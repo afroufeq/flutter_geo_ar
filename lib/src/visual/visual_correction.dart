@@ -10,14 +10,20 @@ class VisualTracker {
   double _offsetY = 0.0;
   StreamSubscription? _gyroSub;
   final double pixelPerRadian;
+  final Stream<GyroscopeEvent>? _gyroStreamOverride;
 
-  VisualTracker({this.mode = VisualTrackingMode.off, this.pixelPerRadian = 500.0});
+  VisualTracker({
+    this.mode = VisualTrackingMode.off,
+    this.pixelPerRadian = 500.0,
+    Stream<GyroscopeEvent>? gyroStream,
+  }) : _gyroStreamOverride = gyroStream;
 
   void start() {
     if (mode == VisualTrackingMode.lite) {
       // Usamos giroscopio para estimar desplazamiento de píxeles (fake optical flow)
       // Esto suaviza el jitter visual.
-      _gyroSub = gyroscopeEventStream().listen((g) {
+      final stream = _gyroStreamOverride ?? gyroscopeEventStream();
+      _gyroSub = stream.listen((g) {
         // g.y (rotación eje Y) -> movimiento X en pantalla
         // g.x (rotación eje X) -> movimiento Y en pantalla
         _offsetX += g.y * 0.02 * pixelPerRadian;

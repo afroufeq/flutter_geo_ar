@@ -1,0 +1,12 @@
+targets:
+  $default:
+    builders:
+      slang_build_runner:
+        options:
+          base_locale: es
+          fallback_strategy: base_locale
+          input_directory: assets/translations
+          output_directory: lib/src/i18n
+          translate_var: t
+          enum_name: AppLocale
+          translation_class_visibility: public

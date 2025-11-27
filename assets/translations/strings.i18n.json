@@ -1,0 +1,33 @@
+{
+  "debug": {
+    "sections": {
+      "debug": "DEPURACIÓN",
+      "filters": "FILTROS",
+      "sensors": "SENSORES"
+    },
+    "metrics": {
+      "fps": "FPS",
+      "poisVisibleTotal": "POIs visible/total",
+      "cacheHitRate": "Cache hit rate",
+      "projectionTime": "Projection time",
+      "declutterTime": "Declutter time",
+      "behind": "Detrás",
+      "tooFar": "Muy lejos",
+      "horizon": "Horizonte",
+      "latitude": "Latitud",
+      "longitude": "Longitud",
+      "altitude": "Altitud",
+      "heading": "Rumbo",
+      "pitch": "Inclinación",
+      "calibration": "Calibración"
+    },
+    "mode": {
+      "debugMode": "MODO DEBUG"
+    },
+    "actions": {
+      "calibrating": "Calibrando: {offset}°",
+      "hideDebug": "Ocultar debug",
+      "showDebug": "Mostrar debug"
+    }
+  }
+}

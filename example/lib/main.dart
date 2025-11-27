@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:camera/camera.dart';
@@ -100,6 +102,7 @@ class HomeScreen extends StatelessWidget {
                     focalLength: 520,
                     debugMode: true, // Oculta imagen de cámara pero mantiene sensores
                     showHorizonDebug: true, // Mostrar info de debug del horizonte
+                    showDebugOverlay: true, // Habilita el overlay de debug con botón toggle
                   ),
                 ),
               ),

@@ -112,33 +112,6 @@ class HorizonPainter extends CustomPainter {
     }
 
     canvas.drawPath(path, paint);
-
-    // Información de debug opcional
-    if (showDebugInfo) {
-      _drawDebugInfo(canvas, size, currentHeading, currentPitch);
-    }
-  }
-
-  void _drawDebugInfo(Canvas canvas, Size size, double heading, double pitch) {
-    final textPainter = TextPainter(
-      textDirection: TextDirection.ltr,
-    );
-
-    final debugText = 'Heading: ${heading.toStringAsFixed(1)}° | '
-        'Pitch: ${pitch.toStringAsFixed(1)}° | '
-        'Profile: ${profile!.angles.length} points';
-
-    textPainter.text = TextSpan(
-      text: debugText,
-      style: const TextStyle(
-        color: Colors.yellow,
-        fontSize: 12,
-        backgroundColor: Colors.black54,
-      ),
-    );
-
-    textPainter.layout();
-    textPainter.paint(canvas, const Offset(10, 10));
   }
 
   @override

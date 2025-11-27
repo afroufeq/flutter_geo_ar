@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 import 'package:flutter/services.dart';
+import '../utils/logger.dart';
 
 class DemService {
   final String? _demPath;
@@ -20,7 +21,7 @@ class DemService {
   Future<void> init([String? assetPath]) async {
     final pathToLoad = assetPath ?? _demPath;
     if (pathToLoad == null) {
-      print("[GeoAR] ⚠️  No se proporcionó ruta al DEM. La oclusión/altitud será imprecisa.");
+      utilLog("[GeoAR] ⚠️  No se proporcionó ruta al DEM. La oclusión/altitud será imprecisa.");
       return;
     }
 
@@ -28,7 +29,7 @@ class DemService {
     try {
       byteData = await rootBundle.load(pathToLoad);
     } catch (e) {
-      print("[GeoAR] ❌ No se pudo cargar el DEM desde $pathToLoad: $e");
+      utilLog("[GeoAR] ❌ No se pudo cargar el DEM desde $pathToLoad: $e");
       return;
     }
 
@@ -39,7 +40,7 @@ class DemService {
     // seguido por los datos de elevación como raw Float32List.
 
     if (bytes.length < 32) {
-      print("[GeoAR] ❌ El archivo DEM tiene un formato inválido o está incompleto.");
+      utilLog("[GeoAR] ❌ El archivo DEM tiene un formato inválido o está incompleto.");
       return;
     }
 
@@ -60,7 +61,7 @@ class DemService {
     // La longitud debe ser revisada para evitar error de rango al crear el view
     int expectedLength = _width * _height * 4; // 4 bytes por Float32
     if (bytes.length - dataOffset < expectedLength) {
-      print("[GeoAR] ❌ Los datos de elevación están incompletos en el archivo DEM.");
+      utilLog("[GeoAR] ❌ Los datos de elevación están incompletos en el archivo DEM.");
       return;
     }
 
@@ -72,8 +73,8 @@ class DemService {
     _maxLon = _minLon + _pixelSize * _width;
 
     _isInitialized = true;
-    print(
-        "[GeoAR] ✅ DEM cargado: ${_width}x${_height} píxeles, cobertura: (${_minLat.toStringAsFixed(4)},${_minLon.toStringAsFixed(4)}) a (${_maxLat.toStringAsFixed(4)},${_maxLon.toStringAsFixed(4)})");
+    utilLog(
+        "[GeoAR] ✅ DEM cargado: ${_width}x$_height píxeles, cobertura: (${_minLat.toStringAsFixed(4)},${_minLon.toStringAsFixed(4)}) a (${_maxLat.toStringAsFixed(4)},${_maxLon.toStringAsFixed(4)})");
   }
 
   /// Obtiene la elevación para una latitud y longitud dadas.

@@ -14,3 +14,5 @@ export 'src/camera/camera_background.dart';
 export 'src/visual/visual_tracking.dart';
 export 'src/horizon/horizon_generator.dart';
 export 'src/horizon/horizon_painter.dart';
+export 'src/utils/debug_metrics.dart';
+export 'src/utils/telemetry_service.dart';

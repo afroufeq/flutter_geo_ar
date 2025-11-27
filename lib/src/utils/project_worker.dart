@@ -26,13 +26,18 @@ void projectWorkerEntry(SendPort sendPort) {
   });
 }
 
-List<Map<String, dynamic>> _processFrame(Map<String, dynamic> input, PoiRenderer renderer) {
+Map<String, dynamic> _processFrame(Map<String, dynamic> input, PoiRenderer renderer) {
+  final startTime = DateTime.now();
+
   final pois = (input['pois'] as List).map((m) => Poi.fromMap(m)).toList();
   final sensors = FusedData.fromMap(input['sensors']);
 
   renderer.focalLength = (input['focal'] as num).toDouble();
+  renderer.maxDistance = (input['maxDistance'] as num?)?.toDouble() ?? 20000.0;
 
-  final projected = renderer.projectPois(
+  // Medir tiempo de proyección
+  final projectionStart = DateTime.now();
+  final projectionResult = renderer.projectPois(
       pois,
       (input['userLat'] as num).toDouble(),
       (input['userLon'] as num).toDouble(),
@@ -40,8 +45,13 @@ List<Map<String, dynamic>> _processFrame(Map<String, dynamic> input, PoiRenderer
       sensors,
       Size((input['width'] as num).toDouble(), (input['height'] as num).toDouble()),
       calibration: (input['calibration'] as num).toDouble());
+  final projectionEnd = DateTime.now();
+  final projectionMs = projectionEnd.difference(projectionStart).inMicroseconds / 1000.0;
 
-  return projected
+  // TODO: Aquí iría el decluttering cuando se implemente
+  final declutterMs = 0.0;
+
+  final result = projectionResult.pois
       .map((rp) => {
             'x': rp.x,
             'y': rp.y,
@@ -51,4 +61,23 @@ List<Map<String, dynamic>> _processFrame(Map<String, dynamic> input, PoiRenderer
             'importance': rp.poi.importance
           })
       .toList();
+
+  final endTime = DateTime.now();
+  final totalMs = endTime.difference(startTime).inMicroseconds / 1000.0;
+
+  // Retornar resultado con métricas detalladas
+  return {
+    'pois': result,
+    'metrics': {
+      'projectionMs': projectionMs,
+      'declutterMs': declutterMs,
+      'totalMs': totalMs,
+      'totalPois': projectionResult.totalProcessed,
+      'visiblePois': projectionResult.pois.length,
+      'filteredPois': projectionResult.totalProcessed - projectionResult.pois.length,
+      'behindUser': projectionResult.behindUser,
+      'tooFar': projectionResult.tooFar,
+      'horizonCulled': projectionResult.horizonCulled,
+    }
+  };
 }

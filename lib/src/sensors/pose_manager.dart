@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'native_event_channel.dart';
 import 'fused_data.dart';
+import '../utils/logger.dart';
 
 /// Gestiona los sensores nativos con optimizaciones de batería
 ///
@@ -23,7 +24,7 @@ import 'fused_data.dart';
 ///
 /// // Escuchar eventos
 /// poseManager.stream.listen((data) {
-///   print('Heading: ${data.heading}, Lat: ${data.lat}');
+///   utilLog('Heading: ${data.heading}, Lat: ${data.lat}');
 /// });
 /// ```
 class PoseManager {
@@ -87,7 +88,7 @@ class PoseManager {
         _ctrl.add(FusedData(
             heading: _heading, pitch: _pitch, roll: _roll, lat: _lat, lon: _lon, alt: _alt, ts: (ts as num).toInt()));
       }
-    }, onError: (e) => print("Error sensores: $e"));
+    }, onError: (e) => utilLog("Error sensores: $e"));
   }
 
   /// Detiene la escucha de sensores

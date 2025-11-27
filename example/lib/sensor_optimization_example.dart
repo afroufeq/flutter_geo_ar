@@ -10,7 +10,7 @@ import 'package:flutter_geo_ar/flutter_geo_ar.dart';
 /// - Visualización de datos en tiempo real
 /// - Gestión del ciclo de vida
 class SensorOptimizationExample extends StatefulWidget {
-  const SensorOptimizationExample({Key? key}) : super(key: key);
+  const SensorOptimizationExample({super.key});
 
   @override
   State<SensorOptimizationExample> createState() => _SensorOptimizationExampleState();
@@ -27,7 +27,6 @@ class _SensorOptimizationExampleState extends State<SensorOptimizationExample> w
   double? _lat;
   double? _lon;
   double? _alt;
-  int? _timestamp;
 
   // Configuración
   bool _lowPowerMode = false;
@@ -116,7 +115,6 @@ class _SensorOptimizationExampleState extends State<SensorOptimizationExample> w
       _lat = data.lat;
       _lon = data.lon;
       _alt = data.alt;
-      _timestamp = data.ts;
       _eventCount++;
     });
   }

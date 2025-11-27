@@ -2,6 +2,11 @@
 
 Todos los cambios importantes de este proyecto serán documentados en este archivo.
 
+## [0.0.2] - 2025-11-27
+
+- Agregado sistema de estabilización visual (ver [documentación](/docs/VISUAL_STABILIZATION.md))
+- Debug Overlay para monitorización en tiempo real de métricas de rendimiento, sensores y filtros (ver [documentación](/docs/DEBUG_OVERLAY.md))
+
 ## [0.0.1] - 2025-11-27
 
 ### 🎉 Release Inicial
@@ -41,23 +46,6 @@ Plugin Flutter para Realidad Aumentada Geográfica optimizado para senderismo y 
 - **Debug mode**: Overlay de información técnica para desarrollo y testing
 - **Internacionalización**: Sistema i18n con slang para múltiples idiomas
 - **Ejemplos incluidos**: App de ejemplo completa con datos de las Islas Canarias
-
-### 📦 Dependencias
-- Flutter SDK >=3.16.0, Dart >=3.2.0
-- camera ^0.11.0, geolocator ^11.0.0, sensors_plus ^5.0.0
-- vector_math ^2.1.4, proj4dart ^3.0.0
-- Otras dependencias para UI, storage y procesamiento de datos
-
-### 📝 Documentación
-- Guía de uso completa (USAGE.md)
-- Documentación técnica de optimizaciones
-- Ejemplos interactivos con datos reales
-- API documentation en código fuente
-
-### 🔧 Configuración
-- Sistema de permisos para cámara, ubicación y sensores
-- Configuración de assets (fuentes, traducciones)
-- Plantillas para DEMs y POIs en formato específico
 
 ---
 

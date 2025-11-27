@@ -1,6 +1,6 @@
 name: flutter_geo_ar
 description: Geo-AR plugin for Flutter. Optimized v1.5 with Native Sensor Fusion, Isolate Offloading, DEM support, and Visual Correction.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/afroufeq/flutter_geo_ar
 repository: https://github.com/afroufeq/flutter_geo_ar
 issue_tracker: https://github.com/afroufeq/flutter_geo_ar/issues

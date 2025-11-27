@@ -1,5 +1,5 @@
 group = "com.trackingsport.geoar"
-version = "0.0.1"
+version = "0.0.2"
 
 buildscript {
     ext.kotlin_version = "2.1.0"

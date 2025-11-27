@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
+import '../utils/logger.dart';
 import '../sensors/pose_manager.dart';
 import '../sensors/fused_data.dart';
 import '../utils/persistent_isolate.dart';
@@ -12,6 +13,9 @@ import '../storage/calibration_service.dart';
 import '../visual/visual_tracking.dart';
 import '../horizon/horizon_generator.dart';
 import '../horizon/horizon_painter.dart';
+import '../utils/telemetry_service.dart';
+import '../i18n/strings.g.dart';
+import 'debug_overlay.dart';
 
 class GeoArView extends StatefulWidget {
   final List<Poi> pois;
@@ -42,6 +46,26 @@ class GeoArView extends StatefulWidget {
   /// Útil para visualizar mejor los POIs y el horizonte en pruebas
   final bool debugMode;
 
+  /// Modo de estabilización visual usando el giroscopio
+  /// - VisualTrackingMode.off: Sin estabilización (máximo ahorro de batería)
+  /// - VisualTrackingMode.lite: Estabilización ligera con throttling a 20Hz (por defecto)
+  final VisualTrackingMode visualStabilization;
+
+  /// Modo de bajo consumo de energía
+  /// Cuando está activado, desactiva automáticamente la estabilización visual
+  /// independientemente del valor de visualStabilization
+  final bool lowPowerMode;
+
+  /// Muestra el overlay de debug con métricas en tiempo real
+  final bool showDebugOverlay;
+
+  /// Muestra la sección de métricas de rendimiento en el debug overlay
+  final bool showPerformanceMetrics;
+
+  /// Idioma de la interfaz del plugin ('es' para español, 'en' para inglés)
+  /// Por defecto es español ('es')
+  final String language;
+
   const GeoArView({
     super.key,
     this.pois = const [],
@@ -54,6 +78,11 @@ class GeoArView extends StatefulWidget {
     this.horizonLineWidth = 2.0,
     this.showHorizonDebug = false,
     this.debugMode = false,
+    this.visualStabilization = VisualTrackingMode.lite,
+    this.lowPowerMode = false,
+    this.showDebugOverlay = false,
+    this.showPerformanceMetrics = true,
+    this.language = 'es',
   }) : assert(
           pois.length > 0 || poisPath != null,
           'Debe proporcionar POIs directamente o mediante poisPath',
@@ -68,12 +97,22 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
   final PoseManager _pose = PoseManager();
   final CalibrationService _calib = CalibrationService();
   final PersistentIsolate _isolate = PersistentIsolate();
-  final VisualTracker _tracker = VisualTracker(mode: VisualTrackingMode.lite);
+  late final VisualTracker _tracker;
 
   List<Map<String, dynamic>> _projectedPois = [];
   List<Poi> _loadedPois = [];
   double _calibrationOffset = 0.0;
   bool _isCalibrating = false;
+  bool _showDebugOverlay = false;
+
+  // Telemetry service para métricas de debug
+  final TelemetryService _telemetry = TelemetryService();
+
+  // Variables para cache de proyecciones
+  double? _lastCachedLat;
+  double? _lastCachedLon;
+  double? _lastCachedHeading;
+  List<Map<String, dynamic>>? _cachedProjectedPois;
 
   // Variables para el horizonte
   HorizonProfile? _horizonProfile;
@@ -85,7 +124,41 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+
+    // Configurar el idioma del plugin
+    _setLanguage(widget.language);
+
+    // Inicializar VisualTracker con configuración adecuada
+    // lowPowerMode tiene prioridad y fuerza off independientemente de visualStabilization
+    final effectiveMode = widget.lowPowerMode ? VisualTrackingMode.off : widget.visualStabilization;
+
+    _tracker = VisualTracker(mode: effectiveMode);
+
+    // Logging de configuración
+    utilLog('[GeoAR] 🔧 Configuración de estabilización visual:');
+    utilLog('[GeoAR]    - visualStabilization: ${widget.visualStabilization}');
+    utilLog('[GeoAR]    - lowPowerMode: ${widget.lowPowerMode}');
+    utilLog('[GeoAR]    - Modo efectivo: $effectiveMode');
+    if (widget.lowPowerMode && widget.visualStabilization != VisualTrackingMode.off) {
+      utilLog('[GeoAR] ⚡ Modo de bajo consumo activo - estabilización forzada a OFF');
+    }
+
     _initSystem();
+  }
+
+  /// Configura el idioma del plugin
+  void _setLanguage(String languageCode) {
+    try {
+      final locale = AppLocale.values.firstWhere(
+        (l) => l.languageCode == languageCode,
+        orElse: () => AppLocale.es,
+      );
+      LocaleSettings.setLocale(locale);
+      utilLog('[GeoAR] 🌐 Idioma configurado: ${locale.languageCode}');
+    } catch (e) {
+      utilLog('[GeoAR] ⚠️ Error configurando idioma "$languageCode", usando español por defecto: $e');
+      LocaleSettings.setLocale(AppLocale.es);
+    }
   }
 
   Future<void> _initSystem() async {
@@ -96,14 +169,14 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
     if (widget.poisPath != null) {
       try {
         _loadedPois = await PoiLoader.loadFromAsset(widget.poisPath!);
-        print('[GeoAR] ✅ POIs cargados desde ${widget.poisPath}: ${_loadedPois.length} POIs');
+        utilLog('[GeoAR] ✅ POIs cargados desde ${widget.poisPath}: ${_loadedPois.length} POIs');
       } catch (e) {
-        print('[GeoAR] ❌ Error cargando POIs: $e');
+        utilLog('[GeoAR] ❌ Error cargando POIs: $e');
         _loadedPois = [];
       }
     } else {
       _loadedPois = widget.pois;
-      print('[GeoAR] ✅ Usando ${_loadedPois.length} POIs proporcionados directamente');
+      utilLog('[GeoAR] ✅ Usando ${_loadedPois.length} POIs proporcionados directamente');
     }
 
     // Cargar elevaciones desde DEM si están faltando y hay un DEM disponible
@@ -119,24 +192,37 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
     await _isolate.spawn(projectWorkerEntry);
     _tracker.start();
 
-    print('[GeoAR] 🚀 Iniciando PoseManager...');
+    utilLog('[GeoAR] 🚀 Iniciando PoseManager...');
     _pose.start();
-    print('[GeoAR] 🎧 Escuchando stream de sensores...');
+    utilLog('[GeoAR] 🎧 Escuchando stream de sensores...');
 
     _pose.stream.listen((fused) {
-      print('[GeoAR] 📡 Datos recibidos del stream - mounted: $mounted, lat: ${fused.lat}');
+      utilLog('[GeoAR] 📡 Datos recibidos del stream - mounted: $mounted, lat: ${fused.lat}');
 
       if (!mounted || fused.lat == null) {
-        print('[GeoAR] ⚠️ Stream ignorado - mounted: $mounted, lat: ${fused.lat}');
+        utilLog('[GeoAR] ⚠️ Stream ignorado - mounted: $mounted, lat: ${fused.lat}');
         return;
       }
 
       // Guardar los datos actuales del sensor para el HorizonPainter
       _currentSensorData = fused;
 
+      // Actualizar métricas de sensores para el debug overlay
+      if (widget.showDebugOverlay) {
+        _telemetry.updateSensorData(
+          lat: fused.lat,
+          lon: fused.lon,
+          alt: fused.alt,
+          heading: fused.heading,
+          pitch: fused.pitch,
+          roll: fused.roll,
+          calibrationOffset: _calibrationOffset,
+        );
+      }
+
       final Size size = MediaQuery.of(context).size;
 
-      print(
+      utilLog(
           '[GeoAR] 📍 Usuario: lat=${fused.lat?.toStringAsFixed(6)}, lon=${fused.lon?.toStringAsFixed(6)}, alt=${fused.alt?.toStringAsFixed(1)}m | heading=${fused.heading?.toStringAsFixed(1)}°, pitch=${fused.pitch?.toStringAsFixed(1)}°');
 
       // Calcular perfil del horizonte si es necesario
@@ -144,6 +230,54 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
         _computeHorizonProfile(fused.lat!, fused.lon!, fused.alt ?? 0.0);
       }
 
+      // Sistema de cache: evitar reprocesar si el usuario está quieto
+      bool useCache = false;
+      if (_lastCachedLat != null && _lastCachedLon != null && _lastCachedHeading != null) {
+        // Diferencias absolutas en coordenadas (aprox. 1° = 111km, usamos umbral de ~2m)
+        final latDiff = (fused.lat! - _lastCachedLat!).abs();
+        final lonDiff = (fused.lon! - _lastCachedLon!).abs();
+        final headingDiff = (fused.heading! - _lastCachedHeading!).abs();
+
+        // Normalizar la diferencia de heading para manejar el wrap-around de 360°
+        final normalizedHeadingDiff = headingDiff > 180.0 ? 360.0 - headingDiff : headingDiff;
+
+        // Umbrales: 2m de movimiento (~0.00002°), 2° de rotación
+        if (latDiff < 0.00002 && lonDiff < 0.00002 && normalizedHeadingDiff < 2.0) {
+          useCache = true;
+          if (widget.showDebugOverlay) {
+            _telemetry.recordCacheHit();
+          }
+        } else {
+          if (widget.showDebugOverlay) {
+            _telemetry.recordCacheMiss();
+          }
+        }
+      } else {
+        // Primera iteración, no hay cache disponible
+        if (widget.showDebugOverlay) {
+          _telemetry.recordCacheMiss();
+        }
+      }
+
+      // Si podemos usar el cache, evitamos el cómputo
+      if (useCache && _cachedProjectedPois != null) {
+        utilLog('[GeoAR] 💾 Usando cache de proyección');
+
+        if (widget.showDebugOverlay) {
+          // Aún medimos el "frame time" aunque sea cache (será muy rápido)
+          final frameStart = DateTime.now();
+          final frameEnd = DateTime.now();
+          final frameMicros = frameEnd.difference(frameStart).inMicroseconds;
+          _telemetry.recordFrameTime(frameMicros);
+        }
+
+        setState(() {
+          _projectedPois = _cachedProjectedPois!;
+        });
+        return;
+      }
+
+      // No hay cache o los datos cambiaron, procesar normalmente
       final task = {
         'pois': _loadedPois.map((p) => p.toMap()).toList(),
         'sensors': fused.toMap(),
@@ -157,15 +291,94 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
         'demPath': widget.demPath, // Pasar demPath para el worker
       };
 
+      final frameStart = DateTime.now();
+
       _isolate.compute(task).then((result) {
-        if (mounted && result is List) {
-          final projected = _tracker.applyOffset(List<Map<String, dynamic>>.from(result));
-          if (projected.isNotEmpty) {
-            print(
-                '[GeoAR] ✅ ${projected.length} POIs proyectados | Ejemplo: ${projected.first['poiName']} en (${projected.first['x']?.toStringAsFixed(1)}, ${projected.first['y']?.toStringAsFixed(1)}) a ${projected.first['distance']?.toStringAsFixed(0)}m');
-          } else {
-            print('[GeoAR] ⚠️  0 POIs proyectados (pueden estar fuera del campo de visión)');
+        if (!mounted) return;
+
+        if (result is Map) {
+          // Nuevo formato con métricas
+          final poisData = result['pois'] as List?;
+          final metricsData = result['metrics'] as Map?;
+
+          if (poisData != null) {
+            final projected = _tracker.applyOffset(List<Map<String, dynamic>>.from(poisData));
+
+            if (projected.isNotEmpty) {
+              utilLog(
+                  '[GeoAR] ✅ ${projected.length} POIs proyectados | Ejemplo: ${projected.first['poiName']} en (${projected.first['x']?.toStringAsFixed(1)}, ${projected.first['y']?.toStringAsFixed(1)}) a ${projected.first['distance']?.toStringAsFixed(0)}m');
+            } else {
+              utilLog('[GeoAR] ⚠️  0 POIs proyectados (pueden estar fuera del campo de visión)');
+            }
+
+            // Actualizar métricas para el debug overlay
+            if (widget.showDebugOverlay) {
+              // Medir FPS
+              final frameEnd = DateTime.now();
+              final frameMicros = frameEnd.difference(frameStart).inMicroseconds;
+              _telemetry.recordFrameTime(frameMicros);
+
+              // Actualizar tiempos de procesamiento desde el worker
+              if (metricsData != null) {
+                final projectionMs = (metricsData['projectionMs'] as num?)?.toDouble() ?? 0.0;
+                final declutterMs = (metricsData['declutterMs'] as num?)?.toDouble() ?? 0.0;
+
+                _telemetry.recordProjectionTime(projectionMs);
+                _telemetry.recordDeclutterTime(declutterMs);
+
+                // Actualizar métricas de POIs con estadísticas detalladas
+                final totalPois = (metricsData['totalPois'] as num?)?.toInt() ?? _loadedPois.length;
+                final behindUser = (metricsData['behindUser'] as num?)?.toInt() ?? 0;
+                final tooFar = (metricsData['tooFar'] as num?)?.toInt() ?? 0;
+                final horizonCulled = (metricsData['horizonCulled'] as num?)?.toInt() ?? 0;
+
+                _telemetry.updatePoiMetrics(
+                  visible: projected.length,
+                  total: totalPois,
+                  horizonCulled: horizonCulled,
+                  importanceFiltered: behindUser, // Reutilizamos este campo para "detrás del usuario"
+                  categoryFiltered: tooFar, // Reutilizamos este campo para "demasiado lejos"
+                );
+              } else {
+                // Sin métricas detalladas, usar valores básicos
+                _telemetry.updatePoiMetrics(
+                  visible: projected.length,
+                  total: _loadedPois.length,
+                );
+              }
+            }
+
+            // Actualizar cache
+            _lastCachedLat = fused.lat;
+            _lastCachedLon = fused.lon;
+            _lastCachedHeading = fused.heading;
+            _cachedProjectedPois = projected;
+
+            setState(() {
+              _projectedPois = projected;
+            });
           }
+        } else if (result is List) {
+          // Formato antiguo (retrocompatibilidad)
+          final projected = _tracker.applyOffset(List<Map<String, dynamic>>.from(result));
+
+          if (widget.showDebugOverlay) {
+            final frameEnd = DateTime.now();
+            final frameMicros = frameEnd.difference(frameStart).inMicroseconds;
+            _telemetry.recordFrameTime(frameMicros);
+
+            _telemetry.updatePoiMetrics(
+              visible: projected.length,
+              total: _loadedPois.length,
+            );
+          }
+
+          // Actualizar cache (formato antiguo)
+          _lastCachedLat = fused.lat;
+          _lastCachedLon = fused.lon;
+          _lastCachedHeading = fused.heading;
+          _cachedProjectedPois = projected;
+
           setState(() {
             _projectedPois = projected;
           });
@@ -181,25 +394,25 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
     if (_horizonGenerator == null) return;
 
     try {
-      print('[GeoAR] 🗻 Calculando perfil del horizonte...');
+      utilLog('[GeoAR] 🗻 Calculando perfil del horizonte...');
       final profile = await _horizonGenerator!.compute(lat, lon, alt, angularRes: 2.0);
       if (mounted) {
         setState(() {
           _horizonProfile = profile;
         });
-        print('[GeoAR] ✅ Perfil del horizonte calculado: ${profile.angles.length} puntos');
+        utilLog('[GeoAR] ✅ Perfil del horizonte calculado: ${profile.angles.length} puntos');
       }
     } catch (e) {
-      print('[GeoAR] ❌ Error calculando perfil del horizonte: $e');
+      utilLog('[GeoAR] ❌ Error calculando perfil del horizonte: $e');
     }
   }
 
   Future<void> _loadElevationsFromDem() async {
     try {
       _demService = DemService();
-      print('[GeoAR] 📂 Inicializando DemService con path: ${widget.demPath}');
+      utilLog('[GeoAR] 📂 Inicializando DemService con path: ${widget.demPath}');
       await _demService!.init(widget.demPath!);
-      print('[GeoAR] ✅ DemService inicializado correctamente');
+      utilLog('[GeoAR] ✅ DemService inicializado correctamente');
 
       int poisUpdated = 0;
       int poisFailed = 0;
@@ -218,27 +431,25 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
           } catch (e) {
             poisFailed++;
             poi.elevation = 500.0;
-            print('[GeoAR] ⚠️  Error obteniendo elevación para POI ${poi.name}: $e');
+            utilLog('[GeoAR] ⚠️  Error obteniendo elevación para POI ${poi.name}: $e');
           }
         }
       }
 
-      print('[GeoAR] 📊 Elevaciones DEM: $poisUpdated POIs actualizados, $poisFailed con valor predeterminado');
-      print('[GeoAR] 📊 Total POIs con elevación: ${_loadedPois.where((p) => p.elevation != null).length}');
+      utilLog('[GeoAR] 📊 Elevaciones DEM: $poisUpdated POIs actualizados, $poisFailed con valor predeterminado');
+      utilLog('[GeoAR] 📊 Total POIs con elevación: ${_loadedPois.where((p) => p.elevation != null).length}');
 
       // Inicializar el generador de horizonte si showHorizon está habilitado
       if (widget.showHorizon) {
         _horizonGenerator = HorizonGenerator(_demService!);
-        print('[GeoAR] ✅ HorizonGenerator inicializado');
+        utilLog('[GeoAR] ✅ HorizonGenerator inicializado');
       }
     } catch (e) {
-      print('[GeoAR] ❌ Error cargando elevaciones desde DEM: $e');
-      print('[GeoAR] Stack trace: ${StackTrace.current}');
+      utilLog('[GeoAR] ❌ Error cargando elevaciones desde DEM: $e');
+      utilLog('[GeoAR] Stack trace: ${StackTrace.current}');
       // Asignar elevación predeterminada a todos los POIs sin elevación
       for (var poi in _loadedPois) {
-        if (poi.elevation == null) {
-          poi.elevation = 500.0;
-        }
+        poi.elevation ??= 500.0;
       }
     }
   }
@@ -319,9 +530,29 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
+    final translations = t;
     return Scaffold(
       extendBodyBehindAppBar: true,
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black.withValues(alpha: 0.3),
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        actions: [
+          if (widget.showDebugOverlay)
+            IconButton(
+              icon: Icon(
+                _showDebugOverlay ? Icons.bug_report : Icons.bug_report_outlined,
+                color: _showDebugOverlay ? Colors.green : Colors.white,
+              ),
+              onPressed: () => setState(() => _showDebugOverlay = !_showDebugOverlay),
+              tooltip: _showDebugOverlay ? translations.debug.actions.hideDebug : translations.debug.actions.showDebug,
+            ),
+        ],
+      ),
       body: GestureDetector(
         onHorizontalDragStart: (_) => setState(() => _isCalibrating = true),
         onHorizontalDragUpdate: (d) => setState(() => _calibrationOffset += d.delta.dx * 0.1),
@@ -350,14 +581,15 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
               ),
             if (_isCalibrating)
               Center(
-                  child: Text("Calibrando: ${_calibrationOffset.toStringAsFixed(1)}°",
-                      style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold))),
-            SafeArea(
-                child: Align(
-                    alignment: Alignment.topLeft,
-                    child: IconButton(
-                        icon: Icon(Icons.arrow_back, color: Colors.white),
-                        onPressed: () => Navigator.of(context).pop()))),
+                  child: Text(
+                      translations.debug.actions.calibrating
+                          .replaceAll('{offset}', _calibrationOffset.toStringAsFixed(1)),
+                      style: const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold))),
+            // Debug overlay
+            if (widget.showDebugOverlay && _showDebugOverlay)
+              DebugOverlay(
+                showPerformanceMetrics: widget.showPerformanceMetrics,
+              ),
           ],
         ),
       ),
@@ -389,15 +621,15 @@ class _DebugBackgroundPainter extends CustomPainter {
     // Texto de modo debug en la esquina
     final textPainter = TextPainter(textDirection: TextDirection.ltr);
     textPainter.text = TextSpan(
-      text: 'MODO DEBUG',
+      text: t.debug.mode.debugMode,
       style: TextStyle(
-        color: Colors.white.withOpacity(0.6),
+        color: Colors.white.withValues(alpha: 0.6),
         fontSize: 12,
         fontWeight: FontWeight.bold,
       ),
     );
     textPainter.layout();
-    textPainter.paint(canvas, Offset(10, 10));
+    textPainter.paint(canvas, const Offset(10, 10));
   }
 
   @override

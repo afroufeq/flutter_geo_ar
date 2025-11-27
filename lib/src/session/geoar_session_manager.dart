@@ -3,6 +3,7 @@ import '../sensors/pose_manager.dart';
 import '../utils/persistent_isolate.dart';
 import '../utils/project_worker.dart';
 import '../utils/telemetry_service.dart';
+import '../utils/logger.dart';
 
 /// Clase que coordina el ciclo de vida completo de una sesión AR.
 /// Inicia los sensores, levanta el Isolate de proyección y gestiona la telemetría.
@@ -28,7 +29,7 @@ class GeoArSessionManager {
     // 2. Iniciar sensores (EventChannel nativo)
     _poseManager.start();
 
-    print("GeoArSessionManager: Sesión iniciada.");
+    utilLog("GeoArSessionManager: Sesión iniciada.");
   }
 
   /// Detiene todo para ahorrar batería
@@ -39,7 +40,7 @@ class GeoArSessionManager {
     _poseManager.stop();
     _isolate.dispose(); // Matar isolate
 
-    print("GeoArSessionManager: Sesión detenida.");
+    utilLog("GeoArSessionManager: Sesión detenida.");
   }
 
   PoseManager get poseManager => _poseManager;
