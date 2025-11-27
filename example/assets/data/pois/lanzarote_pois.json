@@ -1,0 +1,4952 @@
+[
+  {
+    "id": "node/51161019",
+    "lat": 29.153888,
+    "lon": -13.4295608,
+    "name": "Punta Usaje",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/206390274",
+    "lat": 29.2217012,
+    "lon": -13.451946,
+    "name": "\u00d3rzola",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/209106533",
+    "lat": 29.2143596,
+    "lon": -13.4811596,
+    "name": "Mirador del R\u00edo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/209112213",
+    "lat": 29.1458859,
+    "lon": -13.5001038,
+    "name": "Har\u00eda",
+    "category": "place",
+    "subtype": "town",
+    "importance": 1
+  },
+  {
+    "id": "node/209134150",
+    "lat": 29.13181,
+    "lon": -13.4618271,
+    "name": "Arrieta",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/209139840",
+    "lat": 29.0592518,
+    "lon": -13.5602184,
+    "name": "Teguise",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/211318753",
+    "lat": 29.1574211,
+    "lon": -13.4303771,
+    "name": "Jameos del Agua",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/258765976",
+    "lat": 28.9137946,
+    "lon": -13.7789386,
+    "name": "Fem\u00e9s",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/258765980",
+    "lat": 28.9528697,
+    "lon": -13.7642134,
+    "name": "Yaiza",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/258765981",
+    "lat": 28.95016,
+    "lon": -13.744138,
+    "name": "Uga",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/267135215",
+    "lat": 28.9128969,
+    "lon": -13.7801819,
+    "name": "Balc\u00f3n de Fem\u00e9s",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/267140676",
+    "lat": 29.0037024,
+    "lon": -13.6761588,
+    "name": "Bomba Volc\u00e1nica Gigantesca",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/267150172",
+    "lat": 29.1957046,
+    "lon": -13.495009,
+    "name": "Las Rositas",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/299940107",
+    "lat": 28.924441,
+    "lon": -13.7441236,
+    "name": "Pico Nago",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299940110",
+    "lat": 28.9309314,
+    "lon": -13.7502658,
+    "name": "Las Casitas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/299940114",
+    "lat": 28.9188747,
+    "lon": -13.7838544,
+    "name": "Atalaya de F\u00e9mes",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299954008",
+    "lat": 28.9980656,
+    "lon": -13.744941,
+    "name": "Monta\u00f1a de Timanfaya",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299954023",
+    "lat": 29.0669158,
+    "lon": -13.706698,
+    "name": "Teneza",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299958242",
+    "lat": 29.107732,
+    "lon": -13.6656762,
+    "name": "La Santa",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/299958245",
+    "lat": 29.0819201,
+    "lon": -13.6644431,
+    "name": "El Cuchillo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/299958248",
+    "lat": 29.0993188,
+    "lon": -13.6223493,
+    "name": "Soo",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/299958251",
+    "lat": 29.1061724,
+    "lon": -13.6139799,
+    "name": "Caldera Trasera",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299959618",
+    "lat": 29.0709295,
+    "lon": -13.6345423,
+    "name": "Mu\u00f1ique",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/299959620",
+    "lat": 29.0546429,
+    "lon": -13.6335609,
+    "name": "Tiagua",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/299959622",
+    "lat": 29.0395479,
+    "lon": -13.6245357,
+    "name": "Tao",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/299959624",
+    "lat": 29.0358032,
+    "lon": -13.6373451,
+    "name": "Monta\u00f1a Tamia",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299959627",
+    "lat": 29.0219042,
+    "lon": -13.612642,
+    "name": "Mozaga",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/299960858",
+    "lat": 28.99484,
+    "lon": -13.6791532,
+    "name": "Monta\u00f1a Negra",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299960860",
+    "lat": 29.0050355,
+    "lon": -13.6529501,
+    "name": "Monta\u00f1a Juan Bello",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299961853",
+    "lat": 29.0016939,
+    "lon": -13.59459,
+    "name": "Monta\u00f1a de la Mina",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299961854",
+    "lat": 29.001965,
+    "lon": -13.5761047,
+    "name": "Monta\u00f1a de Zonzamas",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/299961855",
+    "lat": 28.9724996,
+    "lon": -13.6139656,
+    "name": "Guime",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/299970496",
+    "lat": 29.231296,
+    "lon": -13.502333,
+    "name": "Caleta del Sebo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/300055643",
+    "lat": 29.2227216,
+    "lon": -13.5384764,
+    "name": "Monta\u00f1a Amarilla",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/300055644",
+    "lat": 29.2433079,
+    "lon": -13.5182213,
+    "name": "Monta\u00f1a del Moj\u00f3n",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/300055645",
+    "lat": 29.2523736,
+    "lon": -13.5034088,
+    "name": "Agujas Grandes",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/300055646",
+    "lat": 29.2569428,
+    "lon": -13.5003815,
+    "name": "Agujas Chicas",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/300055647",
+    "lat": 29.2768108,
+    "lon": -13.5108051,
+    "name": "Monta\u00f1a Bermeja",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/301107695",
+    "lat": 29.073846,
+    "lon": -13.4792452,
+    "name": "Guatiza",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/301107696",
+    "lat": 29.0982733,
+    "lon": -13.467903,
+    "name": "Mala",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/301107708",
+    "lat": 29.0602213,
+    "lon": -13.4839417,
+    "name": "La Caldera o Tinamala",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/301107710",
+    "lat": 29.0645038,
+    "lon": -13.4610009,
+    "name": "Los Cocoteros",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/301107732",
+    "lat": 29.0839542,
+    "lon": -13.5230977,
+    "name": "Los Valles",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/301107734",
+    "lat": 29.0546344,
+    "lon": -13.531848,
+    "name": "Teseguite",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/301107745",
+    "lat": 29.0379133,
+    "lon": -13.5608329,
+    "name": "Nazaret",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/301107747",
+    "lat": 29.0682507,
+    "lon": -13.5178064,
+    "name": "El Moj\u00f3n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/301108107",
+    "lat": 29.1600287,
+    "lon": -13.4950893,
+    "name": "M\u00e1guez",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/301108108",
+    "lat": 29.1441316,
+    "lon": -13.4464066,
+    "name": "Los Picachos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/301108110",
+    "lat": 29.1703638,
+    "lon": -13.5008238,
+    "name": "Los Helechos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/301108111",
+    "lat": 29.1828731,
+    "lon": -13.4847057,
+    "name": "Monte Corona",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/301109607",
+    "lat": 29.0136233,
+    "lon": -13.5430585,
+    "name": "Tah\u00edche",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/301109609",
+    "lat": 29.0113623,
+    "lon": -13.536347,
+    "name": "Tah\u00edche",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/301109611",
+    "lat": 28.9959062,
+    "lon": -13.4971609,
+    "name": "Costa Teguise",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/301109612",
+    "lat": 29.1144055,
+    "lon": -13.5472129,
+    "name": "Urbanizaci\u00f3n Famara",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/301109613",
+    "lat": 29.1188456,
+    "lon": -13.565989,
+    "name": "Caleta de Famara",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/301111070",
+    "lat": 28.9501756,
+    "lon": -13.7172466,
+    "name": "Tinasoria",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/301111073",
+    "lat": 28.9879402,
+    "lon": -13.6373602,
+    "name": "Monta\u00f1a Blanca",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/316967630",
+    "lat": 29.1847763,
+    "lon": -13.5011479,
+    "name": "Mirador de Guinate",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/316968023",
+    "lat": 29.0164979,
+    "lon": -13.6155689,
+    "name": "Casa Museo del Campesino",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/319686220",
+    "lat": 29.0429511,
+    "lon": -13.689787,
+    "name": "Mancha Blanca",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/330942604",
+    "lat": 29.0816215,
+    "lon": -13.7170047,
+    "name": "Tenesar",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/331134368",
+    "lat": 29.0741914,
+    "lon": -13.6793212,
+    "name": "La Costa",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/331157029",
+    "lat": 29.0443289,
+    "lon": -13.7416835,
+    "name": "Casas Del Islote",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/333679191",
+    "lat": 29.1164605,
+    "lon": -13.6403414,
+    "name": "Caleta de Caballo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/335385918",
+    "lat": 28.9074843,
+    "lon": -13.7321958,
+    "name": "Playa Quemada",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/335698974",
+    "lat": 29.1263356,
+    "lon": -13.5245178,
+    "name": "Mirador del Bosquecillo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/339951342",
+    "lat": 29.0874572,
+    "lon": -13.5620798,
+    "name": "Las Laderas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/340209875",
+    "lat": 28.9543147,
+    "lon": -13.6529153,
+    "name": "T\u00edas",
+    "category": "place",
+    "subtype": "town",
+    "importance": 1
+  },
+  {
+    "id": "node/340334471",
+    "lat": 29.0017041,
+    "lon": -13.6139122,
+    "name": "San Bartolom\u00e9",
+    "category": "place",
+    "subtype": "town",
+    "importance": 1
+  },
+  {
+    "id": "node/341189268",
+    "lat": 28.9782613,
+    "lon": -13.6409516,
+    "name": "Monta\u00f1a Blanca",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/341950946",
+    "lat": 28.9839241,
+    "lon": -13.794232,
+    "name": "Monta\u00f1a Hern\u00e1ndez",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/341950948",
+    "lat": 28.9838081,
+    "lon": -13.7812158,
+    "name": "Monta\u00f1a Tremesana",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/341950955",
+    "lat": 29.0030127,
+    "lon": -13.7163478,
+    "name": "Monta\u00f1a del Se\u00f1alo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/341950956",
+    "lat": 29.0051431,
+    "lon": -13.7301448,
+    "name": "Monta\u00f1a de los Miraderos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/357453157",
+    "lat": 28.9550662,
+    "lon": -13.5902879,
+    "name": "Playa Honda",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/369574958",
+    "lat": 29.127247,
+    "lon": -13.4777515,
+    "name": "Tabayesco",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/369702440",
+    "lat": 29.144807,
+    "lon": -13.4476087,
+    "name": "Punta Mujeres",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/369956105",
+    "lat": 29.0370491,
+    "lon": -13.6861733,
+    "name": "Tinguat\u00f3n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/369962336",
+    "lat": 29.0180244,
+    "lon": -13.6291581,
+    "name": "El Islote",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/369962667",
+    "lat": 29.0473774,
+    "lon": -13.6509215,
+    "name": "La Vegueta",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/455947883",
+    "lat": 28.9972764,
+    "lon": -13.6563724,
+    "name": "Masdache",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/455947885",
+    "lat": 29.0085562,
+    "lon": -13.6305815,
+    "name": "La Florida",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/606061021",
+    "lat": 28.9870126,
+    "lon": -13.5153267,
+    "name": "fontana navidad",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/606225519",
+    "lat": 28.9413111,
+    "lon": -13.7573898,
+    "name": "Molina de Yaiza",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/624085839",
+    "lat": 28.9235401,
+    "lon": -13.6683509,
+    "name": "Guardia Civil",
+    "category": "amenity",
+    "subtype": "police",
+    "importance": 1
+  },
+  {
+    "id": "node/624105011",
+    "lat": 28.9204443,
+    "lon": -13.6506837,
+    "name": "Puerto del Carmen",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/624420338",
+    "lat": 29.0570664,
+    "lon": -13.6308187,
+    "name": "Museo Agricola El Patio",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/631608473",
+    "lat": 28.9745045,
+    "lon": -13.5661249,
+    "name": "Hospital General de Lanzarote",
+    "category": "amenity",
+    "subtype": "hospital",
+    "importance": 1
+  },
+  {
+    "id": "node/631758185",
+    "lat": 29.0585441,
+    "lon": -13.5605658,
+    "name": "Palacio Herrera",
+    "category": "historic",
+    "subtype": "castle",
+    "importance": 1
+  },
+  {
+    "id": "node/632235405",
+    "lat": 29.1807468,
+    "lon": -13.4951921,
+    "name": "Guinate",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/633636224",
+    "lat": 29.1121183,
+    "lon": -13.6078842,
+    "name": "Monta\u00f1a Juan del Hierro",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633637031",
+    "lat": 29.0398664,
+    "lon": -13.7176008,
+    "name": "Monta\u00f1a Caldereta",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633638991",
+    "lat": 29.0514298,
+    "lon": -13.6732768,
+    "name": "Monta\u00f1a Tinache",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633639931",
+    "lat": 29.0132949,
+    "lon": -13.6952317,
+    "name": "Monta\u00f1a de la Pe\u00f1a de Santa Catalina",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633640394",
+    "lat": 29.0199831,
+    "lon": -13.7209279,
+    "name": "Monta\u00f1a Tingafa",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633640809",
+    "lat": 28.9368185,
+    "lon": -13.748451,
+    "name": "Caldera Riscada",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633641466",
+    "lat": 28.9347482,
+    "lon": -13.7571549,
+    "name": "Caldera Gritana",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633643423",
+    "lat": 28.96264,
+    "lon": -13.7061968,
+    "name": "Monta\u00f1a de Guardilama",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633644025",
+    "lat": 28.9650212,
+    "lon": -13.7002368,
+    "name": "Caldera de Gaida",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633644645",
+    "lat": 28.9673648,
+    "lon": -13.6844024,
+    "name": "Cerro Tegoyo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633645666",
+    "lat": 28.9725032,
+    "lon": -13.6625255,
+    "name": "La Monta\u00f1eta",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633646283",
+    "lat": 28.9760728,
+    "lon": -13.6564888,
+    "name": "Monta\u00f1a Tesa",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633647364",
+    "lat": 28.9923543,
+    "lon": -13.6308359,
+    "name": "Monta\u00f1a Guatisea",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633649851",
+    "lat": 28.9465783,
+    "lon": -13.7278329,
+    "name": "Monta\u00f1a Moj\u00f3n",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633650996",
+    "lat": 28.9165449,
+    "lon": -13.7361611,
+    "name": "Monta\u00f1a Bermeja",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633652493",
+    "lat": 28.9144333,
+    "lon": -13.7927283,
+    "name": "Caldera de Masian",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/633654107",
+    "lat": 28.9949309,
+    "lon": -13.7736592,
+    "name": "Monta\u00f1a Rajada",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/653418066",
+    "lat": 28.9611209,
+    "lon": -13.690837,
+    "name": "La Asomada",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/655152205",
+    "lat": 28.9679343,
+    "lon": -13.6680215,
+    "name": "Conil",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/671714188",
+    "lat": 29.106989,
+    "lon": -13.5302023,
+    "name": "Mirador de Las Nieves",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/679313080",
+    "lat": 28.8387561,
+    "lon": -13.7872385,
+    "name": "Punta de Papagayo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/696866483",
+    "lat": 29.1451929,
+    "lon": -13.5193075,
+    "name": "Mirador Monta\u00f1a Ganada",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/802988634",
+    "lat": 28.946228,
+    "lon": -13.7781643,
+    "name": "Monta\u00f1a de la Cinta",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/802988644",
+    "lat": 28.9321448,
+    "lon": -13.78505,
+    "name": "Monta\u00f1a de El Cabo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/802988648",
+    "lat": 28.9327929,
+    "lon": -13.7819115,
+    "name": "La Degollada",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/948743656",
+    "lat": 29.1194053,
+    "lon": -13.5209311,
+    "name": "Pe\u00f1as del Chache",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/948765098",
+    "lat": 28.8864091,
+    "lon": -13.7818323,
+    "name": "Hacha Grande",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/948776812",
+    "lat": 28.9949415,
+    "lon": -13.7736971,
+    "name": "Monta\u00f1a Rajada",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/948783994",
+    "lat": 29.0344094,
+    "lon": -13.7317514,
+    "name": "Caldera Blanca",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/948790825",
+    "lat": 29.0558013,
+    "lon": -13.5486237,
+    "name": "Guanapay",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/948812297",
+    "lat": 29.0357979,
+    "lon": -13.6373135,
+    "name": "Tamia",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/1069766586",
+    "lat": 29.1948559,
+    "lon": -13.4790797,
+    "name": "Ye",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/1070734570",
+    "lat": 29.0602143,
+    "lon": -13.6429495,
+    "name": "Monta\u00f1a Timbaiba",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1070734575",
+    "lat": 29.0472645,
+    "lon": -13.6864294,
+    "name": "Monta\u00f1a de Los Dolores",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1071070633",
+    "lat": 28.9910252,
+    "lon": -13.6938921,
+    "name": "Monta\u00f1a de las Lapas o del Cuervo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1071070635",
+    "lat": 29.0058047,
+    "lon": -13.6777998,
+    "name": "Monta\u00f1a Colorada",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1107506552",
+    "lat": 28.902812,
+    "lon": -13.7781743,
+    "name": "Pico Redondo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/1441041117",
+    "lat": 29.0173728,
+    "lon": -13.4740583,
+    "name": "Los Ancones",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1441041268",
+    "lat": 28.9819636,
+    "lon": -13.5116404,
+    "name": "Las Caletas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1441041324",
+    "lat": 28.9732337,
+    "lon": -13.6813385,
+    "name": "Vega de Tegoyo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1441041497",
+    "lat": 28.9689848,
+    "lon": -13.7145061,
+    "name": "La Geria",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1441041899",
+    "lat": 29.0288904,
+    "lon": -13.5479762,
+    "name": "Las Cabreras",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1441041909",
+    "lat": 28.911478,
+    "lon": -13.7895988,
+    "name": "Maciot",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1476148474",
+    "lat": 29.0178664,
+    "lon": -13.6720281,
+    "name": "Monta\u00f1a Cardona",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1476161560",
+    "lat": 29.0025218,
+    "lon": -13.7446768,
+    "name": "Caldera de la Boca del Infierno",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1572872289",
+    "lat": 29.0930144,
+    "lon": -13.47046,
+    "name": "Consultorio Local de Mala",
+    "category": "amenity",
+    "subtype": "hospital",
+    "importance": 1
+  },
+  {
+    "id": "node/1572875269",
+    "lat": 29.0953561,
+    "lon": -13.473001,
+    "name": "Private Cactus Garden",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1578121774",
+    "lat": 28.9558011,
+    "lon": -13.5830567,
+    "name": "Urbanizaci\u00f3n la Concha",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/1587379644",
+    "lat": 28.9578923,
+    "lon": -13.5722464,
+    "name": "Urbanizaci\u00f3n Playa del Cable",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/1610805215",
+    "lat": 28.9692829,
+    "lon": -13.7240557,
+    "name": "Monta\u00f1a Chupaderos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1614102827",
+    "lat": 29.021118,
+    "lon": -13.5007979,
+    "name": "Monta\u00f1a de Tinaguache",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1614148556",
+    "lat": 29.0402149,
+    "lon": -13.7295166,
+    "name": "Caldera de Monta\u00f1a Blanca",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/1662657550",
+    "lat": 29.0741042,
+    "lon": -13.4739016,
+    "name": "Las Calderetas",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1662699337",
+    "lat": 29.0557979,
+    "lon": -13.5486219,
+    "name": "Monta\u00f1a de Guanapay",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1662763324",
+    "lat": 29.0930575,
+    "lon": -13.5393814,
+    "name": "Pico de Maramajo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1662763342",
+    "lat": 29.1238926,
+    "lon": -13.5152576,
+    "name": "Mirador sobre el Valle Temisa",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1662763559",
+    "lat": 29.1276822,
+    "lon": -13.5131837,
+    "name": "Mirador Los Valles",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1662783516",
+    "lat": 29.1014642,
+    "lon": -13.6180102,
+    "name": "Pico Colorado",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/1671318571",
+    "lat": 29.0208222,
+    "lon": -13.7214493,
+    "name": "Caldera de Monta\u00f1a Tingafa",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/1671318833",
+    "lat": 28.9858243,
+    "lon": -13.781049,
+    "name": "Monta\u00f1a Tremesana",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/1671318900",
+    "lat": 28.9940826,
+    "lon": -13.7510834,
+    "name": "El Valle de la Tranquilidad",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/1671319239",
+    "lat": 28.9899911,
+    "lon": -13.7965039,
+    "name": "Caldera de Monta\u00f1a Encantada",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/1732758345",
+    "lat": 29.0004792,
+    "lon": -13.6113511,
+    "name": "Centro de Salud de San Bartolom\u00e9",
+    "category": "amenity",
+    "subtype": "hospital",
+    "importance": 1
+  },
+  {
+    "id": "node/1777011991",
+    "lat": 28.9607766,
+    "lon": -13.5591,
+    "name": "Las Salinas",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/1777883524",
+    "lat": 28.9616884,
+    "lon": -13.5656951,
+    "name": "San Francisco Javier",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/1800555764",
+    "lat": 28.9599704,
+    "lon": -13.5503427,
+    "name": "Arrecife Centro",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/1800559108",
+    "lat": 28.9710278,
+    "lon": -13.5570185,
+    "name": "Titerroy",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/1800559109",
+    "lat": 28.9767153,
+    "lon": -13.5679462,
+    "name": "Argana Alta",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/1888848642",
+    "lat": 29.0454572,
+    "lon": -13.5545236,
+    "name": "Casa Omar Sharif",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495043",
+    "lat": 28.9670225,
+    "lon": -13.7919703,
+    "name": "Monta\u00f1a de dos Picos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495179",
+    "lat": 28.9917662,
+    "lon": -13.7499857,
+    "name": "Monta\u00f1a del Valle de la Tranquilidad",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495191",
+    "lat": 28.9937068,
+    "lon": -13.7841389,
+    "name": "Caldera Rajada",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495214",
+    "lat": 28.9967259,
+    "lon": -13.7614243,
+    "name": "Caldera Quemada del Mirador",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495236",
+    "lat": 28.9986167,
+    "lon": -13.7586744,
+    "name": "Caldera Quemada del Nido del Guirre",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495287",
+    "lat": 28.9997936,
+    "lon": -13.7312678,
+    "name": "Caldera del Corazoncillo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495296",
+    "lat": 28.9982461,
+    "lon": -13.7531309,
+    "name": "Caldera Quemada de Arriba",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495355",
+    "lat": 29.004425,
+    "lon": -13.7050466,
+    "name": "Caldera de la Rilla",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152495406",
+    "lat": 29.0065997,
+    "lon": -13.749762,
+    "name": "Monta\u00f1a del Pajerito",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152502933",
+    "lat": 28.9787173,
+    "lon": -13.7123492,
+    "name": "Monta\u00f1a Diama",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152502969",
+    "lat": 28.9843384,
+    "lon": -13.6729669,
+    "name": "Monta\u00f1a Testeyna",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2152503025",
+    "lat": 29.0187253,
+    "lon": -13.7376581,
+    "name": "Monta\u00f1a de Mazo o Negra",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2158014813",
+    "lat": 29.0841409,
+    "lon": -13.4517479,
+    "name": "Charco del Palo",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/2282880012",
+    "lat": 29.0100274,
+    "lon": -13.734207,
+    "name": "Taro de Entrada",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2352406231",
+    "lat": 28.9541994,
+    "lon": -13.7737854,
+    "name": "Museo Alo\u00e9 +",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/2352513623",
+    "lat": 28.9344676,
+    "lon": -13.6124844,
+    "name": "Airplane landing",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2385708320",
+    "lat": 28.9636349,
+    "lon": -13.5562998,
+    "name": "La Vega",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2385738319",
+    "lat": 28.9657255,
+    "lon": -13.5453157,
+    "name": "Valterra",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2385764781",
+    "lat": 28.9727033,
+    "lon": -13.5684061,
+    "name": "Argana Baja",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2386905613",
+    "lat": 28.9750759,
+    "lon": -13.5532739,
+    "name": "Parque Maneje",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2386938374",
+    "lat": 28.9730288,
+    "lon": -13.5484032,
+    "name": "Altavista",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2386938375",
+    "lat": 28.9696988,
+    "lon": -13.5450597,
+    "name": "Los Alonsos",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2386944945",
+    "lat": 28.9744088,
+    "lon": -13.5408965,
+    "name": "Tenorio",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2386977213",
+    "lat": 28.9708165,
+    "lon": -13.5369948,
+    "name": "Puerto de Naos",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2387213424",
+    "lat": 28.9768682,
+    "lon": -13.5211588,
+    "name": "Punta Grande",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2486179336",
+    "lat": 28.9639681,
+    "lon": -13.5499014,
+    "name": "Arrecife",
+    "category": "place",
+    "subtype": "town",
+    "importance": 1
+  },
+  {
+    "id": "node/2486345345",
+    "lat": 28.977555,
+    "lon": -13.5554745,
+    "name": "Maneje",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/2533089230",
+    "lat": 28.9647477,
+    "lon": -13.5368668,
+    "name": "Islote de las Cruces",
+    "category": "place",
+    "subtype": "islet",
+    "importance": 1
+  },
+  {
+    "id": "node/2533089231",
+    "lat": 28.9598787,
+    "lon": -13.5427001,
+    "name": "Islote del Franc\u00e9s",
+    "category": "place",
+    "subtype": "islet",
+    "importance": 1
+  },
+  {
+    "id": "node/2592598409",
+    "lat": 29.065105,
+    "lon": -13.5667649,
+    "name": "Monta\u00f1a de San Rafael",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/2592715583",
+    "lat": 29.0053648,
+    "lon": -13.5615641,
+    "name": "Monta\u00f1a de Maneje",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2593000799",
+    "lat": 29.1199166,
+    "lon": -13.6577085,
+    "name": "La Isleta",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2593000801",
+    "lat": 29.1116491,
+    "lon": -13.6524901,
+    "name": "Moj\u00f3n del R\u00edo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2614718978",
+    "lat": 29.0417257,
+    "lon": -13.6852839,
+    "name": "Las Monta\u00f1etas",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2671623804",
+    "lat": 28.9085553,
+    "lon": -13.779956,
+    "name": "Pico de la Aceituna",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/2959789670",
+    "lat": 29.0112604,
+    "lon": -13.6595531,
+    "name": "Cueva de Las Palomas - Los Naturalistas (Entrada B)",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/2959790114",
+    "lat": 29.0130724,
+    "lon": -13.6563573,
+    "name": "Cueva de Las Palomas - Los Naturalistas (Entrada A)",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/3050124579",
+    "lat": 29.0661199,
+    "lon": -13.5013924,
+    "name": "Monta\u00f1a de Guenia",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/3167627928",
+    "lat": 29.0280993,
+    "lon": -13.5034653,
+    "name": "Monta\u00f1a Tejia",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/3168516108",
+    "lat": 28.9218611,
+    "lon": -13.6776993,
+    "name": "Mirador del Puerto",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/3168644867",
+    "lat": 28.8905389,
+    "lon": -13.7461689,
+    "name": "Spielzeuggrotte",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/3287702574",
+    "lat": 29.0068001,
+    "lon": -13.6883571,
+    "name": "Monta\u00f1a de las Nueces",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/3287702576",
+    "lat": 29.0419592,
+    "lon": -13.7173372,
+    "name": "Caldera de Monta\u00f1a Caldereta",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/3305850661",
+    "lat": 29.0837709,
+    "lon": -13.4498761,
+    "name": "Affenfelsen",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/3370650993",
+    "lat": 29.2988384,
+    "lon": -13.534937,
+    "name": "Monta\u00f1a Clara",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/3578639800",
+    "lat": 28.9565755,
+    "lon": -13.6502142,
+    "name": "Los Villareales",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/3703698238",
+    "lat": 28.9178779,
+    "lon": -13.7031064,
+    "name": "Submarine Safaris",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/3704568430",
+    "lat": 29.2190892,
+    "lon": -13.5436089,
+    "name": "Punta del Pobre",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/4082233261",
+    "lat": 28.948368,
+    "lon": -13.683913,
+    "name": "M\u00e1cher",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/4484319848",
+    "lat": 28.9534079,
+    "lon": -13.5907488,
+    "name": "Polic\u00eda Local",
+    "category": "amenity",
+    "subtype": "police",
+    "importance": 1
+  },
+  {
+    "id": "node/4646615089",
+    "lat": 29.0165678,
+    "lon": -13.6155846,
+    "name": "Taller de gofio",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/4646615189",
+    "lat": 29.0164998,
+    "lon": -13.6154426,
+    "name": "Taller de mojo",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/4682003454",
+    "lat": 29.0377932,
+    "lon": -13.7399852,
+    "name": "Risco Quebrado",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4682003471",
+    "lat": 29.0344249,
+    "lon": -13.7317465,
+    "name": "Monta\u00f1a Blanca",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4691468897",
+    "lat": 28.9600793,
+    "lon": -13.7730709,
+    "name": "Monta\u00f1a Almurcia",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692567815",
+    "lat": 28.968112,
+    "lon": -13.7857348,
+    "name": "Monta\u00f1a de la Mancha",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692567816",
+    "lat": 28.9687866,
+    "lon": -13.7959651,
+    "name": "Pico Redondo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692567854",
+    "lat": 28.988962,
+    "lon": -13.7975415,
+    "name": "Monta\u00f1a Encantada",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692868361",
+    "lat": 29.0036833,
+    "lon": -13.7180766,
+    "name": "Lomo Enchumbade",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692868362",
+    "lat": 29.0162372,
+    "lon": -13.7294845,
+    "name": "Monta\u00f1eta de los Mudos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692868363",
+    "lat": 29.0110439,
+    "lon": -13.7277619,
+    "name": "Miraderos bajos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692868376",
+    "lat": 29.0091299,
+    "lon": -13.7592792,
+    "name": "Manto de la Virgen",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876013",
+    "lat": 28.9845438,
+    "lon": -13.6889637,
+    "name": "Monta\u00f1a del Cuaco",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876047",
+    "lat": 29.0425694,
+    "lon": -13.7638581,
+    "name": "Monta\u00f1a Bermeja",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876056",
+    "lat": 29.0157391,
+    "lon": -13.6806872,
+    "name": "Monta\u00f1a Ortiz",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876173",
+    "lat": 29.0091744,
+    "lon": -13.7071001,
+    "name": "Monta\u00f1a de Santa Catalina",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876183",
+    "lat": 29.0000164,
+    "lon": -13.6976185,
+    "name": "Monta\u00f1eta del Cuaco",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876334",
+    "lat": 29.0084015,
+    "lon": -13.7192593,
+    "name": "Pico Partido",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876543",
+    "lat": 28.9978393,
+    "lon": -13.7225801,
+    "name": "Monta\u00f1a Rodeos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876580",
+    "lat": 29.0100423,
+    "lon": -13.7507826,
+    "name": "Monta\u00f1a del Chinero",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876776",
+    "lat": 29.0066626,
+    "lon": -13.7537382,
+    "name": "Monta\u00f1a del Balc\u00f3n",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876804",
+    "lat": 28.9978628,
+    "lon": -13.7499491,
+    "name": "Monta\u00f1a de los Camellos",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876827",
+    "lat": 28.9958568,
+    "lon": -13.7445016,
+    "name": "Pcio del Fuego",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876871",
+    "lat": 28.996109,
+    "lon": -13.7635333,
+    "name": "Caldera Quemada de Abajo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876889",
+    "lat": 28.9955027,
+    "lon": -13.7687956,
+    "name": "Monta\u00f1eta de Monta\u00f1a Rajada",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/4692876890",
+    "lat": 28.9962712,
+    "lon": -13.7729252,
+    "name": "Caldera de Monta\u00f1a Rajada",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/4704048695",
+    "lat": 29.1848091,
+    "lon": -13.4723994,
+    "name": "Los Molinos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4917154121",
+    "lat": 29.12706,
+    "lon": -13.6137799,
+    "name": "El Risco",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/5246887389",
+    "lat": 29.145364,
+    "lon": -13.5012188,
+    "name": "Mercado Municipal de Abastos",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/5514259421",
+    "lat": 29.0580004,
+    "lon": -13.5626363,
+    "name": "CASA MUSEO MARA MAO",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/5626318121",
+    "lat": 29.2838868,
+    "lon": -13.5007906,
+    "name": "Los Arcos",
+    "category": "natural",
+    "subtype": "arch",
+    "importance": 1
+  },
+  {
+    "id": "node/5626635122",
+    "lat": 29.2005218,
+    "lon": -13.4524656,
+    "name": "Lanzaloe Park - aloe",
+    "category": "historic",
+    "subtype": "monument",
+    "importance": 1
+  },
+  {
+    "id": "node/5628236427",
+    "lat": 29.0934156,
+    "lon": -13.4708645,
+    "name": "Centro de la cochinilla",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/5630331421",
+    "lat": 28.9163809,
+    "lon": -13.7045771,
+    "name": "watertaxi",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/5832289946",
+    "lat": 29.1466551,
+    "lon": -13.4981378,
+    "name": "Museo De Arte Sacro",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/5834954018",
+    "lat": 29.0598806,
+    "lon": -13.5604365,
+    "name": "Aloe Vera Museum",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/5834978338",
+    "lat": 29.0582126,
+    "lon": -13.5593102,
+    "name": "Museo Diocesano De Arte Sacro",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/6264075987",
+    "lat": 28.9485234,
+    "lon": -13.652174,
+    "name": "Casa Jos\u00e9 Saramago",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/6395886691",
+    "lat": 28.9205991,
+    "lon": -13.6563447,
+    "name": "Aquarelle Diving",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/6501788179",
+    "lat": 29.0965308,
+    "lon": -13.4498313,
+    "name": "Playa Seifio",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/6578313291",
+    "lat": 29.0791714,
+    "lon": -13.566409,
+    "name": "Morro Prieto",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/6827974001",
+    "lat": 28.9188338,
+    "lon": -13.7616844,
+    "name": "Pico de la Oveja",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6827979946",
+    "lat": 28.8740691,
+    "lon": -13.7824043,
+    "name": "Ajache Chico",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6828006120",
+    "lat": 29.0257347,
+    "lon": -13.5599386,
+    "name": "Monta\u00f1a Ubigue",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/6828006160",
+    "lat": 29.1194358,
+    "lon": -13.5287071,
+    "name": "El Castillejo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6828006812",
+    "lat": 28.9379886,
+    "lon": -13.7830463,
+    "name": "Monta\u00f1a de Enmedio",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6828013319",
+    "lat": 29.0285139,
+    "lon": -13.6538844,
+    "name": "Monta\u00f1a Tizalaya",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6828022091",
+    "lat": 29.0288392,
+    "lon": -13.692294,
+    "name": "Monta\u00f1a Coruja",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6828027083",
+    "lat": 29.0810193,
+    "lon": -13.5566944,
+    "name": "Cerro Terroso",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6828029841",
+    "lat": 29.1540698,
+    "lon": -13.516855,
+    "name": "La Mesa",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6828042621",
+    "lat": 29.1367817,
+    "lon": -13.5009145,
+    "name": "Monta\u00f1a de Faja",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/6834214886",
+    "lat": 29.0981271,
+    "lon": -13.5086076,
+    "name": "Parque Eolico",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/6972222453",
+    "lat": 29.1649223,
+    "lon": -13.4685353,
+    "name": "Las Cuevas de Maguez",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/7031780386",
+    "lat": 29.1230601,
+    "lon": -13.5083574,
+    "name": "La Fuente De Chafariz",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/7033858086",
+    "lat": 29.1410528,
+    "lon": -13.5036466,
+    "name": "Don Eulogio Concepti\u00f3n Perdomo",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8241484851",
+    "lat": 28.9977393,
+    "lon": -13.4918475,
+    "name": "Clinica Jorgani",
+    "category": "amenity",
+    "subtype": "clinic",
+    "importance": 1
+  },
+  {
+    "id": "node/8622895737",
+    "lat": 28.9986392,
+    "lon": -13.4886133,
+    "name": "Jardin de Cactus",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8622897571",
+    "lat": 28.9540136,
+    "lon": -13.7650029,
+    "name": "Cat Hill",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8651368950",
+    "lat": 29.1467428,
+    "lon": -13.4985911,
+    "name": "Saturday Town Market",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8651414884",
+    "lat": 29.0643969,
+    "lon": -13.7064064,
+    "name": "Rock Garden",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8651419755",
+    "lat": 29.0118224,
+    "lon": -13.71831,
+    "name": "La Madre",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8651421020",
+    "lat": 29.0446541,
+    "lon": -13.6812429,
+    "name": "Agrarian Market",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8651421882",
+    "lat": 29.00127,
+    "lon": -13.613891,
+    "name": "Agrarian and Handcraft Market",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8696978404",
+    "lat": 29.1139417,
+    "lon": -13.4969227,
+    "name": "La catedral",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8696990498",
+    "lat": 29.126201,
+    "lon": -13.521613,
+    "name": "El Bosquecillo",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8697032160",
+    "lat": 29.1439006,
+    "lon": -13.5239281,
+    "name": "Casa del Silencio",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/8697032953",
+    "lat": 29.1402382,
+    "lon": -13.5254855,
+    "name": "Casa del Aqua",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/8697221390",
+    "lat": 29.1826954,
+    "lon": -13.4736058,
+    "name": "Fig Tree Garden",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8730518040",
+    "lat": 29.1034541,
+    "lon": -13.453891,
+    "name": "Lava arch",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8730524802",
+    "lat": 29.0087365,
+    "lon": -13.5377754,
+    "name": "Jard\u00edn Volc\u00e1nico Tahiche",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8730526707",
+    "lat": 29.1262074,
+    "lon": -13.5246213,
+    "name": "Sunset Point",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/8730527691",
+    "lat": 29.1031617,
+    "lon": -13.4538939,
+    "name": "Charco",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8730534742",
+    "lat": 29.1090832,
+    "lon": -13.4580722,
+    "name": "Charco de Mala",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8750871634",
+    "lat": 29.0537819,
+    "lon": -13.6347087,
+    "name": "Jardin de Cactus",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8764399350",
+    "lat": 28.9861597,
+    "lon": -13.7974194,
+    "name": "Collapsed lava tunnel",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8764400044",
+    "lat": 28.9875835,
+    "lon": -13.7958412,
+    "name": "Cave and lava canyon",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8807422184",
+    "lat": 28.9207838,
+    "lon": -13.6657963,
+    "name": "GP Surgery Of Lanzarote",
+    "category": "amenity",
+    "subtype": "clinic",
+    "importance": 1
+  },
+  {
+    "id": "node/8814542306",
+    "lat": 29.0556155,
+    "lon": -13.4860828,
+    "name": "Inverse Pyramids",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8814569575",
+    "lat": 29.0553493,
+    "lon": -13.48668,
+    "name": "Rocks for the pyramids",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8814574579",
+    "lat": 28.9586636,
+    "lon": -13.572572,
+    "name": "Cat cactus",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8959997094",
+    "lat": 29.2772861,
+    "lon": -13.3369543,
+    "name": "El Campanario",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/8996477179",
+    "lat": 28.9546721,
+    "lon": -13.6549664,
+    "name": "Centro de salud de T\u00edas",
+    "category": "amenity",
+    "subtype": "clinic",
+    "importance": 1
+  },
+  {
+    "id": "node/9148541351",
+    "lat": 29.0862329,
+    "lon": -13.6478113,
+    "name": "Pico del Cuchillo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/9148541352",
+    "lat": 29.0985336,
+    "lon": -13.6795365,
+    "name": "Monta\u00f1a Bermeja",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/9148551064",
+    "lat": 29.1252292,
+    "lon": -13.5900458,
+    "name": "Monta\u00f1a Cavera",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/9155181117",
+    "lat": 29.0438882,
+    "lon": -13.6826392,
+    "name": "bodegas reymar",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/9323386462",
+    "lat": 29.0016324,
+    "lon": -13.5446253,
+    "name": "Juguete del Viento (Fobos)",
+    "category": "historic",
+    "subtype": "monument",
+    "importance": 1
+  },
+  {
+    "id": "node/9323420217",
+    "lat": 28.9836229,
+    "lon": -13.6277661,
+    "name": "Juguete del Viento",
+    "category": "historic",
+    "subtype": "monument",
+    "importance": 1
+  },
+  {
+    "id": "node/9375648952",
+    "lat": 29.100603,
+    "lon": -13.4490453,
+    "name": "Piscina Natural de Mala",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/9454431283",
+    "lat": 28.8695245,
+    "lon": -13.7936433,
+    "name": "Monumento natural de los Ajaches",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/9528400574",
+    "lat": 29.1082718,
+    "lon": -13.4575478,
+    "name": "Basin",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/9528409556",
+    "lat": 29.1155705,
+    "lon": -13.4642784,
+    "name": "Bunker",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/9536494310",
+    "lat": 29.2725155,
+    "lon": -13.5060023,
+    "name": "Old Farm",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/9755412886",
+    "lat": 29.0571001,
+    "lon": -13.5042752,
+    "name": "Ciudad Estratificada",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/10098914244",
+    "lat": 29.0059714,
+    "lon": -13.7531299,
+    "name": "Islote de Hilario - Monta\u00f1as del Fuego",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/10209458451",
+    "lat": 29.0017982,
+    "lon": -13.644849,
+    "name": "Museo del Vino El Grifo",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/10655456462",
+    "lat": 29.0602724,
+    "lon": -13.5592587,
+    "name": "Mercadillo de Teguise",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/10702022657",
+    "lat": 29.0830832,
+    "lon": -13.724659,
+    "name": "Piedra Mansa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/10833699870",
+    "lat": 28.9645809,
+    "lon": -13.5405687,
+    "name": "Monumento a los M\u00e1rtires del Mar",
+    "category": "historic",
+    "subtype": "monument",
+    "importance": 1
+  },
+  {
+    "id": "node/11102887488",
+    "lat": 28.920985,
+    "lon": -13.6710216,
+    "name": "Dentista - Pediatra",
+    "category": "amenity",
+    "subtype": "hospital",
+    "importance": 1
+  },
+  {
+    "id": "node/11381492688",
+    "lat": 28.9210131,
+    "lon": -13.7036505,
+    "name": "Puerto Calero",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11439139072",
+    "lat": 28.9819701,
+    "lon": -13.6461955,
+    "name": "Los Morretes",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11483574700",
+    "lat": 28.9333921,
+    "lon": -13.6203021,
+    "name": "Matagorda",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11549650085",
+    "lat": 29.0694353,
+    "lon": -13.6719926,
+    "name": "La Ca\u00f1ada",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11549650086",
+    "lat": 29.0627664,
+    "lon": -13.6802804,
+    "name": "La Laguneta",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11549650087",
+    "lat": 29.0660353,
+    "lon": -13.6766035,
+    "name": "Plaza San Roque",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11549650088",
+    "lat": 29.0578221,
+    "lon": -13.6812093,
+    "name": "El Calvario",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11549650089",
+    "lat": 29.0509317,
+    "lon": -13.6829092,
+    "name": "Tajaste",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11549650091",
+    "lat": 29.0532065,
+    "lon": -13.6491891,
+    "name": "Yuco",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11549650092",
+    "lat": 29.1163733,
+    "lon": -13.6504951,
+    "name": "Urbanizaci\u00f3n la Santa Sport",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11549657495",
+    "lat": 29.0804392,
+    "lon": -13.4534958,
+    "name": "Charco del Palo",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/11550608416",
+    "lat": 29.0239328,
+    "lon": -13.6270927,
+    "name": "Tomar\u00e9n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11550608417",
+    "lat": 28.9550533,
+    "lon": -13.6095699,
+    "name": "Aeropuerto",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/11550826650",
+    "lat": 28.9182022,
+    "lon": -13.7101888,
+    "name": "Cortijo Viejo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11551007389",
+    "lat": 28.8621438,
+    "lon": -13.7986501,
+    "name": "Las Coloradas",
+    "category": "place",
+    "subtype": "suburb",
+    "importance": 1
+  },
+  {
+    "id": "node/11631750116",
+    "lat": 29.0351517,
+    "lon": -13.5491761,
+    "name": "Monta\u00f1a Cabrera",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/11666232802",
+    "lat": 28.9919752,
+    "lon": -13.6916706,
+    "name": "Caldera de los Cuervos",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/11764093013",
+    "lat": 28.9878222,
+    "lon": -13.5104966,
+    "name": "La Plaza",
+    "category": "place",
+    "subtype": "square",
+    "importance": 1
+  },
+  {
+    "id": "node/11956037112",
+    "lat": 28.9050602,
+    "lon": -13.7594942,
+    "name": "Valle del Higueral",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956037113",
+    "lat": 28.900983,
+    "lon": -13.7606962,
+    "name": "Morro de la Loma del Pozo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956037114",
+    "lat": 28.8971631,
+    "lon": -13.7686672,
+    "name": "Valle de la Casa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956037116",
+    "lat": 28.8916725,
+    "lon": -13.7760441,
+    "name": "Valle de los Dioses",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956037117",
+    "lat": 28.8946648,
+    "lon": -13.7614962,
+    "name": "Valle de la Casa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956109871",
+    "lat": 29.0517764,
+    "lon": -13.6637081,
+    "name": "Liria",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956109872",
+    "lat": 29.0559285,
+    "lon": -13.660121,
+    "name": "los Llanos de Liria",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956109874",
+    "lat": 29.0313222,
+    "lon": -13.684005,
+    "name": "Monta\u00f1a Tinguat\u00f3n",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956109875",
+    "lat": 29.0850402,
+    "lon": -13.7028871,
+    "name": "la Costa de Tinajo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956109876",
+    "lat": 29.0935155,
+    "lon": -13.679789,
+    "name": "la Vega",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110108",
+    "lat": 29.067196,
+    "lon": -13.6842446,
+    "name": "Monta\u00f1a de Tinajo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110109",
+    "lat": 29.0269242,
+    "lon": -13.6975609,
+    "name": "Monta\u00f1a de los Rostros",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110110",
+    "lat": 29.0334655,
+    "lon": -13.6821656,
+    "name": "Monta\u00f1a de la Tabaiba",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110151",
+    "lat": 29.0492388,
+    "lon": -13.6854097,
+    "name": "Caldera de Guigua",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110152",
+    "lat": 29.0600264,
+    "lon": -13.6905245,
+    "name": "la Laguneta",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110279",
+    "lat": 29.0889279,
+    "lon": -13.6545586,
+    "name": "Caldera del Cuchillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110280",
+    "lat": 29.0971013,
+    "lon": -13.6381924,
+    "name": "el Jablillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110281",
+    "lat": 29.1056294,
+    "lon": -13.6600853,
+    "name": "Pe\u00f1a Negra",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956110282",
+    "lat": 29.0938472,
+    "lon": -13.6583889,
+    "name": "Lomo del Cojo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956148810",
+    "lat": 29.196428,
+    "lon": -13.4964939,
+    "name": "Bajo el Risco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956148811",
+    "lat": 29.1928939,
+    "lon": -13.4945917,
+    "name": "las Rositas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956148812",
+    "lat": 29.1910601,
+    "lon": -13.4999638,
+    "name": "Bajo el Risco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956148813",
+    "lat": 29.1852214,
+    "lon": -13.5031991,
+    "name": "Bajo el Risco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956148814",
+    "lat": 29.1804996,
+    "lon": -13.5077623,
+    "name": "Bajo el Risco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956148815",
+    "lat": 29.1770232,
+    "lon": -13.4953205,
+    "name": "la Cerca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155430",
+    "lat": 29.0455045,
+    "lon": -13.7019654,
+    "name": "el Islotito",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155431",
+    "lat": 29.0485931,
+    "lon": -13.7402259,
+    "name": "Loma de las Casas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155440",
+    "lat": 29.0393486,
+    "lon": -13.6832792,
+    "name": "Mancha Blanca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155441",
+    "lat": 29.0210089,
+    "lon": -13.6600686,
+    "name": "el Alto",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155443",
+    "lat": 29.0343835,
+    "lon": -13.6725444,
+    "name": "Caldera Quemada",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155444",
+    "lat": 29.0340071,
+    "lon": -13.6684972,
+    "name": "Monta\u00f1a Iguad\u00e9n",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155529",
+    "lat": 29.2077595,
+    "lon": -13.4506296,
+    "name": "las Tabaibitas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155530",
+    "lat": 29.2046318,
+    "lon": -13.4475627,
+    "name": "las Tabaibitas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155531",
+    "lat": 29.1991751,
+    "lon": -13.4586411,
+    "name": "lomo Blanco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155532",
+    "lat": 29.1943874,
+    "lon": -13.4709401,
+    "name": "Lajares",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155533",
+    "lat": 29.1911773,
+    "lon": -13.4697587,
+    "name": "Cercado de los Burros",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155534",
+    "lat": 29.1779534,
+    "lon": -13.486345,
+    "name": "Pe\u00f1as de Agite",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155535",
+    "lat": 29.1658891,
+    "lon": -13.4901082,
+    "name": "Monta\u00f1a de los Llanos",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155536",
+    "lat": 29.1559552,
+    "lon": -13.489365,
+    "name": "las Rehoyas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155537",
+    "lat": 29.1369866,
+    "lon": -13.5107942,
+    "name": "Valle de Malpaso",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155538",
+    "lat": 29.1320049,
+    "lon": -13.5102184,
+    "name": "Filo del Cuchillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155539",
+    "lat": 29.1125397,
+    "lon": -13.5280566,
+    "name": "Rinc\u00f3n de la Paja",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155540",
+    "lat": 29.1104959,
+    "lon": -13.5291362,
+    "name": "las Nieves",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155541",
+    "lat": 29.1085683,
+    "lon": -13.5265466,
+    "name": "Mirador de la Ermita de las Nieves",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155542",
+    "lat": 29.0989706,
+    "lon": -13.5341982,
+    "name": "Vista de las Nieves",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155543",
+    "lat": 29.0901105,
+    "lon": -13.5345033,
+    "name": "Dise Blanco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155544",
+    "lat": 29.0754787,
+    "lon": -13.5401887,
+    "name": "Lomo Blanco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155545",
+    "lat": 29.0706034,
+    "lon": -13.5474832,
+    "name": "Vega de San Jos\u00e9",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155546",
+    "lat": 29.1602747,
+    "lon": -13.4851997,
+    "name": "Pe\u00f1a de los Cardos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155547",
+    "lat": 29.1658444,
+    "lon": -13.4799956,
+    "name": "Cercados del Coronel",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155548",
+    "lat": 29.1619915,
+    "lon": -13.4714646,
+    "name": "las Cuevas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155549",
+    "lat": 29.1722605,
+    "lon": -13.4665274,
+    "name": "el Raso",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155550",
+    "lat": 29.1751034,
+    "lon": -13.4654066,
+    "name": "la Majadita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155551",
+    "lat": 29.1755849,
+    "lon": -13.4516448,
+    "name": "Pe\u00f1a Redonda",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155552",
+    "lat": 29.1845556,
+    "lon": -13.4455245,
+    "name": "Pe\u00f1a de las Siete Leguas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155553",
+    "lat": 29.1901862,
+    "lon": -13.4556568,
+    "name": "las Hoyas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155579",
+    "lat": 29.2116308,
+    "lon": -13.4675422,
+    "name": "Loma de Fuente Dulce",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155580",
+    "lat": 29.2103752,
+    "lon": -13.4783751,
+    "name": "los Tablones",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155581",
+    "lat": 29.2061302,
+    "lon": -13.4871521,
+    "name": "Atalaya Chica",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155582",
+    "lat": 29.2024982,
+    "lon": -13.4805238,
+    "name": "Lomo de los Polvillos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155583",
+    "lat": 29.198527,
+    "lon": -13.489431,
+    "name": "Vega Chica",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155584",
+    "lat": 29.2015024,
+    "lon": -13.4757544,
+    "name": "Vega Grande",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956155585",
+    "lat": 29.2019036,
+    "lon": -13.4661809,
+    "name": "Valle de Fuente Salada",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196836",
+    "lat": 29.1864918,
+    "lon": -13.4816612,
+    "name": "la Lomita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196837",
+    "lat": 29.1906494,
+    "lon": -13.4875709,
+    "name": "Hoya de la Pila",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196839",
+    "lat": 29.1688832,
+    "lon": -13.4859014,
+    "name": "Cercado de los Llanos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196840",
+    "lat": 29.1634171,
+    "lon": -13.4995823,
+    "name": "las Casillas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196841",
+    "lat": 29.1651836,
+    "lon": -13.5053925,
+    "name": "la Pescosa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196866",
+    "lat": 29.1561601,
+    "lon": -13.5066991,
+    "name": "el Valle",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196867",
+    "lat": 29.1598752,
+    "lon": -13.5131095,
+    "name": "los Risquetes",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956196868",
+    "lat": 29.1625851,
+    "lon": -13.5121625,
+    "name": "el Gallo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242469",
+    "lat": 29.1727943,
+    "lon": -13.5080613,
+    "name": "el Jurado",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242484",
+    "lat": 29.151588,
+    "lon": -13.4981284,
+    "name": "Pe\u00f1a de Mar\u00eda Herrera",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242485",
+    "lat": 29.1513059,
+    "lon": -13.4909207,
+    "name": "la Atalaya",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242563",
+    "lat": 29.1289123,
+    "lon": -13.5241559,
+    "name": "Risco de Famara",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242564",
+    "lat": 29.1347215,
+    "lon": -13.5227558,
+    "name": "Monta\u00f1a Ganada",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242565",
+    "lat": 29.1355241,
+    "lon": -13.5218808,
+    "name": "Risco de Famara",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242566",
+    "lat": 29.1418278,
+    "lon": -13.5199906,
+    "name": "Risco de Famara",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242567",
+    "lat": 29.144834,
+    "lon": -13.5109142,
+    "name": "Valle del Rinc\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242631",
+    "lat": 29.1432894,
+    "lon": -13.4970307,
+    "name": "Vista del Valle",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242632",
+    "lat": 29.136082,
+    "lon": -13.4847981,
+    "name": "Pe\u00f1a Tegazo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242633",
+    "lat": 29.1381377,
+    "lon": -13.4799793,
+    "name": "Tope Tegazo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242634",
+    "lat": 29.1323852,
+    "lon": -13.4825004,
+    "name": "las piletas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242635",
+    "lat": 29.1293289,
+    "lon": -13.480517,
+    "name": "Valle de Temisa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242648",
+    "lat": 29.1345872,
+    "lon": -13.4942563,
+    "name": "los Rincones",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242671",
+    "lat": 29.1397334,
+    "lon": -13.4650431,
+    "name": "la Salida",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242672",
+    "lat": 29.1456904,
+    "lon": -13.4631407,
+    "name": "el Canto",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242673",
+    "lat": 29.1478409,
+    "lon": -13.4675244,
+    "name": "el Bardo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242674",
+    "lat": 29.1499079,
+    "lon": -13.4792566,
+    "name": "los Castillejos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242675",
+    "lat": 29.1460929,
+    "lon": -13.4814113,
+    "name": "Cuesta del Pozo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11956242676",
+    "lat": 29.1427426,
+    "lon": -13.4881897,
+    "name": "Cuesta de Trujillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794723",
+    "lat": 29.2482308,
+    "lon": -13.5085032,
+    "name": "las Agujas Grandes",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794724",
+    "lat": 29.2659592,
+    "lon": -13.5191748,
+    "name": "Llano de la Baja del Ganado",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794726",
+    "lat": 29.279819,
+    "lon": -13.5002042,
+    "name": "las Hoyas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794727",
+    "lat": 29.2785517,
+    "lon": -13.4906149,
+    "name": "las Piconas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794728",
+    "lat": 29.2757188,
+    "lon": -13.485239,
+    "name": "el Jablillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794729",
+    "lat": 29.2676073,
+    "lon": -13.4817434,
+    "name": "Lomo del Burro",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794730",
+    "lat": 29.2471321,
+    "lon": -13.4956403,
+    "name": "Jable del Barranco de los Conejos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794731",
+    "lat": 29.2396546,
+    "lon": -13.5009113,
+    "name": "Jable de las Caletas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794732",
+    "lat": 29.235815,
+    "lon": -13.5033984,
+    "name": "la Sociedad",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794733",
+    "lat": 29.2433272,
+    "lon": -13.5067905,
+    "name": "Hoya Cumplida",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794735",
+    "lat": 29.2251166,
+    "lon": -13.5329471,
+    "name": "Jable de Playa Francesa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794736",
+    "lat": 29.236662,
+    "lon": -13.5303813,
+    "name": "Llano del Corral",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794738",
+    "lat": 29.2454808,
+    "lon": -13.5187575,
+    "name": "Morro de los Dises",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794739",
+    "lat": 29.2485468,
+    "lon": -13.5204755,
+    "name": "Llano de la Mareta",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794740",
+    "lat": 29.2345302,
+    "lon": -13.5107369,
+    "name": "la Vista",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794741",
+    "lat": 29.1934913,
+    "lon": -13.4770999,
+    "name": "Tef\u00edo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794742",
+    "lat": 29.1815009,
+    "lon": -13.5033255,
+    "name": "Valle de Guinate",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794743",
+    "lat": 29.1104254,
+    "lon": -13.5517334,
+    "name": "los Matorrales",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794744",
+    "lat": 29.1213294,
+    "lon": -13.5296958,
+    "name": "El Castillejo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794745",
+    "lat": 29.1196261,
+    "lon": -13.5296624,
+    "name": "Rincon del Castillejo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794746",
+    "lat": 29.1236585,
+    "lon": -13.5274628,
+    "name": "la Monta\u00f1a",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794747",
+    "lat": 29.117639,
+    "lon": -13.5308955,
+    "name": "Risco de Famara",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794748",
+    "lat": 29.1225595,
+    "lon": -13.6234124,
+    "name": "las Sacominas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794750",
+    "lat": 29.1068536,
+    "lon": -13.6310357,
+    "name": "Rocas Negras",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794751",
+    "lat": 29.1150149,
+    "lon": -13.63082,
+    "name": "Costa Blanca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958794752",
+    "lat": 29.09996,
+    "lon": -13.5455261,
+    "name": "Las Laderas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958900040",
+    "lat": 29.066235,
+    "lon": -13.470382,
+    "name": "Vista de las Nieves",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958900058",
+    "lat": 29.0463285,
+    "lon": -13.4968995,
+    "name": "Llanos del Cuchillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958900059",
+    "lat": 29.0541614,
+    "lon": -13.4917571,
+    "name": "Muele Molino",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958900060",
+    "lat": 29.0626236,
+    "lon": -13.4834203,
+    "name": "la Caldera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11958900061",
+    "lat": 29.0839889,
+    "lon": -13.4982732,
+    "name": "Monta\u00f1a Temeje",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11958900062",
+    "lat": 29.0984835,
+    "lon": -13.4954961,
+    "name": "Pe\u00f1a del Silbo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947542",
+    "lat": 28.9152842,
+    "lon": -13.7700149,
+    "name": "las Casitas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947552",
+    "lat": 28.9177459,
+    "lon": -13.7189618,
+    "name": "Morro de las Atalayas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947554",
+    "lat": 29.0160564,
+    "lon": -13.5285334,
+    "name": "Maleza de los Medianos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947555",
+    "lat": 29.0796519,
+    "lon": -13.4878715,
+    "name": "Vega de Guatiza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947556",
+    "lat": 29.0874499,
+    "lon": -13.4863752,
+    "name": "Valle de la Higuera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947557",
+    "lat": 29.0960299,
+    "lon": -13.4889419,
+    "name": "Lomo de los Linderos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947558",
+    "lat": 29.0990711,
+    "lon": -13.4947219,
+    "name": "Monta\u00f1a de las Mesas",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947559",
+    "lat": 29.1141822,
+    "lon": -13.6015032,
+    "name": "los Bebederos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947560",
+    "lat": 29.1117931,
+    "lon": -13.6013508,
+    "name": "los Ca\u00f1ones",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947561",
+    "lat": 29.1133414,
+    "lon": -13.6069057,
+    "name": "Caldera Juan del Hierro",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947562",
+    "lat": 28.9991398,
+    "lon": -13.7674165,
+    "name": "Santa Catalina",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947563",
+    "lat": 28.9681942,
+    "lon": -13.769965,
+    "name": "Islote Lenguas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947564",
+    "lat": 29.0486771,
+    "lon": -13.708089,
+    "name": "Islote de los P\u00e9rez",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947566",
+    "lat": 29.0383592,
+    "lon": -13.7107549,
+    "name": "Monta\u00f1eta de Uga",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947567",
+    "lat": 29.0291148,
+    "lon": -13.7325952,
+    "name": "las Ca\u00f1as",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960947568",
+    "lat": 29.0269136,
+    "lon": -13.7235677,
+    "name": "Islote de Rostro Cavero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960949869",
+    "lat": 29.2227943,
+    "lon": -13.4818023,
+    "name": "Gusa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960949870",
+    "lat": 29.2232101,
+    "lon": -13.4697709,
+    "name": "Valle Chico",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960949871",
+    "lat": 29.2202519,
+    "lon": -13.4692078,
+    "name": "Lomo del Zahalar",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960949872",
+    "lat": 28.8486758,
+    "lon": -13.7835331,
+    "name": "el Papagayo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11960949873",
+    "lat": 28.8684029,
+    "lon": -13.7659925,
+    "name": "Barranco de las Pilas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11990605853",
+    "lat": 28.9499814,
+    "lon": -13.7782494,
+    "name": "el Pi\u00f1ero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11990610486",
+    "lat": 28.9448374,
+    "lon": -13.7871536,
+    "name": "la Vega Nueva",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11990631495",
+    "lat": 28.9151075,
+    "lon": -13.7830911,
+    "name": "Castillejo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11990634050",
+    "lat": 28.9471022,
+    "lon": -13.7699499,
+    "name": "Lomo del Cura",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11991791357",
+    "lat": 29.1003266,
+    "lon": -13.6794128,
+    "name": "Monta\u00f1a Bermeja",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/11991799594",
+    "lat": 29.0361351,
+    "lon": -13.749286,
+    "name": "Lomo Alto de Arriba",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11991799595",
+    "lat": 29.0314687,
+    "lon": -13.7398556,
+    "name": "el Moj\u00f3n de Mazo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11991799596",
+    "lat": 29.0487417,
+    "lon": -13.7259734,
+    "name": "los Cascajos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11991799597",
+    "lat": 29.0600836,
+    "lon": -13.7321067,
+    "name": "Islote del Gato",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11991799598",
+    "lat": 29.0615186,
+    "lon": -13.7392049,
+    "name": "Islote del Gato",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11992253546",
+    "lat": 28.9108795,
+    "lon": -13.7734413,
+    "name": "Pico de los Cuervos",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11992253547",
+    "lat": 28.9135835,
+    "lon": -13.7674986,
+    "name": "Pico de las Flores",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11992253555",
+    "lat": 28.9925372,
+    "lon": -13.674932,
+    "name": "el Volc\u00e1n de Testeyna",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11992253556",
+    "lat": 28.9948873,
+    "lon": -13.6699839,
+    "name": "el Rinc\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12329722432",
+    "lat": 29.1575359,
+    "lon": -13.4322238,
+    "name": "Casa de los Volcanes",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/12329752473",
+    "lat": 29.1604234,
+    "lon": -13.4393652,
+    "name": "Cueva de los Verdes",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/12345048366",
+    "lat": 28.9210819,
+    "lon": -13.6718365,
+    "name": "El Varadero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386728623",
+    "lat": 29.1064226,
+    "lon": -13.6741738,
+    "name": "Morro de las Betancores",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386728624",
+    "lat": 29.1006997,
+    "lon": -13.6820102,
+    "name": "el Picacho",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386728625",
+    "lat": 29.0984954,
+    "lon": -13.6806819,
+    "name": "Bajo de la Monta\u00f1a",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386728626",
+    "lat": 29.0987183,
+    "lon": -13.6729077,
+    "name": "el Meli\u00e1n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386728627",
+    "lat": 29.0881822,
+    "lon": -13.6759977,
+    "name": "Pe\u00f1a del Gato",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386728628",
+    "lat": 29.0903297,
+    "lon": -13.6666435,
+    "name": "Mijera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386729293",
+    "lat": 29.1978672,
+    "lon": -13.5062743,
+    "name": "Catalina Cabrera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386729294",
+    "lat": 29.2025358,
+    "lon": -13.5036197,
+    "name": "Playa del Embarcadero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12387720996",
+    "lat": 28.9239034,
+    "lon": -13.7708775,
+    "name": "Valle de Fem\u00e9s",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12387720997",
+    "lat": 28.9186711,
+    "lon": -13.768267,
+    "name": "el Filo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12387723576",
+    "lat": 29.1703529,
+    "lon": -13.5123509,
+    "name": "mirador de la Caldera",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/12387723577",
+    "lat": 29.1738554,
+    "lon": -13.478048,
+    "name": "Vallichuelo de Adelante",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12387723578",
+    "lat": 29.1881417,
+    "lon": -13.5011914,
+    "name": "Guatitay",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12387813817",
+    "lat": 28.9362822,
+    "lon": -13.7757362,
+    "name": "Valle de Fenauso",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12588114450",
+    "lat": 29.2227758,
+    "lon": -13.5383005,
+    "name": "Monta\u00f1a Amarilla",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12588114452",
+    "lat": 29.242946,
+    "lon": -13.514503,
+    "name": "Morro de las Pedreras",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12588114456",
+    "lat": 29.2590686,
+    "lon": -13.5192137,
+    "name": "Morros del Rodaje",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12588114458",
+    "lat": 29.2692316,
+    "lon": -13.4738488,
+    "name": "Punta de la Sonda",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12588185351",
+    "lat": 29.2166062,
+    "lon": -13.4786496,
+    "name": "Bater\u00eda",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12588185364",
+    "lat": 29.1497548,
+    "lon": -13.518316,
+    "name": "Matos Verdes",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12588185372",
+    "lat": 29.1195145,
+    "lon": -13.5207399,
+    "name": "Pe\u00f1as del Chache",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12588185378",
+    "lat": 29.118749,
+    "lon": -13.5999566,
+    "name": "Monta\u00f1a Chica",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12588185386",
+    "lat": 29.0929116,
+    "lon": -13.6337951,
+    "name": "Monta\u00f1a Mosta",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12588220126",
+    "lat": 29.0007009,
+    "lon": -13.7473261,
+    "name": "Cr\u00e1ter de Timanfaya",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12588220129",
+    "lat": 29.0028258,
+    "lon": -13.7506728,
+    "name": "Islote de Hilario",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12588524532",
+    "lat": 28.8568714,
+    "lon": -13.7926597,
+    "name": "Papagayo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590535288",
+    "lat": 28.9817136,
+    "lon": -13.6968912,
+    "name": "Pe\u00f1a Palomas",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590535299",
+    "lat": 29.0226647,
+    "lon": -13.6474328,
+    "name": "Monta\u00f1a Chibusque",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546602",
+    "lat": 29.0342107,
+    "lon": -13.6485123,
+    "name": "Monta\u00f1a de la Meseta",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546603",
+    "lat": 29.0407273,
+    "lon": -13.6384259,
+    "name": "El Pe\u00f1\u00f3n",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546605",
+    "lat": 29.0487953,
+    "lon": -13.6203743,
+    "name": "Pico Perneo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546606",
+    "lat": 29.0478554,
+    "lon": -13.6216353,
+    "name": "Monta\u00f1a del Cl\u00e9rigo Duarte",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546613",
+    "lat": 29.0596886,
+    "lon": -13.6233603,
+    "name": "Berrugo",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546615",
+    "lat": 29.1971811,
+    "lon": -13.4681919,
+    "name": "La Quemada de Orzola",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546623",
+    "lat": 29.1212351,
+    "lon": -13.4976453,
+    "name": "Cerro Tabayesco",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546624",
+    "lat": 29.1193479,
+    "lon": -13.5030166,
+    "name": "Pe\u00f1a de la Peque\u00f1a",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546628",
+    "lat": 29.1047553,
+    "lon": -13.5214469,
+    "name": "Pe\u00f1a de Juan Est\u00e9vez",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546630",
+    "lat": 29.0930011,
+    "lon": -13.5393805,
+    "name": "Pico de Maramajo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546634",
+    "lat": 29.0708088,
+    "lon": -13.5627069,
+    "name": "La Monta\u00f1a de Chimia",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546640",
+    "lat": 29.0484893,
+    "lon": -13.5458754,
+    "name": "Meseta de la Torre",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546643",
+    "lat": 29.0386441,
+    "lon": -13.5506318,
+    "name": "Monta\u00f1a Chica",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546644",
+    "lat": 29.0311476,
+    "lon": -13.6136811,
+    "name": "Lomo de San Andr\u00e9s",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546645",
+    "lat": 29.0318317,
+    "lon": -13.6292052,
+    "name": "Lomo de Camacho",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546652",
+    "lat": 29.0238067,
+    "lon": -13.497185,
+    "name": "Monta\u00f1a Corona",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546656",
+    "lat": 28.9086744,
+    "lon": -13.744025,
+    "name": "Risco de la Madera",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546657",
+    "lat": 28.9061444,
+    "lon": -13.7441335,
+    "name": "Risco de las Coronas",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546662",
+    "lat": 28.8864341,
+    "lon": -13.7818338,
+    "name": "Hacha Grande",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546663",
+    "lat": 28.8908955,
+    "lon": -13.7841783,
+    "name": "Morro de los Dises",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546688",
+    "lat": 28.8689925,
+    "lon": -13.7738681,
+    "name": "Los Morros de Hacha Chica",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546694",
+    "lat": 28.9469263,
+    "lon": -13.7546718,
+    "name": "Monta\u00f1a Miguel Ruiz",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546696",
+    "lat": 28.9420819,
+    "lon": -13.7383547,
+    "name": "Monta\u00f1a Majada",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546697",
+    "lat": 28.9446758,
+    "lon": -13.7337213,
+    "name": "Monta\u00f1a Casa",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546700",
+    "lat": 28.9499946,
+    "lon": -13.7280912,
+    "name": "Monta\u00f1a Norte",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546705",
+    "lat": 28.9555282,
+    "lon": -13.7009252,
+    "name": "La Monta\u00f1eta",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546710",
+    "lat": 28.9715713,
+    "lon": -13.675003,
+    "name": "El Morro de Conil",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590546722",
+    "lat": 28.9725036,
+    "lon": -13.6312897,
+    "name": "Monta\u00f1a Bermeja",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/12590604569",
+    "lat": 29.2805914,
+    "lon": -13.514666,
+    "name": "Morro de los Entraderos",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12590618193",
+    "lat": 29.2059513,
+    "lon": -13.4641901,
+    "name": "Cerro Llano",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12615816268",
+    "lat": 29.001802,
+    "lon": -13.5466845,
+    "name": "Juguete del viento \u201cFundaci\u00f3n C\u00e9sar Manrique\u201c",
+    "category": "historic",
+    "subtype": "monument",
+    "importance": 1
+  },
+  {
+    "id": "node/12615828687",
+    "lat": 29.0024413,
+    "lon": -13.5471455,
+    "name": "Juguete del Viento \"Energ\u00eda piramidal\"",
+    "category": "historic",
+    "subtype": "monument",
+    "importance": 1
+  },
+  {
+    "id": "node/12756946444",
+    "lat": 28.8604283,
+    "lon": -13.7999588,
+    "name": "Doha Grupo Medico",
+    "category": "amenity",
+    "subtype": "clinic",
+    "importance": 1
+  },
+  {
+    "id": "node/12959200902",
+    "lat": 28.964709,
+    "lon": -13.5583413,
+    "name": "Quir\u00f3n prevenci\u00f3n",
+    "category": "amenity",
+    "subtype": "hospital",
+    "importance": 1
+  }
+]

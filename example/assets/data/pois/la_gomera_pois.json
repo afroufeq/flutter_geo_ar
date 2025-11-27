@@ -1,0 +1,5996 @@
+[
+  {
+    "id": "node/260619903",
+    "lat": 28.0910382,
+    "lon": -17.1110077,
+    "name": "San Sebasti\u00e1n de la Gomera",
+    "category": "place",
+    "subtype": "town",
+    "importance": 1
+  },
+  {
+    "id": "node/308257462",
+    "lat": 28.0288114,
+    "lon": -17.1978996,
+    "name": "Playa de Santiago",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/308257464",
+    "lat": 28.1881791,
+    "lon": -17.1945669,
+    "name": "Agulo",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/308257466",
+    "lat": 28.1344077,
+    "lon": -17.3195646,
+    "name": "Arure",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257468",
+    "lat": 28.1067812,
+    "lon": -17.3270621,
+    "name": "El Guro",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257470",
+    "lat": 28.0877392,
+    "lon": -17.3385272,
+    "name": "La Puntilla",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257472",
+    "lat": 28.0834643,
+    "lon": -17.3338187,
+    "name": "Vueltas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257473",
+    "lat": 28.095544,
+    "lon": -17.3434479,
+    "name": "La Playa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257477",
+    "lat": 28.1377016,
+    "lon": -17.3318322,
+    "name": "Taguluche",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257478",
+    "lat": 28.16227,
+    "lon": -17.327888,
+    "name": "Alojera",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257483",
+    "lat": 28.1798679,
+    "lon": -17.2646825,
+    "name": "Vallehermoso",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/308257485",
+    "lat": 28.1288729,
+    "lon": -17.292872,
+    "name": "Las Hayas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257696",
+    "lat": 28.1190124,
+    "lon": -17.2851994,
+    "name": "El Cercado",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257697",
+    "lat": 28.1103436,
+    "lon": -17.2839042,
+    "name": "Chipude",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/308257698",
+    "lat": 28.0619917,
+    "lon": -17.2383666,
+    "name": "Alajer\u00f3",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/308783394",
+    "lat": 28.0857499,
+    "lon": -17.2413982,
+    "name": "Imada",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/309253722",
+    "lat": 28.1089858,
+    "lon": -17.2146234,
+    "name": "Mirador de Los Roques",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/314070459",
+    "lat": 28.0886775,
+    "lon": -17.3358706,
+    "name": "Borbal\u00e1n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/315384868",
+    "lat": 28.0801066,
+    "lon": -17.3313312,
+    "name": "Punta de Clavitos",
+    "category": "man_made",
+    "subtype": "lighthouse",
+    "importance": 1
+  },
+  {
+    "id": "node/316534436",
+    "lat": 28.1192335,
+    "lon": -17.3156885,
+    "name": "Mirador C\u00e9sar Manrique",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/316534442",
+    "lat": 28.1149512,
+    "lon": -17.3211879,
+    "name": "Mirador de la curva del Queso",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/317077073",
+    "lat": 28.1188395,
+    "lon": -17.3074564,
+    "name": "Lomo del Balo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317077076",
+    "lat": 28.1112907,
+    "lon": -17.3184551,
+    "name": "Los Granados",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317077079",
+    "lat": 28.1157297,
+    "lon": -17.3112569,
+    "name": "El Retamal",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317077080",
+    "lat": 28.1180713,
+    "lon": -17.3053056,
+    "name": "Los Descansaderos",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317077083",
+    "lat": 28.1151814,
+    "lon": -17.3074576,
+    "name": "La Vizca\u00edna",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317077086",
+    "lat": 28.1113782,
+    "lon": -17.3137139,
+    "name": "El Hornillo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317077087",
+    "lat": 28.1092205,
+    "lon": -17.3165586,
+    "name": "Chel\u00e9",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317077090",
+    "lat": 28.1076614,
+    "lon": -17.3251202,
+    "name": "Casa de la Seda",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/317099701",
+    "lat": 28.1320361,
+    "lon": -17.3234786,
+    "name": "Mirador Ermita del Santo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/317107382",
+    "lat": 28.1032498,
+    "lon": -17.3408576,
+    "name": "Riscos de La M\u00e9rica",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/318345736",
+    "lat": 28.151124,
+    "lon": -17.3086093,
+    "name": "Mirador de Alojera",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/318347047",
+    "lat": 28.1399284,
+    "lon": -17.3116125,
+    "name": "Acardece",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318420026",
+    "lat": 28.1846487,
+    "lon": -17.1992021,
+    "name": "Mirador de Agulo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/318421718",
+    "lat": 28.0925263,
+    "lon": -17.1107826,
+    "name": "Museo Arqueol\u00f3gico de la Gomera",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/318421731",
+    "lat": 28.1092246,
+    "lon": -17.1483264,
+    "name": "El Jorado",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318421732",
+    "lat": 28.1169658,
+    "lon": -17.1693993,
+    "name": "Chejelipes",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318421822",
+    "lat": 28.1128365,
+    "lon": -17.1952763,
+    "name": "La Laja",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318597207",
+    "lat": 28.0971451,
+    "lon": -17.2690437,
+    "name": "Mirador del Erque",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/318877357",
+    "lat": 28.0962174,
+    "lon": -17.3440564,
+    "name": "Guardia Civil",
+    "category": "amenity",
+    "subtype": "police",
+    "importance": 1
+  },
+  {
+    "id": "node/318877477",
+    "lat": 28.0857097,
+    "lon": -17.2646563,
+    "name": "Erquito",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877480",
+    "lat": 28.0867334,
+    "lon": -17.2661832,
+    "name": "Erque",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877481",
+    "lat": 28.0714193,
+    "lon": -17.193617,
+    "name": "Tejiade",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877484",
+    "lat": 28.1012189,
+    "lon": -17.2520381,
+    "name": "Igualero",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877492",
+    "lat": 28.0607592,
+    "lon": -17.2842971,
+    "name": "Arguayoda",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877494",
+    "lat": 28.0548116,
+    "lon": -17.300028,
+    "name": "La Dama",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877496",
+    "lat": 28.066908,
+    "lon": -17.2147052,
+    "name": "Pastrana",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877503",
+    "lat": 28.0684537,
+    "lon": -17.2264782,
+    "name": "Guarimiar",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/318877509",
+    "lat": 28.093264,
+    "lon": -17.2179634,
+    "name": "Benchijigua",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/319254092",
+    "lat": 28.1004239,
+    "lon": -17.3302111,
+    "name": "Centro de Salud",
+    "category": "amenity",
+    "subtype": "clinic",
+    "importance": 1
+  },
+  {
+    "id": "node/319784077",
+    "lat": 28.1844326,
+    "lon": -17.3088642,
+    "name": "Tazo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/319784082",
+    "lat": 28.1663016,
+    "lon": -17.2993825,
+    "name": "Epina",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/319784083",
+    "lat": 28.1764296,
+    "lon": -17.3239455,
+    "name": "La Costa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/320258416",
+    "lat": 28.0951262,
+    "lon": -17.3148527,
+    "name": "Geri\u00e1n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/321493514",
+    "lat": 28.1710346,
+    "lon": -17.2669447,
+    "name": "Los Chapines",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/321493515",
+    "lat": 28.1706959,
+    "lon": -17.2782756,
+    "name": "La Quilla",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/321493516",
+    "lat": 28.1680144,
+    "lon": -17.2752608,
+    "name": "Macayo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322535981",
+    "lat": 28.1548577,
+    "lon": -17.2699859,
+    "name": "Los Loros",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322535984",
+    "lat": 28.1578148,
+    "lon": -17.2659106,
+    "name": "Banda de las Rosas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322535987",
+    "lat": 28.1689617,
+    "lon": -17.2515343,
+    "name": "Garabato",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536015",
+    "lat": 28.1853949,
+    "lon": -17.2448203,
+    "name": "Tamargada",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536019",
+    "lat": 28.1707643,
+    "lon": -17.2162023,
+    "name": "La Palmita",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536022",
+    "lat": 28.1581605,
+    "lon": -17.2298303,
+    "name": "Serpa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536025",
+    "lat": 28.0982376,
+    "lon": -17.2808933,
+    "name": "La Dehesa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536040",
+    "lat": 28.1043657,
+    "lon": -17.2746276,
+    "name": "Pav\u00f3n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536062",
+    "lat": 28.0613937,
+    "lon": -17.2608465,
+    "name": "Los Alm\u00e1cigos",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/322536064",
+    "lat": 28.0601653,
+    "lon": -17.2287458,
+    "name": "Targa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536066",
+    "lat": 28.0835764,
+    "lon": -17.2184211,
+    "name": "Lo del Gato",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322536085",
+    "lat": 28.0754736,
+    "lon": -17.2082819,
+    "name": "Las Toscas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/322558701",
+    "lat": 28.1994042,
+    "lon": -17.2951272,
+    "name": "Arguamul",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/323130265",
+    "lat": 28.1139472,
+    "lon": -17.2724792,
+    "name": "Los Manantiales",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/327755502",
+    "lat": 28.1360784,
+    "lon": -17.2143131,
+    "name": "El Cedro",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/327756669",
+    "lat": 28.1231295,
+    "lon": -17.2096583,
+    "name": "Mirador del Bailadero",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/331217687",
+    "lat": 28.0476011,
+    "lon": -17.2269809,
+    "name": "Antoncojo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/332089532",
+    "lat": 28.15726,
+    "lon": -17.2455231,
+    "name": "Mirador de Vallehermoso",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/332102599",
+    "lat": 28.1251158,
+    "lon": -17.2065337,
+    "name": "Mirador del Rejo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/332107293",
+    "lat": 28.1052923,
+    "lon": -17.2137276,
+    "name": "Roque de Agando",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/332107296",
+    "lat": 28.1112935,
+    "lon": -17.2166297,
+    "name": "Roque de la Zarcita",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/332111250",
+    "lat": 28.1143255,
+    "lon": -17.2106092,
+    "name": "Roque de Ojila",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/364801219",
+    "lat": 28.0989901,
+    "lon": -17.2775671,
+    "name": "Fortaleza",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/372470231",
+    "lat": 28.1631609,
+    "lon": -17.299198,
+    "name": "Chorros de Epina",
+    "category": "natural",
+    "subtype": "spring",
+    "importance": 1
+  },
+  {
+    "id": "node/418151645",
+    "lat": 28.0747131,
+    "lon": -17.2462198,
+    "name": "El Drago",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/418152321",
+    "lat": 28.0746083,
+    "lon": -17.246303,
+    "name": "Drago Centenario",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/418154979",
+    "lat": 28.1250879,
+    "lon": -17.2084916,
+    "name": "Mirador de Hermigua",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/480458990",
+    "lat": 28.0885944,
+    "lon": -17.3393168,
+    "name": "Hautacuperche",
+    "category": "historic",
+    "subtype": "monument",
+    "importance": 1
+  },
+  {
+    "id": "node/481295831",
+    "lat": 28.1548742,
+    "lon": -17.3062846,
+    "name": "Los Barranquillos",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/534771869",
+    "lat": 28.0849227,
+    "lon": -17.3261615,
+    "name": "Tequergenche",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/575125034",
+    "lat": 28.1053955,
+    "lon": -17.3118066,
+    "name": "Valle Gran Rey View",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/582735846",
+    "lat": 28.1670308,
+    "lon": -17.2482374,
+    "name": "El Ti\u00f3n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/582735935",
+    "lat": 28.1789636,
+    "lon": -17.265757,
+    "name": "Centro Salud",
+    "category": "amenity",
+    "subtype": "hospital",
+    "importance": 1
+  },
+  {
+    "id": "node/582736160",
+    "lat": 28.1816611,
+    "lon": -17.2563447,
+    "name": "Roque Cano",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/582736235",
+    "lat": 28.1703694,
+    "lon": -17.2414421,
+    "name": "Mirador de Roque Blanco",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/583306517",
+    "lat": 28.0835385,
+    "lon": -17.2319135,
+    "name": "Casa",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/583306533",
+    "lat": 28.0825348,
+    "lon": -17.2276575,
+    "name": "El Azadoe",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/583306534",
+    "lat": 28.0825393,
+    "lon": -17.2272726,
+    "name": "Roca Hongo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/583306551",
+    "lat": 28.0849179,
+    "lon": -17.2315802,
+    "name": "Terrazza",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/583989604",
+    "lat": 28.1476503,
+    "lon": -17.2860877,
+    "name": "Risquillo de Corgo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/585094869",
+    "lat": 28.1106653,
+    "lon": -17.2052654,
+    "name": "Degollada del Tanque",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/585094873",
+    "lat": 28.110932,
+    "lon": -17.2052635,
+    "name": "Vista a los Roques",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/585095277",
+    "lat": 28.1050336,
+    "lon": -17.1870051,
+    "name": "Roca Falo",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/589198630",
+    "lat": 28.1165411,
+    "lon": -17.2551044,
+    "name": "Buenavista",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/929027131",
+    "lat": 28.1605542,
+    "lon": -17.1537747,
+    "name": "Casas de Taguluche",
+    "category": "historic",
+    "subtype": "ruins",
+    "importance": 1
+  },
+  {
+    "id": "node/948744059",
+    "lat": 28.1262428,
+    "lon": -17.1388172,
+    "name": "Jarag\u00e1n",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/948767199",
+    "lat": 28.0529911,
+    "lon": -17.2417923,
+    "name": "Calvario",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/948774980",
+    "lat": 28.1439545,
+    "lon": -17.1795776,
+    "name": "Enchereda",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/1035160833",
+    "lat": 28.109085,
+    "lon": -17.224514,
+    "name": "Mirador de Tajaqu\u00e9",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1079117569",
+    "lat": 28.2046045,
+    "lon": -17.2984041,
+    "name": "Guillama",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1171134542",
+    "lat": 28.0464344,
+    "lon": -17.2562231,
+    "name": "Quise",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1425477730",
+    "lat": 28.1499249,
+    "lon": -17.1989529,
+    "name": "Hermigua",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814472",
+    "lat": 28.0947699,
+    "lon": -17.2025461,
+    "name": "Vegaipala",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814512",
+    "lat": 28.111622,
+    "lon": -17.2822592,
+    "name": "Temocod\u00e1",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814522",
+    "lat": 28.1679063,
+    "lon": -17.1956651,
+    "name": "Callej\u00f3n de Ordaiz",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814528",
+    "lat": 28.1548632,
+    "lon": -17.1947122,
+    "name": "Las Poyatas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814534",
+    "lat": 28.1954076,
+    "lon": -17.1968711,
+    "name": "Piedra Gorda",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814552",
+    "lat": 28.1556763,
+    "lon": -17.1974771,
+    "name": "Las Casas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814554",
+    "lat": 28.1837802,
+    "lon": -17.2190952,
+    "name": "Pajar de Bento",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814557",
+    "lat": 28.1773942,
+    "lon": -17.1824483,
+    "name": "Santa Catalina",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814562",
+    "lat": 28.0500805,
+    "lon": -17.2975461,
+    "name": "La Rajita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814569",
+    "lat": 28.1731604,
+    "lon": -17.2388828,
+    "name": "Cruz de Tierno",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814570",
+    "lat": 28.162723,
+    "lon": -17.2536682,
+    "name": "Ambrosio",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814573",
+    "lat": 28.1562708,
+    "lon": -17.23171,
+    "name": "Meriga",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814610",
+    "lat": 28.1836357,
+    "lon": -17.225751,
+    "name": "Las Rosas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814629",
+    "lat": 28.1672522,
+    "lon": -17.1897742,
+    "name": "Las Nuevitas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814638",
+    "lat": 28.1181204,
+    "lon": -17.163241,
+    "name": "Lomito Fragoso y Honduras",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814682",
+    "lat": 28.1709106,
+    "lon": -17.1940114,
+    "name": "Piedra Romana",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814695",
+    "lat": 28.1585408,
+    "lon": -17.2012305,
+    "name": "Las Cabezadas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814702",
+    "lat": 28.1334877,
+    "lon": -17.1670879,
+    "name": "Inchereda",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814760",
+    "lat": 28.1637667,
+    "lon": -17.1985192,
+    "name": "El Curato",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814770",
+    "lat": 28.1709664,
+    "lon": -17.2740078,
+    "name": "Los Bellos",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814783",
+    "lat": 28.1642597,
+    "lon": -17.2628186,
+    "name": "Rosa de las Piedras",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814784",
+    "lat": 28.1704054,
+    "lon": -17.186215,
+    "name": "Llano Campo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814786",
+    "lat": 28.1892363,
+    "lon": -17.2629869,
+    "name": "Valle Abajo",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814791",
+    "lat": 28.0975715,
+    "lon": -17.1511144,
+    "name": "Ayamosna",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814808",
+    "lat": 28.0334275,
+    "lon": -17.1928899,
+    "name": "Laguna de Santiago",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814810",
+    "lat": 28.1071283,
+    "lon": -17.1401107,
+    "name": "San Antonio y Pilar",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814818",
+    "lat": 28.1871987,
+    "lon": -17.2226383,
+    "name": "La Vega",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814832",
+    "lat": 28.1091415,
+    "lon": -17.1267171,
+    "name": "El Molinito",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/1437814840",
+    "lat": 28.1608052,
+    "lon": -17.1993623,
+    "name": "Las Hoyetas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816602",
+    "lat": 28.1865194,
+    "lon": -17.187038,
+    "name": "Lepe",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816613",
+    "lat": 28.1543856,
+    "lon": -17.2017464,
+    "name": "El Corralete",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816614",
+    "lat": 28.1783016,
+    "lon": -17.2138171,
+    "name": "Juego de Bolas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816624",
+    "lat": 28.1504194,
+    "lon": -17.2040915,
+    "name": "El Estanquillo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816634",
+    "lat": 28.145076,
+    "lon": -17.2259832,
+    "name": "Los Acevi\u00f1os",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816673",
+    "lat": 28.1671582,
+    "lon": -17.1989179,
+    "name": "Ibo Alfaro",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816695",
+    "lat": 28.1483809,
+    "lon": -17.203583,
+    "name": "Monteforte",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816705",
+    "lat": 28.1165874,
+    "lon": -17.1596977,
+    "name": "El Atajo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816709",
+    "lat": 28.171511,
+    "lon": -17.1893025,
+    "name": "Palmarejo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816730",
+    "lat": 28.0638458,
+    "lon": -17.143878,
+    "name": "El Cabrito",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816748",
+    "lat": 28.1746903,
+    "lon": -17.1929806,
+    "name": "El Tabaibal",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1437816767",
+    "lat": 28.0926274,
+    "lon": -17.1924153,
+    "name": "Jerdu\u00f1e",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1524469121",
+    "lat": 28.1798588,
+    "lon": -17.185181,
+    "name": "Mirador de la Punta",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1550920280",
+    "lat": 28.0844833,
+    "lon": -17.1195899,
+    "name": "Sagrado Coraz\u00f3n",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/1569853957",
+    "lat": 28.0900534,
+    "lon": -17.1515704,
+    "name": "Mirador del Sombrero",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1570969749",
+    "lat": 28.0996502,
+    "lon": -17.1847607,
+    "name": "Mirador de La Laja",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1574755329",
+    "lat": 28.1530949,
+    "lon": -17.1995707,
+    "name": "PEG Los Telares, El Parque Etnogr\u00e1fico de La Gomera",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/1575684610",
+    "lat": 28.1601682,
+    "lon": -17.1984213,
+    "name": "Museo Etnogr\u00e1fico",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/1577346055",
+    "lat": 28.0960953,
+    "lon": -17.1000706,
+    "name": "Faro de San Crist\u00f3bal",
+    "category": "man_made",
+    "subtype": "lighthouse",
+    "importance": 1
+  },
+  {
+    "id": "node/1585966728",
+    "lat": 28.1911327,
+    "lon": -17.1976246,
+    "name": "Mirador de Agulo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1613220902",
+    "lat": 28.1080123,
+    "lon": -17.2206477,
+    "name": "Mirador Cumbre de Tajaqu\u00e9",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1748538764",
+    "lat": 28.0993371,
+    "lon": -17.184124,
+    "name": "Degollada de Peraza",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/1763754612",
+    "lat": 28.0649278,
+    "lon": -17.1740298,
+    "name": "Contreras",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1763754623",
+    "lat": 28.0682001,
+    "lon": -17.1402482,
+    "name": "Risco de la Amargura",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/1763754625",
+    "lat": 28.0811482,
+    "lon": -17.1216435,
+    "name": "Machal",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1763754626",
+    "lat": 28.0735697,
+    "lon": -17.1634786,
+    "name": "Morales",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1763754647",
+    "lat": 28.0799109,
+    "lon": -17.179245,
+    "name": "Tacalcuse",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1764668465",
+    "lat": 28.0621033,
+    "lon": -17.21603,
+    "name": "El Cabezo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1764668466",
+    "lat": 28.0428044,
+    "lon": -17.1824545,
+    "name": "El Joradillo",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/1764668467",
+    "lat": 28.0587578,
+    "lon": -17.2143282,
+    "name": "El Rumbazo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1764668471",
+    "lat": 28.0574252,
+    "lon": -17.2034993,
+    "name": "Roque de Tecina",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/1764668472",
+    "lat": 28.0696419,
+    "lon": -17.1556043,
+    "name": "Sabina Redonda",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1765560140",
+    "lat": 28.0311931,
+    "lon": -17.1978918,
+    "name": "La Banda",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1765560143",
+    "lat": 28.0281778,
+    "lon": -17.200353,
+    "name": "La Trinchera",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1765560153",
+    "lat": 28.0296709,
+    "lon": -17.2012178,
+    "name": "Mirador de la Trinchera",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1765560158",
+    "lat": 28.0298408,
+    "lon": -17.1959929,
+    "name": "Roque de la Cruz",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/1765560160",
+    "lat": 28.0418656,
+    "lon": -17.1960783,
+    "name": "Urbanizaci\u00f3n Pueblo Don Thomas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1766420983",
+    "lat": 28.0738693,
+    "lon": -17.2427884,
+    "name": "Agal\u00e1n",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1766420984",
+    "lat": 28.0601666,
+    "lon": -17.2337032,
+    "name": "El Guanche",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1766420985",
+    "lat": 28.0576553,
+    "lon": -17.2339489,
+    "name": "Las Cruces",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1766420986",
+    "lat": 28.0996797,
+    "lon": -17.2471284,
+    "name": "Las Paredes",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/1766693879",
+    "lat": 28.1163101,
+    "lon": -17.2428171,
+    "name": "El Contadero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1766693882",
+    "lat": 28.1126253,
+    "lon": -17.2504848,
+    "name": "Laguna Chica",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1766693893",
+    "lat": 28.1083836,
+    "lon": -17.2418652,
+    "name": "Pajarito",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1768104691",
+    "lat": 28.069678,
+    "lon": -17.2730361,
+    "name": "El Drago",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1768104693",
+    "lat": 28.0989728,
+    "lon": -17.2624749,
+    "name": "Erque",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1768104694",
+    "lat": 28.0644412,
+    "lon": -17.2688555,
+    "name": "La Manteca",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/1768104695",
+    "lat": 28.0698032,
+    "lon": -17.2495461,
+    "name": "Maga\u00f1a",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/1772529632",
+    "lat": 28.173157,
+    "lon": -17.183498,
+    "name": "El Altozano",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/1772529634",
+    "lat": 28.1754989,
+    "lon": -17.1818515,
+    "name": "Los Pedacitos",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/1973100022",
+    "lat": 28.0583448,
+    "lon": -17.1453416,
+    "name": "Cruz",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/1991248182",
+    "lat": 28.1455354,
+    "lon": -17.2866305,
+    "name": "Risquillos de Corgo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2087474334",
+    "lat": 28.0902893,
+    "lon": -17.109076,
+    "name": "Mirador de la Hila",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2132511504",
+    "lat": 28.1009281,
+    "lon": -17.2019167,
+    "name": "Las Nieves",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2132527003",
+    "lat": 28.1351834,
+    "lon": -17.1944551,
+    "name": "Mirador de La Carbonera",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2282851147",
+    "lat": 28.1235008,
+    "lon": -17.2083988,
+    "name": "El Bailadero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2282851148",
+    "lat": 28.1216112,
+    "lon": -17.2153376,
+    "name": "Revent\u00f3n Oscuro",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2288550106",
+    "lat": 28.1243608,
+    "lon": -17.2557937,
+    "name": "Mirador Cherelep\u00edn",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2308878713",
+    "lat": 28.1231343,
+    "lon": -17.2972395,
+    "name": "La Tranquilla",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2308890579",
+    "lat": 28.0962304,
+    "lon": -17.3345342,
+    "name": "La Calera",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/2361042960",
+    "lat": 28.10974,
+    "lon": -17.2483395,
+    "name": "Alto de Garajonay",
+    "category": "natural",
+    "subtype": "volcano",
+    "importance": 1
+  },
+  {
+    "id": "node/2361042961",
+    "lat": 28.0353155,
+    "lon": -17.1935544,
+    "name": "San Juanito",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/2361042962",
+    "lat": 28.0571414,
+    "lon": -17.2113184,
+    "name": "Taco",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/2463339212",
+    "lat": 28.1033017,
+    "lon": -17.1321823,
+    "name": "Langrero",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/2485113421",
+    "lat": 28.0672999,
+    "lon": -17.1406948,
+    "name": "Stuhl",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2511867048",
+    "lat": 28.0295914,
+    "lon": -17.1979616,
+    "name": "Centro de Salud Playa de Santiago",
+    "category": "amenity",
+    "subtype": "hospital",
+    "importance": 1
+  },
+  {
+    "id": "node/2578929123",
+    "lat": 28.0726412,
+    "lon": -17.2087172,
+    "name": "Cueva del Luch\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2578929130",
+    "lat": 28.0711937,
+    "lon": -17.2103282,
+    "name": "El Rodillon",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2642765551",
+    "lat": 28.1880923,
+    "lon": -17.2367656,
+    "name": "Simancas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/2642765600",
+    "lat": 28.1967057,
+    "lon": -17.2874132,
+    "name": "Mirador de Santa Clara",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2646180021",
+    "lat": 28.1649594,
+    "lon": -17.1611488,
+    "name": "El Palmar",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2647361595",
+    "lat": 28.1977374,
+    "lon": -17.1978092,
+    "name": "Mirador San Marcos",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2656754498",
+    "lat": 28.1090364,
+    "lon": -17.219097,
+    "name": "Mirador del Morro de Agando",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/2658159675",
+    "lat": 28.1443096,
+    "lon": -17.1311402,
+    "name": "Casas de Cuevas Blancas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/2836472545",
+    "lat": 28.1791812,
+    "lon": -17.3095545,
+    "name": "Cubaba",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/3966675703",
+    "lat": 28.1660202,
+    "lon": -17.1729808,
+    "name": "El Moralito",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4127083141",
+    "lat": 28.1590408,
+    "lon": -17.2372732,
+    "name": "Mirador de Lomo del Dinero",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/4198523290",
+    "lat": 28.1880082,
+    "lon": -17.2626137,
+    "name": "Botanical Garden",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/4415562825",
+    "lat": 28.1860567,
+    "lon": -17.2009852,
+    "name": "Mirador de Abrante",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/4419428229",
+    "lat": 28.2202554,
+    "lon": -17.2657623,
+    "name": "Punta de los \u00d3rganos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4419474108",
+    "lat": 28.2002298,
+    "lon": -17.2264233,
+    "name": "Callao Chico",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4419474152",
+    "lat": 28.1929912,
+    "lon": -17.1925767,
+    "name": "La Verdura",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4419489397",
+    "lat": 28.18691,
+    "lon": -17.1847424,
+    "name": "Callao de Lepe",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4419489398",
+    "lat": 28.1799687,
+    "lon": -17.1712026,
+    "name": "Playa de Hermigua",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421594585",
+    "lat": 28.1612179,
+    "lon": -17.1416048,
+    "name": "Rinc\u00f3n de los Hoyos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421594586",
+    "lat": 28.1593829,
+    "lon": -17.1381502,
+    "name": "Piedra Punta del Viento",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421595392",
+    "lat": 28.1550884,
+    "lon": -17.1287088,
+    "name": "Punta Roque Molino",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421595399",
+    "lat": 28.1203617,
+    "lon": -17.1044963,
+    "name": "Puntillas de \u00c1valo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632230",
+    "lat": 28.0845069,
+    "lon": -17.1124043,
+    "name": "Los Gara\u00f1ones",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632232",
+    "lat": 28.079046,
+    "lon": -17.1169523,
+    "name": "Playa de Machal",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632235",
+    "lat": 28.0653951,
+    "lon": -17.1401695,
+    "name": "la Bodega",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632239",
+    "lat": 28.0511244,
+    "lon": -17.1551407,
+    "name": "Cueva Colarada",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632245",
+    "lat": 28.0333183,
+    "lon": -17.1834803,
+    "name": "Embarcadero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632248",
+    "lat": 28.0249195,
+    "lon": -17.2105876,
+    "name": "El Aguila",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632249",
+    "lat": 28.025195,
+    "lon": -17.2085252,
+    "name": "Los Manderos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632251",
+    "lat": 28.0249006,
+    "lon": -17.2247711,
+    "name": "Los Juros",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632255",
+    "lat": 28.0236409,
+    "lon": -17.2595969,
+    "name": "La Jarrita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632265",
+    "lat": 28.0246643,
+    "lon": -17.2556594,
+    "name": "Las Pardelas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632266",
+    "lat": 28.0254598,
+    "lon": -17.2671393,
+    "name": "Cueva de la Lana",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632268",
+    "lat": 28.029911,
+    "lon": -17.2740272,
+    "name": "Cueva del Obispo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632270",
+    "lat": 28.0499106,
+    "lon": -17.3057846,
+    "name": "Punta de la Dama",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632272",
+    "lat": 28.0418051,
+    "lon": -17.2913865,
+    "name": "Punta de la Nariz",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421632274",
+    "lat": 28.0358603,
+    "lon": -17.2721674,
+    "name": "La Centera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421687924",
+    "lat": 28.1189796,
+    "lon": -17.3474045,
+    "name": "El Agujero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421687925",
+    "lat": 28.1238531,
+    "lon": -17.345862,
+    "name": "Punta del Guincho",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421687966",
+    "lat": 28.1538697,
+    "lon": -17.3453469,
+    "name": "Punta de la Cueva",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421687969",
+    "lat": 28.1611308,
+    "lon": -17.3414174,
+    "name": "Charco de los Machos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421687972",
+    "lat": 28.1772427,
+    "lon": -17.3325999,
+    "name": "Los Picachos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421687978",
+    "lat": 28.1795976,
+    "lon": -17.3343096,
+    "name": "Cueva de la Cuchillada",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421687979",
+    "lat": 28.1835695,
+    "lon": -17.3322497,
+    "name": "Punta del Viento",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421835583",
+    "lat": 28.1146131,
+    "lon": -17.2389287,
+    "name": "Lomo de los Tascos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421835584",
+    "lat": 28.1116587,
+    "lon": -17.231163,
+    "name": "Lomito del Loro",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4421857849",
+    "lat": 28.0528427,
+    "lon": -17.2424178,
+    "name": "Mirador de Tagaragunche",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/4421866890",
+    "lat": 28.1189956,
+    "lon": -17.2417239,
+    "name": "Alto de Contadero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/4421866891",
+    "lat": 28.1218793,
+    "lon": -17.2494063,
+    "name": "Alto de Cherelep\u00edn",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/4421866893",
+    "lat": 28.1366422,
+    "lon": -17.2659653,
+    "name": "Monta\u00f1a de la Asomada",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/4422575778",
+    "lat": 28.1369169,
+    "lon": -17.1814482,
+    "name": "Alto de Encherada",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/4422576899",
+    "lat": 28.1260322,
+    "lon": -17.1175298,
+    "name": "Roque de Aluce",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/4566895579",
+    "lat": 28.0926768,
+    "lon": -17.3250584,
+    "name": "Las Pilas",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/4614910426",
+    "lat": 28.1422872,
+    "lon": -17.3323615,
+    "name": "Roque de Mona",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/4660674403",
+    "lat": 28.0769533,
+    "lon": -17.1516207,
+    "name": "Baranco del Cabrito",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4777668584",
+    "lat": 28.1122778,
+    "lon": -17.3021078,
+    "name": "La Matanza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4778482746",
+    "lat": 28.1035914,
+    "lon": -17.3134768,
+    "name": "Degollada del Cerrillal",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4839548867",
+    "lat": 28.096906,
+    "lon": -17.3119252,
+    "name": "Degollada de los Bueyes",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/4850603445",
+    "lat": 28.1261639,
+    "lon": -17.3217597,
+    "name": "Mirador de la Retama",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/5050565656",
+    "lat": 28.1806973,
+    "lon": -17.1878896,
+    "name": "Mirador de La Cruz del Viento",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/5180964216",
+    "lat": 28.1707865,
+    "lon": -17.1563131,
+    "name": "El Muelle de San Lorenzo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/5194015169",
+    "lat": 28.0829243,
+    "lon": -17.3343913,
+    "name": "Delfines y ballenas de La Gomera: Biodiversidad en Cambio",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/5235048417",
+    "lat": 28.1242171,
+    "lon": -17.1620647,
+    "name": "Mirador de Manaderos",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/5235311417",
+    "lat": 28.1097143,
+    "lon": -17.2483398,
+    "name": "Alto de Garajonay",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/5282284921",
+    "lat": 28.25,
+    "lon": -17.0,
+    "name": "Macaronesia",
+    "category": "place",
+    "subtype": "region",
+    "importance": 1
+  },
+  {
+    "id": "node/5506656521",
+    "lat": 28.1288501,
+    "lon": -17.2742956,
+    "name": "Mirador de Mocanillo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/5916734287",
+    "lat": 28.115411,
+    "lon": -17.2179144,
+    "name": "Roque de Ojila",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/6046601786",
+    "lat": 28.1933835,
+    "lon": -17.2138253,
+    "name": "Monta\u00f1a del Cepo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/6180713460",
+    "lat": 28.1717738,
+    "lon": -17.1929548,
+    "name": "Mirador Piedra Romana y parque saludable",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/6345041770",
+    "lat": 28.1251362,
+    "lon": -17.2087566,
+    "name": "Mirador del Rejo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/6363533978",
+    "lat": 28.1225176,
+    "lon": -17.2865441,
+    "name": "Mirador Punta del Belete",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/6380722585",
+    "lat": 28.1519038,
+    "lon": -17.334802,
+    "name": "\u201eMirador de San Miguel\u201c",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879536",
+    "lat": 28.0518592,
+    "lon": -17.2092056,
+    "name": "El Taco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879537",
+    "lat": 28.0514234,
+    "lon": -17.2041953,
+    "name": "la Sardina",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879539",
+    "lat": 28.0562348,
+    "lon": -17.2180518,
+    "name": "el Repecho",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879540",
+    "lat": 28.0625471,
+    "lon": -17.2072636,
+    "name": "Degollada de Hernia",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879541",
+    "lat": 28.0667896,
+    "lon": -17.2089835,
+    "name": "el Silo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879542",
+    "lat": 28.0736359,
+    "lon": -17.2123255,
+    "name": "Plan de la Jueza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879543",
+    "lat": 28.0727052,
+    "lon": -17.222299,
+    "name": "El Palmarejo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879545",
+    "lat": 28.0940514,
+    "lon": -17.2161365,
+    "name": "Benchijigua",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879546",
+    "lat": 28.1027862,
+    "lon": -17.2053131,
+    "name": "Monta\u00f1a de Yerta",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879893",
+    "lat": 28.0784712,
+    "lon": -17.1378696,
+    "name": "Los Revolcaderos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879894",
+    "lat": 28.1254682,
+    "lon": -17.156905,
+    "name": "las Casetas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879895",
+    "lat": 28.1254117,
+    "lon": -17.1493557,
+    "name": "la Hurona",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879896",
+    "lat": 28.1298934,
+    "lon": -17.1497687,
+    "name": "La Gerode",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555879961",
+    "lat": 28.148385,
+    "lon": -17.1375791,
+    "name": "Riscos de Cuevas Blancas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555880000",
+    "lat": 28.1032711,
+    "lon": -17.1968759,
+    "name": "Ca\u00f1adas de Peraza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555880001",
+    "lat": 28.1106288,
+    "lon": -17.210493,
+    "name": "Degollada del Tanque",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555880002",
+    "lat": 28.1031403,
+    "lon": -17.1698569,
+    "name": "Pico Gomero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/7555880003",
+    "lat": 28.0940838,
+    "lon": -17.1687263,
+    "name": "Lomo del Gur\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555880004",
+    "lat": 28.0945993,
+    "lon": -17.1583107,
+    "name": "el Magro",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555880005",
+    "lat": 28.0961928,
+    "lon": -17.1367379,
+    "name": "la Sabina",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555900460",
+    "lat": 28.106097,
+    "lon": -17.2478752,
+    "name": "Monta\u00f1a de Igualero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7555900461",
+    "lat": 28.0922333,
+    "lon": -17.2532628,
+    "name": "Monta\u00f1a de los Ramones",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393769",
+    "lat": 28.0678885,
+    "lon": -17.2301928,
+    "name": "Ladoli\u00e1n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393770",
+    "lat": 28.0706215,
+    "lon": -17.2327675,
+    "name": "Palo Chiruca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393771",
+    "lat": 28.0773099,
+    "lon": -17.2460277,
+    "name": "Tajonaje",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393773",
+    "lat": 28.0606291,
+    "lon": -17.2476032,
+    "name": "Cruz de Mar\u00eda",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393776",
+    "lat": 28.0507127,
+    "lon": -17.2439151,
+    "name": "Ta\u00f1\u00e9",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393778",
+    "lat": 28.0336883,
+    "lon": -17.2704084,
+    "name": "Cabezada de los Alm\u00e1cigos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393779",
+    "lat": 28.0375464,
+    "lon": -17.2641544,
+    "name": "Piedras Sal\u00e9n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393780",
+    "lat": 28.0384246,
+    "lon": -17.2600158,
+    "name": "el Barquillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393781",
+    "lat": 28.04489,
+    "lon": -17.2433159,
+    "name": "la Barca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393782",
+    "lat": 28.0525244,
+    "lon": -17.2524825,
+    "name": "Lomo de los Cardos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556393783",
+    "lat": 28.0588574,
+    "lon": -17.2549989,
+    "name": "Cruz de Mar\u00eda",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556426542",
+    "lat": 28.0457985,
+    "lon": -17.1814605,
+    "name": "El Joradillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7556426543",
+    "lat": 28.0721726,
+    "lon": -17.1537552,
+    "name": "la Fortaleza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372599",
+    "lat": 28.0570649,
+    "lon": -17.2234859,
+    "name": "Roque de los Moros",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372600",
+    "lat": 28.0609801,
+    "lon": -17.2928645,
+    "name": "Cabezada de la Dama",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372601",
+    "lat": 28.0512961,
+    "lon": -17.29552,
+    "name": "Rabo de Pele",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372602",
+    "lat": 28.077242,
+    "lon": -17.2733837,
+    "name": "S. Lorenzo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372604",
+    "lat": 28.0944711,
+    "lon": -17.2536994,
+    "name": "Raso Grande",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372605",
+    "lat": 28.094865,
+    "lon": -17.2634082,
+    "name": "Tarmeche",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372606",
+    "lat": 28.104347,
+    "lon": -17.2723838,
+    "name": "Lomo de las Torres",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372607",
+    "lat": 28.1075141,
+    "lon": -17.2746508,
+    "name": "el Apartadero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372608",
+    "lat": 28.106498,
+    "lon": -17.2815868,
+    "name": "la Dehesa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372610",
+    "lat": 28.1171011,
+    "lon": -17.246611,
+    "name": "Alto de la Aguelisma",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372611",
+    "lat": 28.1162688,
+    "lon": -17.27036,
+    "name": "la Monta\u00f1a",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372612",
+    "lat": 28.1126057,
+    "lon": -17.2688266,
+    "name": "Ca\u00f1ada de Amaya",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372619",
+    "lat": 28.1069215,
+    "lon": -17.256964,
+    "name": "Degollada Blanca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372624",
+    "lat": 28.0908797,
+    "lon": -17.2719114,
+    "name": "Papopay",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372625",
+    "lat": 28.0870634,
+    "lon": -17.2821138,
+    "name": "las Huertitas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372626",
+    "lat": 28.0858657,
+    "lon": -17.2831489,
+    "name": "Topogache",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372627",
+    "lat": 28.1124884,
+    "lon": -17.2925781,
+    "name": "Degollada de la Matanza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372628",
+    "lat": 28.1116424,
+    "lon": -17.3001246,
+    "name": "Junco",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372629",
+    "lat": 28.1098865,
+    "lon": -17.3003418,
+    "name": "Anc\u00f3n de Blas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372630",
+    "lat": 28.1045717,
+    "lon": -17.3030983,
+    "name": "La Vega",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558372632",
+    "lat": 28.114564,
+    "lon": -17.283919,
+    "name": "Los Pajarejos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558517990",
+    "lat": 28.1367542,
+    "lon": -17.2915261,
+    "name": "Lomo de la Higuera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558517991",
+    "lat": 28.1445592,
+    "lon": -17.2968005,
+    "name": "Raso de Don Pedro",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558517992",
+    "lat": 28.1378828,
+    "lon": -17.3011325,
+    "name": "Cru de M\u00aa Tom\u00e9",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558517993",
+    "lat": 28.1317002,
+    "lon": -17.3068029,
+    "name": "La Carbonera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558517994",
+    "lat": 28.1402622,
+    "lon": -17.2822996,
+    "name": "El Quemado",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558517996",
+    "lat": 28.1435735,
+    "lon": -17.3058098,
+    "name": "Lomo Cabeza de Buey",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518008",
+    "lat": 28.1478165,
+    "lon": -17.3031338,
+    "name": "Laguna Grande",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518009",
+    "lat": 28.1496102,
+    "lon": -17.305718,
+    "name": "La Asomada",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518010",
+    "lat": 28.1135318,
+    "lon": -17.3200163,
+    "name": "Lomo del Morral",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518011",
+    "lat": 28.1252025,
+    "lon": -17.317087,
+    "name": "La Traser\u00eda",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518012",
+    "lat": 28.1240979,
+    "lon": -17.2819868,
+    "name": "Lomo de la Pece\u00f1a",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518013",
+    "lat": 28.1257051,
+    "lon": -17.2853122,
+    "name": "Lomo de la Instancia",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518014",
+    "lat": 28.1262745,
+    "lon": -17.3009192,
+    "name": "El Raso",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558518015",
+    "lat": 28.1255912,
+    "lon": -17.3050348,
+    "name": "La Orilla",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558794185",
+    "lat": 28.1566766,
+    "lon": -17.2804123,
+    "name": "La Monta\u00f1a",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558794186",
+    "lat": 28.1765247,
+    "lon": -17.2587671,
+    "name": "el Tanque",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558794187",
+    "lat": 28.1785677,
+    "lon": -17.2615607,
+    "name": "La Morera",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/7558794188",
+    "lat": 28.1818692,
+    "lon": -17.2528282,
+    "name": "Los Zarzales",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558794189",
+    "lat": 28.0897985,
+    "lon": -17.3280369,
+    "name": "Ronquillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7558794190",
+    "lat": 28.1007605,
+    "lon": -17.3180455,
+    "name": "Monta\u00f1a del Adivino",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785815",
+    "lat": 28.0950022,
+    "lon": -17.3245162,
+    "name": "Monta\u00f1a de Guergenche",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785816",
+    "lat": 28.080277,
+    "lon": -17.3233705,
+    "name": "Argaga",
+    "category": "place",
+    "subtype": "isolated_dwelling",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785817",
+    "lat": 28.1029882,
+    "lon": -17.3381035,
+    "name": "Quiebra Canillas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785818",
+    "lat": 28.0964223,
+    "lon": -17.3424065,
+    "name": "Lepanto",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785831",
+    "lat": 28.1125941,
+    "lon": -17.3162502,
+    "name": "Las \u00c1vilas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785833",
+    "lat": 28.1375246,
+    "lon": -17.3391475,
+    "name": "Lomo del Viento",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785834",
+    "lat": 28.140361,
+    "lon": -17.3250782,
+    "name": "Jolgao Gamonal",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785835",
+    "lat": 28.1471492,
+    "lon": -17.3191019,
+    "name": "Terguerguenche",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785836",
+    "lat": 28.1505844,
+    "lon": -17.3216355,
+    "name": "Cabezo de Trujillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559785838",
+    "lat": 28.1495537,
+    "lon": -17.3398814,
+    "name": "Gali\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796923",
+    "lat": 28.1433497,
+    "lon": -17.3159016,
+    "name": "Lomo de Arure",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796925",
+    "lat": 28.1449601,
+    "lon": -17.3290695,
+    "name": "Lomo del Viento",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796926",
+    "lat": 28.1603464,
+    "lon": -17.316196,
+    "name": "Lomo del Balo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796927",
+    "lat": 28.1540405,
+    "lon": -17.3121461,
+    "name": "Cerco de Armas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796928",
+    "lat": 28.1681035,
+    "lon": -17.3228305,
+    "name": "Los Llanos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796929",
+    "lat": 28.1732467,
+    "lon": -17.2979423,
+    "name": "Garim\u00e9n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796930",
+    "lat": 28.1731428,
+    "lon": -17.2953688,
+    "name": "Monta\u00f1a Blanca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796932",
+    "lat": 28.1821995,
+    "lon": -17.3089042,
+    "name": "Ca\u00f1ada de Tehetas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796933",
+    "lat": 28.1761871,
+    "lon": -17.3151833,
+    "name": "Ca\u00f1ada de Fabi\u00e1n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796934",
+    "lat": 28.1749861,
+    "lon": -17.3235657,
+    "name": "Cubada",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7559796935",
+    "lat": 28.172467,
+    "lon": -17.3267121,
+    "name": "Monta\u00f1a de Retamar",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916417",
+    "lat": 28.1767534,
+    "lon": -17.2801347,
+    "name": "El Palmar",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916419",
+    "lat": 28.207513,
+    "lon": -17.2705308,
+    "name": "Chiguer\u00e9",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916420",
+    "lat": 28.1995114,
+    "lon": -17.2771405,
+    "name": "Lomas del Monte",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916421",
+    "lat": 28.1894645,
+    "lon": -17.2828041,
+    "name": "Alto Lomo de Flores",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916422",
+    "lat": 28.1858397,
+    "lon": -17.2904449,
+    "name": "Lomo de Gaguja",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916444",
+    "lat": 28.1881981,
+    "lon": -17.2587841,
+    "name": "Ca\u00f1ada de Luch\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916445",
+    "lat": 28.1880776,
+    "lon": -17.2480509,
+    "name": "Areru",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916446",
+    "lat": 28.1887215,
+    "lon": -17.2431066,
+    "name": "Loma de Palmarejo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916448",
+    "lat": 28.1955501,
+    "lon": -17.2393516,
+    "name": "Monta\u00f1a del Gomero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916449",
+    "lat": 28.1974013,
+    "lon": -17.2422752,
+    "name": "Alto de la Erita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916450",
+    "lat": 28.2009282,
+    "lon": -17.239733,
+    "name": "Cabeza de Sardina",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7561916458",
+    "lat": 28.1758827,
+    "lon": -17.220352,
+    "name": "La Hormiga",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7562219664",
+    "lat": 28.1627853,
+    "lon": -17.1788817,
+    "name": "Morro Canalizo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7562219667",
+    "lat": 28.1716237,
+    "lon": -17.2036539,
+    "name": "Lomo Gordo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7562219668",
+    "lat": 28.1422203,
+    "lon": -17.2094301,
+    "name": "Monteforte",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7562237988",
+    "lat": 28.1327664,
+    "lon": -17.1863573,
+    "name": "Degollada de la Cumbre",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7562237989",
+    "lat": 28.1359302,
+    "lon": -17.2033231,
+    "name": "El Rejo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7562237991",
+    "lat": 28.1304118,
+    "lon": -17.2045436,
+    "name": "Espig\u00f3n de Ibosa",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/7562237992",
+    "lat": 28.1247078,
+    "lon": -17.2149102,
+    "name": "Monta\u00f1a Quemada",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/7562237994",
+    "lat": 28.1158443,
+    "lon": -17.2362238,
+    "name": "Lomo de los Tascos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7562238001",
+    "lat": 28.1198045,
+    "lon": -17.266312,
+    "name": "Rosa de Friete",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/7931120681",
+    "lat": 28.1826711,
+    "lon": -17.2621147,
+    "name": "Mirador del Almendrillo",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/8489661217",
+    "lat": 28.1262273,
+    "lon": -17.3217644,
+    "name": "El mirador de Retama",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/8951444415",
+    "lat": 28.1099042,
+    "lon": -17.2142256,
+    "name": "Mirador Colgado",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/9137324517",
+    "lat": 28.1423958,
+    "lon": -17.1974688,
+    "name": "Mirador Herminia",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/9193596250",
+    "lat": 28.1517808,
+    "lon": -17.3352261,
+    "name": "Tejeleche",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/9207476717",
+    "lat": 28.1888808,
+    "lon": -17.1932989,
+    "name": "Casa del pintor Jose Aguiar",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/9294746517",
+    "lat": 28.21745,
+    "lon": -17.2768166,
+    "name": "Acantilado de los \u00d3rganos",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/9368474092",
+    "lat": 28.1440578,
+    "lon": -17.2951693,
+    "name": "Ca\u00f1ada de Jorge",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/9765531620",
+    "lat": 28.0934748,
+    "lon": -17.1119778,
+    "name": "Casa de Col\u00f3n",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/9766656817",
+    "lat": 28.0925696,
+    "lon": -17.1120375,
+    "name": "Pedro Zamorano Escultor",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/9768033617",
+    "lat": 28.1644839,
+    "lon": -17.3295787,
+    "name": "Casa de la Miel de Palma",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/10132036566",
+    "lat": 28.1788457,
+    "lon": -17.1728979,
+    "name": "Pescante de Hermigua",
+    "category": "tourism",
+    "subtype": "attraction",
+    "importance": 1
+  },
+  {
+    "id": "node/10132183206",
+    "lat": 28.207845,
+    "lon": -17.2629049,
+    "name": "Mirador Punta de Alcal\u00e1",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/10148235052",
+    "lat": 28.1906634,
+    "lon": -17.2515961,
+    "name": "Ara\u00f1a de Arer\u00fa",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/10162486525",
+    "lat": 28.1912638,
+    "lon": -17.269247,
+    "name": "Bentagume",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/10291439791",
+    "lat": 28.1782287,
+    "lon": -17.2626088,
+    "name": "Mirador de la Pilarica",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/10812435418",
+    "lat": 28.1006992,
+    "lon": -17.3279706,
+    "name": "Galeria El Altito",
+    "category": "natural",
+    "subtype": "spring",
+    "importance": 1
+  },
+  {
+    "id": "node/10814424387",
+    "lat": 28.1814549,
+    "lon": -17.2678142,
+    "name": "Guardia Civil",
+    "category": "amenity",
+    "subtype": "police",
+    "importance": 1
+  },
+  {
+    "id": "node/10914584953",
+    "lat": 28.1296396,
+    "lon": -17.2086271,
+    "name": "La Meseta",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/11114821220",
+    "lat": 28.0974942,
+    "lon": -17.3337092,
+    "name": "Museum \u00abLa Alameda\u00bb",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/11142085030",
+    "lat": 28.1133606,
+    "lon": -17.314826,
+    "name": "Lomo del Moral",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11142085042",
+    "lat": 28.1130554,
+    "lon": -17.3112774,
+    "name": "Higuera del Llano",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11142085043",
+    "lat": 28.1138704,
+    "lon": -17.3077382,
+    "name": "El Peto",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11142085044",
+    "lat": 28.1162955,
+    "lon": -17.3057255,
+    "name": "Las Vi\u00f1as",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11142085045",
+    "lat": 28.0352221,
+    "lon": -17.1872306,
+    "name": "Tecina",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184844",
+    "lat": 28.1056801,
+    "lon": -17.3260355,
+    "name": "El Puente",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184845",
+    "lat": 28.1041044,
+    "lon": -17.328039,
+    "name": "Ca\u00f1ada de la Rosa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184846",
+    "lat": 28.0994052,
+    "lon": -17.3312142,
+    "name": "Las Orijamas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184847",
+    "lat": 28.0979971,
+    "lon": -17.332989,
+    "name": "El Picacho",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184848",
+    "lat": 28.0973206,
+    "lon": -17.333689,
+    "name": "Las Palmitas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184849",
+    "lat": 28.0967793,
+    "lon": -17.3344958,
+    "name": "El Chorro",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184850",
+    "lat": 28.0903801,
+    "lon": -17.3348115,
+    "name": "El Palmar",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184851",
+    "lat": 28.0864558,
+    "lon": -17.3338368,
+    "name": "La Palomera",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184852",
+    "lat": 28.0846171,
+    "lon": -17.333971,
+    "name": "Lomo de Vueltas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184853",
+    "lat": 28.0873513,
+    "lon": -17.3369286,
+    "name": "El Mantillo",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184854",
+    "lat": 28.0863893,
+    "lon": -17.337247,
+    "name": "Charco del Conde",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184855",
+    "lat": 28.0847886,
+    "lon": -17.3361921,
+    "name": "Piedra de la Garza",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184856",
+    "lat": 28.084182,
+    "lon": -17.3361924,
+    "name": "La Condesa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184857",
+    "lat": 28.0832656,
+    "lon": -17.3347635,
+    "name": "La Condesa",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11143184858",
+    "lat": 28.0823703,
+    "lon": -17.3334832,
+    "name": "La Quema",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/11399176630",
+    "lat": 28.0644985,
+    "lon": -17.239681,
+    "name": "Mirador de Alajer\u00f3",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/11399223818",
+    "lat": 28.0649648,
+    "lon": -17.2419575,
+    "name": "Monta\u00f1a Castilla",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/11399225644",
+    "lat": 28.0704058,
+    "lon": -17.2387503,
+    "name": "Centro de interpretaci\u00f3n de queso y pastoreo",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/11399241089",
+    "lat": 28.1640859,
+    "lon": -17.29746,
+    "name": "El Bailadero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12003433869",
+    "lat": 28.0819907,
+    "lon": -17.3332631,
+    "name": "Guardia Civil",
+    "category": "amenity",
+    "subtype": "police",
+    "importance": 1
+  },
+  {
+    "id": "node/12006380869",
+    "lat": 28.1786629,
+    "lon": -17.2140328,
+    "name": "Casa de la Memoria",
+    "category": "tourism",
+    "subtype": "museum",
+    "importance": 1
+  },
+  {
+    "id": "node/12367772017",
+    "lat": 28.0597595,
+    "lon": -17.3135455,
+    "name": "Monta\u00f1a Grande",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12367772076",
+    "lat": 28.1060725,
+    "lon": -17.2695246,
+    "name": "Golladita del Molino",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12367789691",
+    "lat": 28.136717,
+    "lon": -17.2933627,
+    "name": "Lomo de la Higuera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12367844767",
+    "lat": 28.1106355,
+    "lon": -17.3437767,
+    "name": "Riscos de la America",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12367849921",
+    "lat": 28.1231545,
+    "lon": -17.3429753,
+    "name": "Rico de Heredia",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12367849970",
+    "lat": 28.1300616,
+    "lon": -17.3298502,
+    "name": "Roque de los Marroyos",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12367849971",
+    "lat": 28.1327479,
+    "lon": -17.3318244,
+    "name": "Roque del Media",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12367879038",
+    "lat": 28.1508709,
+    "lon": -17.334882,
+    "name": "Tejeleche",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12367879054",
+    "lat": 28.157775,
+    "lon": -17.3377382,
+    "name": "Punta y Cueva de las Palomas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12367885366",
+    "lat": 28.1500943,
+    "lon": -17.3284525,
+    "name": "Punta de Tejeleche",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368352084",
+    "lat": 28.1027418,
+    "lon": -17.3394277,
+    "name": "Quiebra Canillas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368366249",
+    "lat": 28.1470809,
+    "lon": -17.3271691,
+    "name": "Nariga",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368366250",
+    "lat": 28.1521482,
+    "lon": -17.3450995,
+    "name": "Punta del Viento",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368427425",
+    "lat": 28.1723507,
+    "lon": -17.3234333,
+    "name": "Monta\u00f1a de Retamar",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368479725",
+    "lat": 28.1705561,
+    "lon": -17.3169824,
+    "name": "Lomo del Espino",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368479945",
+    "lat": 28.1894137,
+    "lon": -17.311741,
+    "name": "Monta\u00f1a Beguira",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368479964",
+    "lat": 28.186423,
+    "lon": -17.3192546,
+    "name": "Pico de Herrera",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368519437",
+    "lat": 28.2075215,
+    "lon": -17.2829356,
+    "name": "La Costa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368519518",
+    "lat": 28.1891221,
+    "lon": -17.244248,
+    "name": "Loma de Palmarejo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368595388",
+    "lat": 28.1764901,
+    "lon": -17.2600718,
+    "name": "Carabato",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12368595503",
+    "lat": 28.1351706,
+    "lon": -17.2606726,
+    "name": "Monta\u00f1a de los Manantiales",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368595532",
+    "lat": 28.1481835,
+    "lon": -17.2454181,
+    "name": "Monta\u00f1a de Tobares",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368628329",
+    "lat": 28.141979,
+    "lon": -17.2656788,
+    "name": "Cabeza del Gatillo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368628387",
+    "lat": 28.1308697,
+    "lon": -17.2587639,
+    "name": "Alto de Piedra del Gallo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368628388",
+    "lat": 28.1279524,
+    "lon": -17.2624578,
+    "name": "La Laguna Grande",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368628390",
+    "lat": 28.1465021,
+    "lon": -17.2878434,
+    "name": "Monta\u00f1a de la Ara\u00f1a",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368662587",
+    "lat": 28.191768,
+    "lon": -17.2163251,
+    "name": "Monta\u00f1a del Cepo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368697492",
+    "lat": 28.1433995,
+    "lon": -17.1753075,
+    "name": "Alto Vistoso",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368697493",
+    "lat": 28.1515647,
+    "lon": -17.1510541,
+    "name": "Alto de Llano de la Cruz",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12368697494",
+    "lat": 28.1550217,
+    "lon": -17.1440707,
+    "name": "Monta\u00f1a Gay\u00f3n",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12368697528",
+    "lat": 28.1294867,
+    "lon": -17.1452331,
+    "name": "Monta\u00f1a Ismael",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12369630816",
+    "lat": 28.0655032,
+    "lon": -17.1927518,
+    "name": "Los Lavadores",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12369630840",
+    "lat": 28.0804499,
+    "lon": -17.1876402,
+    "name": "Funente de los Chorillos",
+    "category": "natural",
+    "subtype": "spring",
+    "importance": 1
+  },
+  {
+    "id": "node/12369630871",
+    "lat": 28.0969765,
+    "lon": -17.1948122,
+    "name": "Monta\u00f1a de Destene",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12369630932",
+    "lat": 28.0914527,
+    "lon": -17.1638223,
+    "name": "Roque de Magro",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12369630933",
+    "lat": 28.0888736,
+    "lon": -17.1613897,
+    "name": "Roque del Sombrero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12369658340",
+    "lat": 28.0776027,
+    "lon": -17.1496263,
+    "name": "Roques Garc\u00eda",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12369689106",
+    "lat": 28.0562609,
+    "lon": -17.1517682,
+    "name": "Roque de la Roja",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12369689137",
+    "lat": 28.0958549,
+    "lon": -17.1592024,
+    "name": "Casas del Magro",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12369722455",
+    "lat": 28.141292,
+    "lon": -17.124572,
+    "name": "Bujero de Cherem\u00eda",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12369722456",
+    "lat": 28.1412237,
+    "lon": -17.116874,
+    "name": "Cherm\u00eda",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12369722493",
+    "lat": 28.1438597,
+    "lon": -17.1620932,
+    "name": "Casas del Helechal",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12369756072",
+    "lat": 28.1038445,
+    "lon": -17.1717051,
+    "name": "Pico Gomero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12369756087",
+    "lat": 28.1079326,
+    "lon": -17.2205829,
+    "name": "Alto de la Tunera",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12370041482",
+    "lat": 28.1113876,
+    "lon": -17.2387408,
+    "name": "Cabezo del Pajarito",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12370138417",
+    "lat": 28.1293872,
+    "lon": -17.235657,
+    "name": "Monta\u00f1a de los Helechos",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12370138418",
+    "lat": 28.1314061,
+    "lon": -17.2374648,
+    "name": "Cabeza de Cabrera",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12370138428",
+    "lat": 28.1173692,
+    "lon": -17.2459135,
+    "name": "Alto de la Aguelisma",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12370138468",
+    "lat": 28.1297801,
+    "lon": -17.2630731,
+    "name": "Cabezo de Amag\u00fa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12370138470",
+    "lat": 28.1249003,
+    "lon": -17.2631971,
+    "name": "Degollada de Cherelep\u00edn",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12370452598",
+    "lat": 28.1417412,
+    "lon": -17.2301248,
+    "name": "Monta\u00f1a de las Cuevas",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12370452697",
+    "lat": 28.1367172,
+    "lon": -17.2090726,
+    "name": "La Monta\u00f1aeta",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12370452700",
+    "lat": 28.1338521,
+    "lon": -17.215475,
+    "name": "La Puntilla",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12370746419",
+    "lat": 28.1576089,
+    "lon": -17.2195224,
+    "name": "853",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12370763091",
+    "lat": 28.1708308,
+    "lon": -17.2325656,
+    "name": "Alto Roque Blanco",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12371020784",
+    "lat": 28.1902484,
+    "lon": -17.2941006,
+    "name": "Monta\u00f1a de la Caldera",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12371020791",
+    "lat": 28.1994323,
+    "lon": -17.2828074,
+    "name": "Cabezo de los Chiquerillos",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12371020793",
+    "lat": 28.2033705,
+    "lon": -17.2745322,
+    "name": "Cumbre de Chiguer\u00e9",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12371923647",
+    "lat": 28.2058864,
+    "lon": -17.2774636,
+    "name": "Las Laderitas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12371923654",
+    "lat": 28.1860975,
+    "lon": -17.3039844,
+    "name": "El Pedegral",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12371962060",
+    "lat": 28.126958,
+    "lon": -17.3150511,
+    "name": "Monta\u00f1a Fari\u00e1n",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12371962073",
+    "lat": 28.0916329,
+    "lon": -17.3278476,
+    "name": "Las Pilas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12372245467",
+    "lat": 28.0481125,
+    "lon": -17.2424094,
+    "name": "Roque de Becerro",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12372245470",
+    "lat": 28.0566808,
+    "lon": -17.2238801,
+    "name": "Roque de los Moros",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12372263590",
+    "lat": 28.0404282,
+    "lon": -17.2156204,
+    "name": "Teberbite",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12372263591",
+    "lat": 28.0529221,
+    "lon": -17.2247255,
+    "name": "Roque Redondo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12372295016",
+    "lat": 28.0825728,
+    "lon": -17.1237982,
+    "name": "Lomo del Higueral",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12372295020",
+    "lat": 28.081032,
+    "lon": -17.1267885,
+    "name": "El Capit\u00e1n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12372295021",
+    "lat": 28.0791449,
+    "lon": -17.1308268,
+    "name": "Costado de la Guancha",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12372295037",
+    "lat": 28.0485365,
+    "lon": -17.1741324,
+    "name": "Majada de Su\u00e1rez",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12374347422",
+    "lat": 28.0677017,
+    "lon": -17.3091327,
+    "name": "Las Hoyas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12374347512",
+    "lat": 28.072622,
+    "lon": -17.3147552,
+    "name": "El Berodal",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12374347546",
+    "lat": 28.0700525,
+    "lon": -17.314673,
+    "name": "Loma de Pepe",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12374478712",
+    "lat": 28.158272,
+    "lon": -17.3245557,
+    "name": "Los Palmeros",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12382982877",
+    "lat": 28.2076522,
+    "lon": -17.2628198,
+    "name": "Monta\u00f1a de Alcal\u00e1",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12383220348",
+    "lat": 28.1975504,
+    "lon": -17.2935213,
+    "name": "Las T\u00edas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12383220349",
+    "lat": 28.1934858,
+    "lon": -17.2891497,
+    "name": "Teselinde",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12383221508",
+    "lat": 28.1884679,
+    "lon": -17.2785589,
+    "name": "Alto de los Chinguerillos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12383221509",
+    "lat": 28.1835008,
+    "lon": -17.2929733,
+    "name": "Monta\u00f1a de la Puntilla",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12383221513",
+    "lat": 28.1811555,
+    "lon": -17.292443,
+    "name": "Alto del Llanito",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12383221514",
+    "lat": 28.1813195,
+    "lon": -17.280106,
+    "name": "Monta\u00f1a de los Roquillos",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12383221558",
+    "lat": 28.1729622,
+    "lon": -17.2918654,
+    "name": "Monta\u00f1a Blance",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12383271310",
+    "lat": 28.1488564,
+    "lon": -17.2938479,
+    "name": "Monta\u00f1a de los Manantiales",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12385446913",
+    "lat": 28.0915319,
+    "lon": -17.2956226,
+    "name": "Chapa de Simancas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12385485659",
+    "lat": 28.0542844,
+    "lon": -17.269242,
+    "name": "Alm\u00e1cigos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12385485665",
+    "lat": 28.046804,
+    "lon": -17.2705834,
+    "name": "La Campana",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12385485666",
+    "lat": 28.0441739,
+    "lon": -17.2882485,
+    "name": "La Rosa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12385485680",
+    "lat": 28.0836806,
+    "lon": -17.1813797,
+    "name": "Risco de la Fortaleza",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12385485690",
+    "lat": 28.0905377,
+    "lon": -17.18508,
+    "name": "Roque de Berruga",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12385485739",
+    "lat": 28.1593261,
+    "lon": -17.1593648,
+    "name": "Roque Garaballo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386712403",
+    "lat": 28.1641828,
+    "lon": -17.1880291,
+    "name": "Caser\u00edo los Barranquillos",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12386712404",
+    "lat": 28.1663042,
+    "lon": -17.1819985,
+    "name": "Salto Lima",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386712506",
+    "lat": 28.1531432,
+    "lon": -17.1441486,
+    "name": "Degollada Majona",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386712558",
+    "lat": 28.1204315,
+    "lon": -17.1252018,
+    "name": "Tamorde",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386769426",
+    "lat": 28.1144899,
+    "lon": -17.191414,
+    "name": "La Sabinilla",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386769486",
+    "lat": 28.1242383,
+    "lon": -17.2011569,
+    "name": "Cabezo Alto",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386769603",
+    "lat": 28.115786,
+    "lon": -17.1503448,
+    "name": "La Rehoya",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12386856698",
+    "lat": 28.0808739,
+    "lon": -17.1752111,
+    "name": "Alto de Tacalcusie",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386899001",
+    "lat": 28.072648,
+    "lon": -17.1840024,
+    "name": "Roque Blanco",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386899009",
+    "lat": 28.0950182,
+    "lon": -17.2069207,
+    "name": "Punta de Ansel",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386899064",
+    "lat": 28.0949159,
+    "lon": -17.2343781,
+    "name": "Monta\u00f1a de Juan Romo",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386899065",
+    "lat": 28.1039878,
+    "lon": -17.2401428,
+    "name": "Monta\u00f1a de las Negrilas",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386899070",
+    "lat": 28.1068589,
+    "lon": -17.2491222,
+    "name": "Monta\u00f1a de Igualero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386899071",
+    "lat": 28.1108363,
+    "lon": -17.2453562,
+    "name": "Alto de Pajarito",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12386899107",
+    "lat": 28.0581757,
+    "lon": -17.2298884,
+    "name": "Roque de Targa",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12387005425",
+    "lat": 28.0419384,
+    "lon": -17.2290815,
+    "name": "Los Pajares Blancos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12394125969",
+    "lat": 28.0906261,
+    "lon": -17.120974,
+    "name": "Las Galanas",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12394125970",
+    "lat": 28.0916265,
+    "lon": -17.1185644,
+    "name": "El Calvario",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12394125971",
+    "lat": 28.0764115,
+    "lon": -17.1230752,
+    "name": "El Veredal",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12394201038",
+    "lat": 28.0420904,
+    "lon": -17.2097408,
+    "name": "Altamache",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12394201155",
+    "lat": 28.0620406,
+    "lon": -17.2718087,
+    "name": "La Manteca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12394309506",
+    "lat": 28.0783595,
+    "lon": -17.26434,
+    "name": "Monta\u00f1a de la Vega",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12394453780",
+    "lat": 28.0540335,
+    "lon": -17.2871204,
+    "name": "Los Roquillos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12394453796",
+    "lat": 28.1513256,
+    "lon": -17.2925498,
+    "name": "Cerco de Don Pedro",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12394453799",
+    "lat": 28.1556842,
+    "lon": -17.3214117,
+    "name": "El Lomo",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12394453800",
+    "lat": 28.1600834,
+    "lon": -17.3213888,
+    "name": "El Mono",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12394479822",
+    "lat": 28.1597121,
+    "lon": -17.2943136,
+    "name": "Monta\u00f1a de la Zarza",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12394479858",
+    "lat": 28.1961088,
+    "lon": -17.2823483,
+    "name": "La Colnenilla",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12394479861",
+    "lat": 28.1955545,
+    "lon": -17.2357223,
+    "name": "Monta\u00f1a del Gomero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12394479866",
+    "lat": 28.1878996,
+    "lon": -17.2266698,
+    "name": "Alto de Jimonete",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12401692179",
+    "lat": 28.1314781,
+    "lon": -17.3256141,
+    "name": "Lomo del Caret\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12401692182",
+    "lat": 28.144078,
+    "lon": -17.3102968,
+    "name": "Lomo Cabeza de Buey",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12405118813",
+    "lat": 28.0594726,
+    "lon": -17.2408843,
+    "name": "Las Tajarias",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/12410300197",
+    "lat": 28.1057115,
+    "lon": -17.1619207,
+    "name": "Raso Pendiente",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410300198",
+    "lat": 28.1216627,
+    "lon": -17.1323466,
+    "name": "Los Pieachos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410300199",
+    "lat": 28.1221701,
+    "lon": -17.1352616,
+    "name": "Jarag\u00e1n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410306513",
+    "lat": 28.1241988,
+    "lon": -17.142925,
+    "name": "Punta de la Vaca",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410306514",
+    "lat": 28.1303551,
+    "lon": -17.1257879,
+    "name": "El Herrero",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410306515",
+    "lat": 28.1179937,
+    "lon": -17.1108599,
+    "name": "La Crucita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410306561",
+    "lat": 28.1752757,
+    "lon": -17.177392,
+    "name": "Mirador de la Orilla",
+    "category": "tourism",
+    "subtype": "viewpoint",
+    "importance": 1
+  },
+  {
+    "id": "node/12410306715",
+    "lat": 28.153375,
+    "lon": -17.1677928,
+    "name": "Palo Atravesado",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410334864",
+    "lat": 28.1452803,
+    "lon": -17.167258,
+    "name": "Alto de Santa Cruz",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410334865",
+    "lat": 28.1470538,
+    "lon": -17.1596683,
+    "name": "Raso de Juel",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410373066",
+    "lat": 28.1121598,
+    "lon": -17.1243425,
+    "name": "La Cabezada",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410376015",
+    "lat": 28.1379929,
+    "lon": -17.1596814,
+    "name": "Majona",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410376047",
+    "lat": 28.1280902,
+    "lon": -17.1597542,
+    "name": "Altos de Uteza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410387241",
+    "lat": 28.1018988,
+    "lon": -17.1401178,
+    "name": "Los Corralejos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410387242",
+    "lat": 28.1076113,
+    "lon": -17.145555,
+    "name": "Risco Grande",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12410387248",
+    "lat": 28.1193646,
+    "lon": -17.1408582,
+    "name": "Lisencial",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12410387249",
+    "lat": 28.1101263,
+    "lon": -17.1553526,
+    "name": "La Pila",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12413603997",
+    "lat": 28.15634,
+    "lon": -17.1585606,
+    "name": "Riscos de Juel",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12413809855",
+    "lat": 28.1910579,
+    "lon": -17.1950667,
+    "name": "El Charco",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12413829306",
+    "lat": 28.1753542,
+    "lon": -17.2234427,
+    "name": "La Hormiga",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12413841461",
+    "lat": 28.1863581,
+    "lon": -17.2315567,
+    "name": "Alto de Toril",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12413909264",
+    "lat": 28.1787569,
+    "lon": -17.2542935,
+    "name": "Roque Chico",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12413909267",
+    "lat": 28.1812932,
+    "lon": -17.2539365,
+    "name": "Los Zarzales",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12421506152",
+    "lat": 28.0902409,
+    "lon": -17.1878339,
+    "name": "Monta\u00f1a de Juesas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12431854450",
+    "lat": 28.1022411,
+    "lon": -17.265838,
+    "name": "Risco de la Sabina",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12451834667",
+    "lat": 28.1433095,
+    "lon": -17.2819497,
+    "name": "Cabezo de la Cruz de las \u00c1nimas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12451834736",
+    "lat": 28.1675845,
+    "lon": -17.2642555,
+    "name": "Rosa de las Piedras",
+    "category": "place",
+    "subtype": "village",
+    "importance": 1
+  },
+  {
+    "id": "node/12451834737",
+    "lat": 28.1675738,
+    "lon": -17.2557343,
+    "name": "Roque Blanco",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12451887339",
+    "lat": 28.179401,
+    "lon": -17.2545452,
+    "name": "Roque Chico",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12452881535",
+    "lat": 28.1892386,
+    "lon": -17.2490847,
+    "name": "Arer\u00fa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12452881581",
+    "lat": 28.1853399,
+    "lon": -17.240026,
+    "name": "Mazapeces",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12452889104",
+    "lat": 28.1911742,
+    "lon": -17.2357041,
+    "name": "Degollada del Manillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12452977701",
+    "lat": 28.1888423,
+    "lon": -17.2638061,
+    "name": "El Risco Colorado",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12452977702",
+    "lat": 28.1975787,
+    "lon": -17.2568938,
+    "name": "El Tributo",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12453351865",
+    "lat": 28.117379,
+    "lon": -17.2916609,
+    "name": "Punta del Arenero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12453583302",
+    "lat": 28.1188446,
+    "lon": -17.217746,
+    "name": "Degollada del Bailadero",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12453583304",
+    "lat": 28.1117401,
+    "lon": -17.2038017,
+    "name": "Monta\u00f1a del Manco",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12453835987",
+    "lat": 28.1349512,
+    "lon": -17.2974241,
+    "name": "Cabezo de la Vizca\u00edna",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12454191070",
+    "lat": 28.1002186,
+    "lon": -17.2943359,
+    "name": "San Sebasti\u00e1n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12454191071",
+    "lat": 28.1021027,
+    "lon": -17.2933401,
+    "name": "Guarchico",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12455685743",
+    "lat": 28.1069863,
+    "lon": -17.276086,
+    "name": "Los Apartaderos",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12455734782",
+    "lat": 28.0768221,
+    "lon": -17.2839273,
+    "name": "La Jaida",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12456014795",
+    "lat": 28.0853016,
+    "lon": -17.25114,
+    "name": "El Negr\u00edn",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12456014796",
+    "lat": 28.0830293,
+    "lon": -17.2557819,
+    "name": "El Paso",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12457167698",
+    "lat": 28.1107826,
+    "lon": -17.1915795,
+    "name": "La Longuera",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12457167699",
+    "lat": 28.113215,
+    "lon": -17.1975887,
+    "name": "La Cueva",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12457187833",
+    "lat": 28.1173975,
+    "lon": -17.1997375,
+    "name": "La Selechera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12457187834",
+    "lat": 28.1183073,
+    "lon": -17.2054209,
+    "name": "Las Tajoras",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12459243255",
+    "lat": 28.1608984,
+    "lon": -17.2299819,
+    "name": "La Cerpa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12459243256",
+    "lat": 28.1573746,
+    "lon": -17.2247595,
+    "name": "Meriga",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12459243257",
+    "lat": 28.1586773,
+    "lon": -17.236641,
+    "name": "El Espig\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12459243258",
+    "lat": 28.1576928,
+    "lon": -17.2376351,
+    "name": "Las Crucitas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12459249411",
+    "lat": 28.1775684,
+    "lon": -17.2374715,
+    "name": "Monta\u00f1a la Cueva",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12461672424",
+    "lat": 28.1458447,
+    "lon": -17.1513382,
+    "name": "Alto de los Helechos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12461672499",
+    "lat": 28.0986536,
+    "lon": -17.1125853,
+    "name": "Barriada de la Gallarda",
+    "category": "place",
+    "subtype": "neighbourhood",
+    "importance": 1
+  },
+  {
+    "id": "node/12461772494",
+    "lat": 28.1231831,
+    "lon": -17.2684711,
+    "name": "Tamarganche",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463031163",
+    "lat": 28.1234827,
+    "lon": -17.3015374,
+    "name": "Los  Jamones",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463217457",
+    "lat": 28.1172381,
+    "lon": -17.2660451,
+    "name": "La Asmadita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463217462",
+    "lat": 28.1174797,
+    "lon": -17.2550536,
+    "name": "La Laguna Alta",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463217470",
+    "lat": 28.1143048,
+    "lon": -17.2703045,
+    "name": "Casa Forestal",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12463217473",
+    "lat": 28.1231369,
+    "lon": -17.2588475,
+    "name": "Alto de Cherelep\u00edn",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463393765",
+    "lat": 28.095206,
+    "lon": -17.2457519,
+    "name": "Paredes",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12463393766",
+    "lat": 28.1002497,
+    "lon": -17.2318534,
+    "name": "Orillas de Isque",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463393796",
+    "lat": 28.086876,
+    "lon": -17.2362767,
+    "name": "El Cabezo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463432983",
+    "lat": 28.0903513,
+    "lon": -17.2447269,
+    "name": "Fuente Barranquillo",
+    "category": "natural",
+    "subtype": "spring",
+    "importance": 1
+  },
+  {
+    "id": "node/12463432984",
+    "lat": 28.0912094,
+    "lon": -17.2455266,
+    "name": "Roquillo de Alajer\u00f3",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463658212",
+    "lat": 28.083931,
+    "lon": -17.2261928,
+    "name": "El Azadoe",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463658215",
+    "lat": 28.0620719,
+    "lon": -17.2271602,
+    "name": "Cabezo de las Vetillas",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12463658322",
+    "lat": 28.067431,
+    "lon": -17.2359838,
+    "name": "La Saldena",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463831783",
+    "lat": 28.0513723,
+    "lon": -17.2171316,
+    "name": "El Repecho",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463833181",
+    "lat": 28.058154,
+    "lon": -17.2111487,
+    "name": "El Frenito",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12463833275",
+    "lat": 28.0694313,
+    "lon": -17.2287214,
+    "name": "Lobeli\u00f3n",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12466943920",
+    "lat": 28.0666205,
+    "lon": -17.2206783,
+    "name": "Barranco de Santiago o Guarimiar",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12466943924",
+    "lat": 28.0718277,
+    "lon": -17.2135522,
+    "name": "Plan de ka Jueza",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12467168184",
+    "lat": 28.1943898,
+    "lon": -17.1968041,
+    "name": "Las Casitas",
+    "category": "place",
+    "subtype": "hamlet",
+    "importance": 1
+  },
+  {
+    "id": "node/12467477174",
+    "lat": 28.1182449,
+    "lon": -17.2339935,
+    "name": "Degollada de la Aguelisma",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12467477175",
+    "lat": 28.1238804,
+    "lon": -17.2246759,
+    "name": "Ermita de Nuestra Senora de Lourdes",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12467576786",
+    "lat": 28.1320831,
+    "lon": -17.2057372,
+    "name": "El Carmen",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12471942076",
+    "lat": 28.154659,
+    "lon": -17.1681279,
+    "name": "Puntas Coloradas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12471942077",
+    "lat": 28.1570857,
+    "lon": -17.1737363,
+    "name": "El Moralito",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12471942094",
+    "lat": 28.1498202,
+    "lon": -17.1887826,
+    "name": "Punta de la Cruz",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12471942095",
+    "lat": 28.1491005,
+    "lon": -17.1857404,
+    "name": "Gollada de Galuche",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12471991315",
+    "lat": 28.1439212,
+    "lon": -17.179537,
+    "name": "Enchereda",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12471991317",
+    "lat": 28.1382896,
+    "lon": -17.1861033,
+    "name": "Punta Yuera",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12471991318",
+    "lat": 28.1373028,
+    "lon": -17.1833984,
+    "name": "Montes Claros",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12472046791",
+    "lat": 28.1366756,
+    "lon": -17.1233131,
+    "name": "Chapadelas Orijamas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473397113",
+    "lat": 28.1440725,
+    "lon": -17.206136,
+    "name": "La Lajita",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473457099",
+    "lat": 28.1588727,
+    "lon": -17.214103,
+    "name": "El Ancosillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473457103",
+    "lat": 28.1644175,
+    "lon": -17.2170193,
+    "name": "Cerro Moldor",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473457104",
+    "lat": 28.1701788,
+    "lon": -17.2119386,
+    "name": "Cabezo de Camacho",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473457105",
+    "lat": 28.1679546,
+    "lon": -17.2091734,
+    "name": "Degollada del Chorillo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473457112",
+    "lat": 28.1556449,
+    "lon": -17.2134905,
+    "name": "Cabeza de la Mesa",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473481043",
+    "lat": 28.1342385,
+    "lon": -17.2377884,
+    "name": "Plan de Remula",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473481044",
+    "lat": 28.1346061,
+    "lon": -17.2442219,
+    "name": "Chamusco de Alejo",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473481045",
+    "lat": 28.1289049,
+    "lon": -17.2435062,
+    "name": "Degollada de los Helechos",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473481047",
+    "lat": 28.1226485,
+    "lon": -17.2426017,
+    "name": "Degollada de Cherelep\u00edn",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473481049",
+    "lat": 28.1493444,
+    "lon": -17.2449259,
+    "name": "Juego de Bolas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12473481091",
+    "lat": 28.1340182,
+    "lon": -17.2881605,
+    "name": "Las Cabecillas",
+    "category": "place",
+    "subtype": "locality",
+    "importance": 1
+  },
+  {
+    "id": "node/12585783607",
+    "lat": 28.0726031,
+    "lon": -17.159419,
+    "name": "Morales",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12585783608",
+    "lat": 28.087737,
+    "lon": -17.1979665,
+    "name": "La Monta\u00f1eta",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12585783616",
+    "lat": 28.1827232,
+    "lon": -17.1907778,
+    "name": "Andenes",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/12585783618",
+    "lat": 28.1814059,
+    "lon": -17.211548,
+    "name": "Traves\u00eda",
+    "category": "natural",
+    "subtype": "peak",
+    "importance": 1
+  },
+  {
+    "id": "node/13233583799",
+    "lat": 28.0934024,
+    "lon": -17.1137863,
+    "name": "Polic\u00eda Local San Sebasti\u00e1n de La Gomera",
+    "category": "amenity",
+    "subtype": "police",
+    "importance": 1
+  }
+]

@@ -1,0 +1,70 @@
+name: flutter_geo_ar
+description: Geo-AR plugin for Flutter. Optimized v1.5 with Native Sensor Fusion, Isolate Offloading, DEM support, and Visual Correction.
+version: 0.0.1
+homepage: https://github.com/afroufeq/flutter_geo_ar
+repository: https://github.com/afroufeq/flutter_geo_ar
+issue_tracker: https://github.com/afroufeq/flutter_geo_ar/issues
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Sensores y Cámara
+  camera: ^0.11.0
+  geolocator: ^11.0.0
+  permission_handler: ^11.3.0
+  sensors_plus: ^5.0.0
+  wakelock_plus: ^1.2.0
+  
+  # Matemáticas y Datos
+  vector_math: ^2.1.4
+  proj4dart: ^3.0.0
+  
+  # Almacenamiento y Rutas
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  shared_preferences: ^2.2.0
+  
+  # UI y Formatos
+  font_awesome_flutter: ^10.7.0
+  image: ^4.1.0
+  xml: ^6.5.0
+  
+  # Internacionalización
+  slang: ^3.31.0
+  slang_flutter: ^3.31.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.9
+  slang_build_runner: ^3.31.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.trackingsport.geoar
+        pluginClass: FlutterGeoArPlugin
+      ios:
+        pluginClass: FlutterGeoArPlugin
+
+  assets:
+    - assets/fonts/
+    - assets/translations/
+    # NOTA: Los assets de datos (DEMs y POIs) deben estar en la app que integra el plugin,
+    # no dentro del plugin mismo. Ver example/pubspec.yaml para un ejemplo.
+
+  fonts:
+    - family: Urbanist
+      fonts:
+        - asset: assets/fonts/Urbanist-Thin.ttf
+          weight: 100
