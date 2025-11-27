@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_geo_ar/src/utils/telemetry_service.dart';
-import 'package:flutter_geo_ar/src/utils/debug_metrics.dart';
 
 void main() {
   group('TelemetryService', () {

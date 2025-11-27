@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_geo_ar/src/poi/poi_renderer.dart';
 import 'package:flutter_geo_ar/src/poi/poi_model.dart';
 import 'package:flutter_geo_ar/src/sensors/fused_data.dart';
+import 'package:flutter_geo_ar/src/horizon/horizon_generator.dart';
 import 'dart:ui';
 
 void main() {
@@ -41,7 +42,11 @@ void main() {
     late Size screenSize;
 
     setUp(() {
-      renderer = PoiRenderer(focalLength: 500.0, maxDistance: 20000.0);
+      renderer = PoiRenderer(
+        focalLength: 500.0,
+        maxDistance: 20000.0,
+        minImportance: 1,
+      );
 
       pois = [
         Poi(
@@ -83,12 +88,18 @@ void main() {
       final r = PoiRenderer();
       expect(r.focalLength, equals(520.0));
       expect(r.maxDistance, equals(20000.0));
+      expect(r.minImportance, equals(1));
     });
 
     test('debe crearse con parámetros personalizados', () {
-      final r = PoiRenderer(focalLength: 600.0, maxDistance: 15000.0);
+      final r = PoiRenderer(
+        focalLength: 600.0,
+        maxDistance: 15000.0,
+        minImportance: 5,
+      );
       expect(r.focalLength, equals(600.0));
       expect(r.maxDistance, equals(15000.0));
+      expect(r.minImportance, equals(5));
     });
 
     test('projectPois debe retornar lista vacía si no hay POIs', () {
@@ -102,6 +113,133 @@ void main() {
       );
 
       expect(result.pois, isEmpty);
+      expect(result.totalProcessed, equals(0));
+      expect(result.behindUser, equals(0));
+      expect(result.tooFar, equals(0));
+      expect(result.lowImportance, equals(0));
+    });
+
+    test('projectPois debe filtrar POIs con importancia menor a minImportance', () {
+      // Configurar renderer con minImportance = 5
+      final rendererWithMinImp = PoiRenderer(
+        focalLength: 500.0,
+        maxDistance: 20000.0,
+        minImportance: 5,
+      );
+
+      final poisVaryingImportance = [
+        Poi(
+          id: 'low1',
+          name: 'Low 1',
+          lat: 28.500001,
+          lon: -16.500001,
+          elevation: 500.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 2, // Debe ser filtrado
+        ),
+        Poi(
+          id: 'low2',
+          name: 'Low 2',
+          lat: 28.500002,
+          lon: -16.500002,
+          elevation: 500.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 4, // Debe ser filtrado
+        ),
+        Poi(
+          id: 'high1',
+          name: 'High 1',
+          lat: 28.500003,
+          lon: -16.500003,
+          elevation: 500.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 5, // No debe ser filtrado
+        ),
+        Poi(
+          id: 'high2',
+          name: 'High 2',
+          lat: 28.500004,
+          lon: -16.500004,
+          elevation: 500.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 8, // No debe ser filtrado
+        ),
+      ];
+
+      final result = rendererWithMinImp.projectPois(
+        poisVaryingImportance,
+        28.5,
+        -16.5,
+        500.0,
+        sensors,
+        screenSize,
+      );
+
+      expect(result.totalProcessed, equals(4));
+      expect(result.lowImportance, equals(2)); // Dos POIs con importancia < 5
+      // Los POIs visibles dependen de otros filtros (geometría, distancia)
+      // pero ninguno debe tener importancia < 5
+      for (final poi in result.pois) {
+        expect(poi.poi.importance, greaterThanOrEqualTo(5));
+      }
+    });
+
+    test('projectPois debe incluir todos los POIs si minImportance es 1', () {
+      // Configurar renderer con minImportance = 1 (mínimo posible)
+      final rendererMinImp1 = PoiRenderer(
+        focalLength: 500.0,
+        maxDistance: 20000.0,
+        minImportance: 1,
+      );
+
+      final poisVaryingImportance = [
+        Poi(
+          id: 'imp1',
+          name: 'Imp 1',
+          lat: 28.500001,
+          lon: -16.500001,
+          elevation: 500.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 1,
+        ),
+        Poi(
+          id: 'imp5',
+          name: 'Imp 5',
+          lat: 28.500002,
+          lon: -16.500002,
+          elevation: 500.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 5,
+        ),
+        Poi(
+          id: 'imp10',
+          name: 'Imp 10',
+          lat: 28.500003,
+          lon: -16.500003,
+          elevation: 500.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 10,
+        ),
+      ];
+
+      final result = rendererMinImp1.projectPois(
+        poisVaryingImportance,
+        28.5,
+        -16.5,
+        500.0,
+        sensors,
+        screenSize,
+      );
+
+      expect(result.totalProcessed, equals(3));
+      expect(result.lowImportance, equals(0)); // Ninguno filtrado por importancia
     });
 
     test('projectPois debe filtrar POIs detrás del usuario', () {
@@ -459,6 +597,100 @@ void main() {
 
       expect(result.pois, isA<List<RenderedPoi>>());
       expect(result.pois.length, lessThanOrEqualTo(manyPois.length));
+    });
+
+    test('projectPois sin horizonProfile debe reportar 0 horizonCulled', () {
+      final result = renderer.projectPois(
+        pois,
+        28.5,
+        -16.5,
+        500.0,
+        sensors,
+        screenSize,
+      );
+
+      expect(result.horizonCulled, equals(0));
+    });
+
+    test('projectPois con horizonProfile que oculta POI debe filtrar correctamente', () {
+      // Crear un perfil de horizonte artificial donde todo a 0° tiene elevación de 10°
+      final angles = List.generate(360, (i) => i == 0 ? 10.0 : -90.0);
+      final horizonProfile = HorizonProfile(angles, 1.0);
+
+      // POI al norte (bearing ~0°) con elevación baja (será ocultado)
+      final poisToBlock = [
+        Poi(
+          id: 'blocked',
+          name: 'Blocked POI',
+          lat: 28.51,
+          lon: -16.5,
+          elevation: 510.0, // Solo 10m por encima del usuario
+          category: 'generic',
+          subtype: 'default',
+          importance: 5,
+        ),
+      ];
+
+      final result = renderer.projectPois(
+        poisToBlock,
+        28.5,
+        -16.5,
+        500.0,
+        sensors,
+        screenSize,
+        horizonProfile: horizonProfile,
+      );
+
+      // El POI debe ser filtrado por el horizonte
+      expect(result.horizonCulled, greaterThan(0));
+    });
+
+    test('projectPois con horizonProfile que no oculta POI debe permitir verlo', () {
+      // Crear un perfil de horizonte artificial donde todo está a -90° (sin obstáculos)
+      final angles = List.generate(360, (i) => -90.0);
+      final horizonProfile = HorizonProfile(angles, 1.0);
+
+      // POI visible
+      final poisVisible = [
+        Poi(
+          id: 'visible',
+          name: 'Visible POI',
+          lat: 28.500001,
+          lon: -16.500001,
+          elevation: 550.0,
+          category: 'generic',
+          subtype: 'default',
+          importance: 5,
+        ),
+      ];
+
+      final result = renderer.projectPois(
+        poisVisible,
+        28.5,
+        -16.5,
+        500.0,
+        sensors,
+        screenSize,
+        horizonProfile: horizonProfile,
+      );
+
+      // No debe haber POIs filtrados por el horizonte
+      expect(result.horizonCulled, equals(0));
+    });
+
+    test('projectPois debe incluir horizonCulled en estadísticas', () {
+      final result = renderer.projectPois(
+        pois,
+        28.5,
+        -16.5,
+        500.0,
+        sensors,
+        screenSize,
+      );
+
+      // Verificar que el campo existe y es un número
+      expect(result.horizonCulled, isA<int>());
+      expect(result.horizonCulled, greaterThanOrEqualTo(0));
     });
   });
 }

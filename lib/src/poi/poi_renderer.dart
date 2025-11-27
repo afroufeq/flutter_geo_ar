@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:vector_math/vector_math_64.dart';
 import 'poi_model.dart';
 import '../sensors/fused_data.dart';
+import '../horizon/horizon_generator.dart';
 
 class RenderedPoi {
   final double x, y, size, distance;
@@ -16,6 +17,7 @@ class ProjectionResult {
   final int totalProcessed;
   final int behindUser;
   final int tooFar;
+  final int lowImportance;
   final int horizonCulled;
 
   ProjectionResult({
@@ -23,6 +25,7 @@ class ProjectionResult {
     required this.totalProcessed,
     required this.behindUser,
     required this.tooFar,
+    required this.lowImportance,
     this.horizonCulled = 0,
   });
 }
@@ -30,16 +33,23 @@ class ProjectionResult {
 class PoiRenderer {
   double focalLength;
   double maxDistance;
-  PoiRenderer({this.focalLength = 520.0, this.maxDistance = 20000.0});
+  int minImportance;
+  PoiRenderer({
+    this.focalLength = 520.0,
+    this.maxDistance = 20000.0,
+    this.minImportance = 1,
+  });
 
   /// Proyecta POIs en la pantalla
   /// Ahora retorna estadísticas detalladas de filtrado
   ProjectionResult projectPois(
       List<Poi> pois, double userLat, double userLon, double userAlt, FusedData sensors, Size screenSize,
-      {double calibration = 0.0}) {
+      {double calibration = 0.0, HorizonProfile? horizonProfile}) {
     final out = <RenderedPoi>[];
     int behindUserCount = 0;
     int tooFarCount = 0;
+    int lowImportanceCount = 0;
+    int horizonCulledCount = 0;
     final radUserLat = radians(userLat);
     final cosUserLat = cos(radUserLat);
     final headingRad = radians(((sensors.heading ?? 0) + calibration) % 360.0);
@@ -55,6 +65,12 @@ class PoiRenderer {
     final sinPitch = sin(pitchRad);
 
     for (final p in pois) {
+      // Filtrar por importancia mínima
+      if (p.importance < minImportance) {
+        lowImportanceCount++;
+        continue;
+      }
+
       final dx = (p.lon - userLon) * (111320.0 * cosUserLat);
       final dy = (p.lat - userLat) * 110540.0;
       final dz = (p.elevation ?? 0.0) - userAlt;
@@ -82,6 +98,22 @@ class PoiRenderer {
         continue;
       }
 
+      // Horizon culling: verificar si el POI está oculto por el horizonte
+      if (horizonProfile != null) {
+        // Calcular bearing (rumbo) hacia el POI
+        final bearing = (atan2(dx, dy) * 180 / pi + 360) % 360;
+
+        // Calcular ángulo de elevación del POI
+        final horizontalDist = sqrt(dx * dx + dy * dy);
+        final elevationAngle = atan2(dz, horizontalDist) * 180 / pi;
+
+        // Verificar si está oculto por el horizonte
+        if (horizonProfile.isOccluded(bearing, elevationAngle)) {
+          horizonCulledCount++;
+          continue;
+        }
+      }
+
       // Proyección perspectiva corregida
       final px = screenSize.width / 2 + (rx / rzRotated) * focalLength;
       final py = screenSize.height / 2 - (dzRotated / rzRotated) * focalLength;
@@ -94,7 +126,8 @@ class PoiRenderer {
       totalProcessed: pois.length,
       behindUser: behindUserCount,
       tooFar: tooFarCount,
-      horizonCulled: 0, // TODO: Implementar cuando se añada horizon culling
+      lowImportance: lowImportanceCount,
+      horizonCulled: horizonCulledCount,
     );
   }
 }

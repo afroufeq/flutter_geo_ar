@@ -54,6 +54,7 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
         // Detener sensores
         motionManager.stopDeviceMotionUpdates()
         locationManager.stopUpdatingLocation()
+        locationManager.stopUpdatingHeading()
         
         // Limpiar throttling
         throttleTimer?.invalidate()
@@ -126,6 +127,9 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
         locationManager.pausesLocationUpdatesAutomatically = true
         
         locationManager.startUpdatingLocation()
+        
+        // Iniciar actualizaciones de heading para obtener precisión de la brújula
+        locationManager.startUpdatingHeading()
     }
     
     /**
@@ -198,6 +202,17 @@ extension SensorStreamHandler: CLLocationManagerDelegate {
         ]
         
         pushToThrottler(data: locationData)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        // Capturar precisión del heading (brújula)
+        // headingAccuracy en grados: negativo = inválido, < 10 = alta, 10-30 = media, 30-90 = baja, > 90 = no fiable
+        let headingAccuracyData: [String: Any] = [
+            "headingAccuracy": newHeading.headingAccuracy,
+            "ts": Date().timeIntervalSince1970 * 1000.0
+        ]
+        
+        pushToThrottler(data: headingAccuracyData)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

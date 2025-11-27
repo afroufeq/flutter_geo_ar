@@ -9,6 +9,7 @@ import '../poi/poi_model.dart';
 import '../poi/poi_painter.dart';
 import '../poi/poi_loader.dart';
 import '../poi/dem_service.dart';
+import '../poi/declutter_mode.dart';
 import '../storage/calibration_service.dart';
 import '../visual/visual_tracking.dart';
 import '../horizon/horizon_generator.dart';
@@ -66,6 +67,29 @@ class GeoArView extends StatefulWidget {
   /// Por defecto es español ('es')
   final String language;
 
+  /// Modo de declutter para controlar solapamientos entre etiquetas de POIs
+  ///
+  /// Controla cómo se manejan los solapamientos entre etiquetas:
+  /// - DeclutterMode.off: Sin filtrado, muestra todos los POIs
+  /// - DeclutterMode.light: Solo evita overlaps grandes (>80%)
+  /// - DeclutterMode.normal: Evita cualquier overlap (default)
+  /// - DeclutterMode.aggressive: Mayor spacing entre etiquetas
+  final DeclutterMode declutterMode;
+
+  /// Distancia máxima en metros para mostrar POIs
+  ///
+  /// Los POIs que estén más lejos que esta distancia no se mostrarán.
+  /// Por defecto es 20000 metros (20 km).
+  final double maxDistance;
+
+  /// Importancia mínima de los POIs a mostrar (escala 1-10)
+  ///
+  /// Los POIs con importancia menor que este valor no se mostrarán.
+  /// - 1: Muestra todos los POIs
+  /// - 5: Muestra POIs de importancia media y alta (default)
+  /// - 10: Solo muestra POIs muy importantes
+  final int minImportance;
+
   const GeoArView({
     super.key,
     this.pois = const [],
@@ -83,6 +107,9 @@ class GeoArView extends StatefulWidget {
     this.showDebugOverlay = false,
     this.showPerformanceMetrics = true,
     this.language = 'es',
+    this.declutterMode = DeclutterMode.normal,
+    this.maxDistance = 20000.0,
+    this.minImportance = 5,
   }) : assert(
           pois.length > 0 || poisPath != null,
           'Debe proporcionar POIs directamente o mediante poisPath',
@@ -104,6 +131,7 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
   double _calibrationOffset = 0.0;
   bool _isCalibrating = false;
   bool _showDebugOverlay = false;
+  bool _showCameraInDebug = false; // Controla si se muestra la cámara en modo debug
 
   // Telemetry service para métricas de debug
   final TelemetryService _telemetry = TelemetryService();
@@ -289,6 +317,9 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
         'calibration': _calibrationOffset,
         'focal': widget.focalLength,
         'demPath': widget.demPath, // Pasar demPath para el worker
+        'maxDistance': widget.maxDistance,
+        'minImportance': widget.minImportance,
+        'horizonProfile': _horizonProfile?.toMap(), // Enviar perfil del horizonte si está disponible
       };
 
       final frameStart = DateTime.now();
@@ -488,8 +519,8 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
   /// - Experiencia inmersiva de pantalla completa
   /// - Compatible con cualquier resolución de cámara y dispositivo
   Widget _buildScaledCameraPreview() {
-    // Si está en modo debug, mostrar fondo de debug aunque la cámara esté inicializada
-    if (widget.debugMode) {
+    // Si está en modo debug Y no se ha activado la vista de cámara, mostrar fondo de debug
+    if (widget.debugMode && !_showCameraInDebug) {
       return CustomPaint(
         painter: _DebugBackgroundPainter(),
         child: Container(),
@@ -542,6 +573,16 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: [
+          // Botón para alternar cámara/fondo azul solo en modo DEBUG
+          if (widget.debugMode && _camController != null && _camController!.value.isInitialized)
+            IconButton(
+              icon: Icon(
+                _showCameraInDebug ? Icons.videocam : Icons.videocam_off,
+                color: _showCameraInDebug ? Colors.green : Colors.white,
+              ),
+              onPressed: () => setState(() => _showCameraInDebug = !_showCameraInDebug),
+              tooltip: _showCameraInDebug ? 'Ocultar cámara' : 'Mostrar cámara',
+            ),
           if (widget.showDebugOverlay)
             IconButton(
               icon: Icon(
@@ -564,7 +605,14 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
           fit: StackFit.expand,
           children: [
             _buildScaledCameraPreview(),
-            CustomPaint(size: Size.infinite, painter: PoiPainter(_projectedPois, debugMode: widget.debugMode)),
+            CustomPaint(
+              size: Size.infinite,
+              painter: PoiPainter(
+                _projectedPois,
+                debugMode: widget.debugMode,
+                declutterMode: widget.declutterMode,
+              ),
+            ),
             // Dibujar el horizonte si está habilitado y disponible
             if (widget.showHorizon && _horizonProfile != null && _currentSensorData != null)
               CustomPaint(

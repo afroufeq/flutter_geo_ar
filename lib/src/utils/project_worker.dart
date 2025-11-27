@@ -3,6 +3,7 @@ import 'dart:ui';
 import '../poi/poi_renderer.dart';
 import '../poi/poi_model.dart';
 import '../sensors/fused_data.dart';
+import '../horizon/horizon_generator.dart';
 
 void projectWorkerEntry(SendPort sendPort) {
   final port = ReceivePort();
@@ -34,6 +35,13 @@ Map<String, dynamic> _processFrame(Map<String, dynamic> input, PoiRenderer rende
 
   renderer.focalLength = (input['focal'] as num).toDouble();
   renderer.maxDistance = (input['maxDistance'] as num?)?.toDouble() ?? 20000.0;
+  renderer.minImportance = (input['minImportance'] as num?)?.toInt() ?? 1;
+
+  // Deserializar HorizonProfile si está presente
+  HorizonProfile? horizonProfile;
+  if (input.containsKey('horizonProfile') && input['horizonProfile'] != null) {
+    horizonProfile = HorizonProfile.fromMap(input['horizonProfile'] as Map<String, dynamic>);
+  }
 
   // Medir tiempo de proyección
   final projectionStart = DateTime.now();
@@ -44,11 +52,12 @@ Map<String, dynamic> _processFrame(Map<String, dynamic> input, PoiRenderer rende
       (input['userAlt'] as num).toDouble(),
       sensors,
       Size((input['width'] as num).toDouble(), (input['height'] as num).toDouble()),
-      calibration: (input['calibration'] as num).toDouble());
+      calibration: (input['calibration'] as num).toDouble(),
+      horizonProfile: horizonProfile);
   final projectionEnd = DateTime.now();
   final projectionMs = projectionEnd.difference(projectionStart).inMicroseconds / 1000.0;
 
-  // TODO: Aquí iría el decluttering cuando se implemente
+  // El decluttering se realiza en PoiPainter, no en el worker de proyección
   final declutterMs = 0.0;
 
   final result = projectionResult.pois
@@ -65,6 +74,12 @@ Map<String, dynamic> _processFrame(Map<String, dynamic> input, PoiRenderer rende
   final endTime = DateTime.now();
   final totalMs = endTime.difference(startTime).inMicroseconds / 1000.0;
 
+  // Calcular total de POIs filtrados
+  final totalFiltered = projectionResult.behindUser +
+      projectionResult.tooFar +
+      projectionResult.lowImportance +
+      projectionResult.horizonCulled;
+
   // Retornar resultado con métricas detalladas
   return {
     'pois': result,
@@ -74,9 +89,10 @@ Map<String, dynamic> _processFrame(Map<String, dynamic> input, PoiRenderer rende
       'totalMs': totalMs,
       'totalPois': projectionResult.totalProcessed,
       'visiblePois': projectionResult.pois.length,
-      'filteredPois': projectionResult.totalProcessed - projectionResult.pois.length,
+      'filteredPois': totalFiltered,
       'behindUser': projectionResult.behindUser,
       'tooFar': projectionResult.tooFar,
+      'lowImportance': projectionResult.lowImportance,
       'horizonCulled': projectionResult.horizonCulled,
     }
   };

@@ -23,7 +23,6 @@ class DebugMetrics {
   final double calibrationOffset;
 
   // Sistema
-  final double memoryMb;
   final int isolateCallbacks;
   final bool cacheActive;
 
@@ -44,7 +43,6 @@ class DebugMetrics {
     this.pitch,
     this.roll,
     this.calibrationOffset = 0.0,
-    this.memoryMb = 0.0,
     this.isolateCallbacks = 0,
     this.cacheActive = false,
   });
@@ -66,7 +64,6 @@ class DebugMetrics {
     double? pitch,
     double? roll,
     double? calibrationOffset,
-    double? memoryMb,
     int? isolateCallbacks,
     bool? cacheActive,
   }) {
@@ -87,7 +84,6 @@ class DebugMetrics {
       pitch: pitch ?? this.pitch,
       roll: roll ?? this.roll,
       calibrationOffset: calibrationOffset ?? this.calibrationOffset,
-      memoryMb: memoryMb ?? this.memoryMb,
       isolateCallbacks: isolateCallbacks ?? this.isolateCallbacks,
       cacheActive: cacheActive ?? this.cacheActive,
     );

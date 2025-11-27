@@ -28,8 +28,10 @@ class SensorEventStreamHandler(private val context: Context) :
     private var sensorManager: SensorManager? = null
     private var locationManager: LocationManager? = null
     private var rotationSensor: Sensor? = null
+    private var magnetometer: Sensor? = null
     private var throttler: SensorEventThrottler? = null
     private var eventSink: EventChannel.EventSink? = null
+    private var magnetometerAccuracy: Int = SensorManager.SENSOR_STATUS_UNRELIABLE
 
     override fun onListen(arguments: Any?, events: EventChannel.EventSink?) {
         eventSink = events
@@ -58,6 +60,12 @@ class SensorEventStreamHandler(private val context: Context) :
 
         rotationSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR)
         rotationSensor?.also { s ->
+            sensorManager?.registerListener(this, s, sensorDelay)
+        }
+
+        // Registrar magnetómetro para obtener precisión
+        magnetometer = sensorManager?.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)
+        magnetometer?.also { s ->
             sensorManager?.registerListener(this, s, sensorDelay)
         }
 
@@ -142,11 +150,12 @@ class SensorEventStreamHandler(private val context: Context) :
             // Normalizar azimuth a 0-360
             val heading = if (azimuth < 0) azimuth + 360f else azimuth
 
-            // Enviar datos de orientación al throttler
+            // Enviar datos de orientación al throttler incluyendo precisión del magnetómetro
             val orientationData = mapOf(
                 "heading" to heading,
                 "pitch" to pitch,
                 "roll" to roll,
+                "magnetometerAccuracy" to magnetometerAccuracy,
                 "ts" to System.currentTimeMillis()
             )
             throttler?.push(orientationData)
@@ -154,7 +163,11 @@ class SensorEventStreamHandler(private val context: Context) :
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        // No se requiere acción para cambios de precisión
+        // Capturar cambios de precisión del magnetómetro
+        if (sensor?.type == Sensor.TYPE_MAGNETIC_FIELD) {
+            magnetometerAccuracy = accuracy
+            // Valores: 0=SENSOR_STATUS_UNRELIABLE, 1=LOW, 2=MEDIUM, 3=HIGH
+        }
     }
 
     override fun onLocationChanged(location: Location) {

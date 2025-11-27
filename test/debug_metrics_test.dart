@@ -22,7 +22,6 @@ void main() {
       expect(metrics.pitch, isNull);
       expect(metrics.roll, isNull);
       expect(metrics.calibrationOffset, equals(0.0));
-      expect(metrics.memoryMb, equals(0.0));
       expect(metrics.isolateCallbacks, equals(0));
       expect(metrics.cacheActive, isFalse);
     });
@@ -45,7 +44,6 @@ void main() {
         pitch: -10.5,
         roll: 2.3,
         calibrationOffset: -15.0,
-        memoryMb: 42.5,
         isolateCallbacks: 100,
         cacheActive: true,
       );
@@ -66,7 +64,6 @@ void main() {
       expect(metrics.pitch, equals(-10.5));
       expect(metrics.roll, equals(2.3));
       expect(metrics.calibrationOffset, equals(-15.0));
-      expect(metrics.memoryMb, equals(42.5));
       expect(metrics.isolateCallbacks, equals(100));
       expect(metrics.cacheActive, isTrue);
     });
@@ -177,12 +174,10 @@ void main() {
         const original = DebugMetrics();
 
         final copied = original.copyWith(
-          memoryMb: 42.5,
           isolateCallbacks: 100,
           cacheActive: true,
         );
 
-        expect(copied.memoryMb, equals(42.5));
         expect(copied.isolateCallbacks, equals(100));
         expect(copied.cacheActive, isTrue);
       });

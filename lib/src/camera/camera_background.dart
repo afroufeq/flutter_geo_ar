@@ -12,7 +12,6 @@ class CameraBackground extends StatefulWidget {
 
 class CameraBackgroundState extends State<CameraBackground> with WidgetsBindingObserver {
   final CameraControllerBridge _bridge = CameraControllerBridge();
-  bool _isReady = false;
 
   @override
   void initState() {
@@ -24,7 +23,7 @@ class CameraBackgroundState extends State<CameraBackground> with WidgetsBindingO
   Future<void> _init() async {
     if (widget.camera == null) return;
     await _bridge.initialize(widget.camera!);
-    if (mounted) setState(() => _isReady = true);
+    if (mounted) setState(() {});
   }
 
   // Métodos públicos para control desde GeoArView
@@ -50,8 +49,10 @@ class CameraBackgroundState extends State<CameraBackground> with WidgetsBindingO
     // TEMPORAL: Fondo azul para pruebas en oficina
     return Container(color: Colors.blue);
 
-    // TODO: Descomentar para volver a usar la cámara en pruebas de campo
-    // if (!_isReady || _bridge.controller == null) return Container(color: Colors.black);
+    // NOTE: Descomentar para volver a usar la cámara en pruebas de campo
+    // if (_bridge.controller == null || !_bridge.controller!.value.isInitialized) {
+    //   return Container(color: Colors.black);
+    // }
     // return CameraPreview(_bridge.controller!);
   }
 }

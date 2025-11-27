@@ -1,6 +1,5 @@
 import 'dart:collection';
 import 'dart:developer';
-import 'dart:io' show Platform;
 import 'debug_metrics.dart';
 
 class TelemetryService {
@@ -38,7 +37,6 @@ class TelemetryService {
 
   // System metrics
   int _callbacks = 0;
-  double _memoryMb = 0.0;
 
   // Public getter for callbacks
   int get callbacks => _callbacks;
@@ -131,23 +129,6 @@ class TelemetryService {
     return _cacheHits / total;
   }
 
-  // Update memory metrics (called periodically)
-  void updateMemoryMetrics() {
-    try {
-      // Intentar obtener memoria actual usando ProcessInfo
-      // Nota: Esto solo funciona en plataformas nativas (Android/iOS)
-      if (Platform.isAndroid || Platform.isIOS) {
-        // En Dart, podemos obtener memoria RSS (Resident Set Size)
-        // usando developer tools, pero es limitado
-        // Por ahora, dejamos esto como placeholder para futura implementación
-        _memoryMb = 0.0; // TODO: Implementar con FFI o platform channels
-      }
-    } catch (e) {
-      // Ignorar errores silenciosamente (ej. en web o desktop)
-      _memoryMb = 0.0;
-    }
-  }
-
   // Get current metrics
   DebugMetrics getMetrics() {
     return DebugMetrics(
@@ -169,7 +150,6 @@ class TelemetryService {
       calibrationOffset: _calibrationOffset,
       isolateCallbacks: _callbacks,
       cacheActive: cacheHitRate > 0.0,
-      memoryMb: _memoryMb,
     );
   }
 
@@ -202,6 +182,5 @@ class TelemetryService {
     _roll = null;
     _calibrationOffset = 0.0;
     _callbacks = 0;
-    _memoryMb = 0.0;
   }
 }

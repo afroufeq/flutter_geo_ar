@@ -29,5 +29,31 @@
       "hideDebug": "Ocultar debug",
       "showDebug": "Mostrar debug"
     }
+  },
+  "visualDensity": {
+    "title": "Densidad Visual",
+    "description": "Ajusta la cantidad de información visible en pantalla",
+    "minimal": "Mínima",
+    "low": "Baja",
+    "normal": "Normal",
+    "high": "Alta",
+    "maximum": "Máxima",
+    "hint": "Desliza para ajustar cuántos POIs se muestran",
+    "settings": {
+      "maxDistance": "Distancia máxima",
+      "minImportance": "Importancia mínima",
+      "declutterMode": "Modo anti-solapamiento"
+    }
+  },
+  "sensorAccuracy": {
+    "high": "Alta",
+    "medium": "Media",
+    "low": "Baja",
+    "unreliable": "No fiable",
+    "highDescription": "Precisión alta - Calibración óptima",
+    "mediumDescription": "Precisión media - Puede requerir calibración",
+    "lowDescription": "Precisión baja - Calibración recomendada",
+    "unreliableDescription": "No fiable - Interferencia magnética, calibración necesaria",
+    "tapToCalibrate": "Toca para calibrar"
   }
 }

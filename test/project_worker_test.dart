@@ -11,6 +11,8 @@ List<Map<String, dynamic>> processFrame(Map<String, dynamic> input, PoiRenderer 
   final sensors = FusedData.fromMap(input['sensors']);
 
   renderer.focalLength = (input['focal'] as num).toDouble();
+  renderer.maxDistance = (input['maxDistance'] as num?)?.toDouble() ?? 20000.0;
+  renderer.minImportance = (input['minImportance'] as num?)?.toInt() ?? 1;
 
   final projectionResult = renderer.projectPois(
       pois,
@@ -61,6 +63,8 @@ void main() {
           'timestamp': DateTime.now().millisecondsSinceEpoch,
         },
         'focal': 520.0,
+        'maxDistance': 20000.0,
+        'minImportance': 1,
         'userLat': 28.0,
         'userLon': -16.0,
         'userAlt': 0.0,
@@ -341,8 +345,6 @@ void main() {
     });
 
     test('filtra POIs fuera de rango', () {
-      renderer.maxDistance = 1000.0; // 1km
-
       final input = {
         'pois': [
           {
@@ -371,6 +373,8 @@ void main() {
           'timestamp': DateTime.now().millisecondsSinceEpoch,
         },
         'focal': 520.0,
+        'maxDistance': 1000.0, // 1km
+        'minImportance': 1,
         'userLat': 28.0,
         'userLon': -16.0,
         'userAlt': 0.0,
@@ -383,6 +387,99 @@ void main() {
 
       // El POI lejano debe ser filtrado
       expect(result.length, lessThan(2));
+    });
+
+    test('filtra POIs con importancia menor a minImportance', () {
+      final input = {
+        'pois': [
+          {
+            'id': '1',
+            'name': 'Low Importance',
+            'lat': 28.001,
+            'lon': -16.001,
+            'importance': 2,
+            'category': 'generic',
+            'subtype': 'default',
+          },
+          {
+            'id': '2',
+            'name': 'High Importance',
+            'lat': 28.002,
+            'lon': -16.002,
+            'importance': 8,
+            'category': 'generic',
+            'subtype': 'default',
+          }
+        ],
+        'sensors': {
+          'heading': 0.0,
+          'pitch': 0.0,
+          'roll': 0.0,
+          'timestamp': DateTime.now().millisecondsSinceEpoch,
+        },
+        'focal': 520.0,
+        'maxDistance': 20000.0,
+        'minImportance': 5, // Filtrar POIs con importancia < 5
+        'userLat': 28.0,
+        'userLon': -16.0,
+        'userAlt': 0.0,
+        'width': 1080.0,
+        'height': 1920.0,
+        'calibration': 0.0,
+      };
+
+      final result = processFrame(input, renderer);
+
+      // Solo el POI de alta importancia debe pasar
+      for (final poi in result) {
+        expect(poi['importance'], greaterThanOrEqualTo(5));
+      }
+    });
+
+    test('aplica maxDistance y minImportance correctamente', () {
+      final input = {
+        'pois': [
+          {
+            'id': '1',
+            'name': 'POI 1',
+            'lat': 28.001,
+            'lon': -16.001,
+            'importance': 3,
+            'category': 'generic',
+            'subtype': 'default',
+          },
+          {
+            'id': '2',
+            'name': 'POI 2',
+            'lat': 28.002,
+            'lon': -16.002,
+            'importance': 7,
+            'category': 'generic',
+            'subtype': 'default',
+          }
+        ],
+        'sensors': {
+          'heading': 0.0,
+          'pitch': 0.0,
+          'roll': 0.0,
+          'timestamp': DateTime.now().millisecondsSinceEpoch,
+        },
+        'focal': 520.0,
+        'maxDistance': 30000.0,
+        'minImportance': 5,
+        'userLat': 28.0,
+        'userLon': -16.0,
+        'userAlt': 0.0,
+        'width': 1080.0,
+        'height': 1920.0,
+        'calibration': 0.0,
+      };
+
+      final result = processFrame(input, renderer);
+
+      // Verificar que el renderer recibió los parámetros
+      expect(renderer.maxDistance, 30000.0);
+      expect(renderer.minImportance, 5);
     });
 
     test('maneja diferentes valores de heading', () {

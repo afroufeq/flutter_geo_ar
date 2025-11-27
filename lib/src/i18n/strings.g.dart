@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 42 (21 per locale)
+/// Strings: 82 (41 per locale)
 ///
-/// Built on 2025-11-27 at 12:32 UTC
+/// Built on 2025-11-27 at 14:41 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -150,6 +150,8 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 
 	// Translations
 	late final StringsDebugEs debug = StringsDebugEs._(_root);
+	late final StringsVisualDensityEs visualDensity = StringsVisualDensityEs._(_root);
+	late final StringsSensorAccuracyEs sensorAccuracy = StringsSensorAccuracyEs._(_root);
 }
 
 // Path: debug
@@ -163,6 +165,42 @@ class StringsDebugEs {
 	late final StringsDebugMetricsEs metrics = StringsDebugMetricsEs._(_root);
 	late final StringsDebugModeEs mode = StringsDebugModeEs._(_root);
 	late final StringsDebugActionsEs actions = StringsDebugActionsEs._(_root);
+}
+
+// Path: visualDensity
+class StringsVisualDensityEs {
+	StringsVisualDensityEs._(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	String get title => 'Densidad Visual';
+	String get description => 'Ajusta la cantidad de información visible en pantalla';
+	String get minimal => 'Mínima';
+	String get low => 'Baja';
+	String get normal => 'Normal';
+	String get high => 'Alta';
+	String get maximum => 'Máxima';
+	String get hint => 'Desliza para ajustar cuántos POIs se muestran';
+	late final StringsVisualDensitySettingsEs settings = StringsVisualDensitySettingsEs._(_root);
+}
+
+// Path: sensorAccuracy
+class StringsSensorAccuracyEs {
+	StringsSensorAccuracyEs._(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	String get high => 'Alta';
+	String get medium => 'Media';
+	String get low => 'Baja';
+	String get unreliable => 'No fiable';
+	String get highDescription => 'Precisión alta - Calibración óptima';
+	String get mediumDescription => 'Precisión media - Puede requerir calibración';
+	String get lowDescription => 'Precisión baja - Calibración recomendada';
+	String get unreliableDescription => 'No fiable - Interferencia magnética, calibración necesaria';
+	String get tapToCalibrate => 'Toca para calibrar';
 }
 
 // Path: debug.sections
@@ -222,6 +260,18 @@ class StringsDebugActionsEs {
 	String get showDebug => 'Mostrar debug';
 }
 
+// Path: visualDensity.settings
+class StringsVisualDensitySettingsEs {
+	StringsVisualDensitySettingsEs._(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	String get maxDistance => 'Distancia máxima';
+	String get minImportance => 'Importancia mínima';
+	String get declutterMode => 'Modo anti-solapamiento';
+}
+
 // Path: <root>
 class StringsEn extends Translations {
 	/// You can call this constructor and build your own translation instance of this locale.
@@ -249,6 +299,8 @@ class StringsEn extends Translations {
 
 	// Translations
 	@override late final StringsDebugEn debug = StringsDebugEn._(_root);
+	@override late final StringsVisualDensityEn visualDensity = StringsVisualDensityEn._(_root);
+	@override late final StringsSensorAccuracyEn sensorAccuracy = StringsSensorAccuracyEn._(_root);
 }
 
 // Path: debug
@@ -262,6 +314,42 @@ class StringsDebugEn extends StringsDebugEs {
 	@override late final StringsDebugMetricsEn metrics = StringsDebugMetricsEn._(_root);
 	@override late final StringsDebugModeEn mode = StringsDebugModeEn._(_root);
 	@override late final StringsDebugActionsEn actions = StringsDebugActionsEn._(_root);
+}
+
+// Path: visualDensity
+class StringsVisualDensityEn extends StringsVisualDensityEs {
+	StringsVisualDensityEn._(StringsEn root) : this._root = root, super._(root);
+
+	@override final StringsEn _root; // ignore: unused_field
+
+	// Translations
+	@override String get title => 'Visual Density';
+	@override String get description => 'Adjust the amount of information visible on screen';
+	@override String get minimal => 'Minimal';
+	@override String get low => 'Low';
+	@override String get normal => 'Normal';
+	@override String get high => 'High';
+	@override String get maximum => 'Maximum';
+	@override String get hint => 'Slide to adjust how many POIs are shown';
+	@override late final StringsVisualDensitySettingsEn settings = StringsVisualDensitySettingsEn._(_root);
+}
+
+// Path: sensorAccuracy
+class StringsSensorAccuracyEn extends StringsSensorAccuracyEs {
+	StringsSensorAccuracyEn._(StringsEn root) : this._root = root, super._(root);
+
+	@override final StringsEn _root; // ignore: unused_field
+
+	// Translations
+	@override String get high => 'High';
+	@override String get medium => 'Medium';
+	@override String get low => 'Low';
+	@override String get unreliable => 'Unreliable';
+	@override String get highDescription => 'High accuracy - Optimal calibration';
+	@override String get mediumDescription => 'Medium accuracy - May require calibration';
+	@override String get lowDescription => 'Low accuracy - Calibration recommended';
+	@override String get unreliableDescription => 'Unreliable - Magnetic interference, calibration needed';
+	@override String get tapToCalibrate => 'Tap to calibrate';
 }
 
 // Path: debug.sections
@@ -321,6 +409,18 @@ class StringsDebugActionsEn extends StringsDebugActionsEs {
 	@override String get showDebug => 'Show debug';
 }
 
+// Path: visualDensity.settings
+class StringsVisualDensitySettingsEn extends StringsVisualDensitySettingsEs {
+	StringsVisualDensitySettingsEn._(StringsEn root) : this._root = root, super._(root);
+
+	@override final StringsEn _root; // ignore: unused_field
+
+	// Translations
+	@override String get maxDistance => 'Maximum distance';
+	@override String get minImportance => 'Minimum importance';
+	@override String get declutterMode => 'Anti-overlap mode';
+}
+
 /// Flat map(s) containing all translations.
 /// Only for edge cases! For simple maps, use the map function of this library.
 
@@ -348,6 +448,26 @@ extension on Translations {
 			case 'debug.actions.calibrating': return 'Calibrando: {offset}°';
 			case 'debug.actions.hideDebug': return 'Ocultar debug';
 			case 'debug.actions.showDebug': return 'Mostrar debug';
+			case 'visualDensity.title': return 'Densidad Visual';
+			case 'visualDensity.description': return 'Ajusta la cantidad de información visible en pantalla';
+			case 'visualDensity.minimal': return 'Mínima';
+			case 'visualDensity.low': return 'Baja';
+			case 'visualDensity.normal': return 'Normal';
+			case 'visualDensity.high': return 'Alta';
+			case 'visualDensity.maximum': return 'Máxima';
+			case 'visualDensity.hint': return 'Desliza para ajustar cuántos POIs se muestran';
+			case 'visualDensity.settings.maxDistance': return 'Distancia máxima';
+			case 'visualDensity.settings.minImportance': return 'Importancia mínima';
+			case 'visualDensity.settings.declutterMode': return 'Modo anti-solapamiento';
+			case 'sensorAccuracy.high': return 'Alta';
+			case 'sensorAccuracy.medium': return 'Media';
+			case 'sensorAccuracy.low': return 'Baja';
+			case 'sensorAccuracy.unreliable': return 'No fiable';
+			case 'sensorAccuracy.highDescription': return 'Precisión alta - Calibración óptima';
+			case 'sensorAccuracy.mediumDescription': return 'Precisión media - Puede requerir calibración';
+			case 'sensorAccuracy.lowDescription': return 'Precisión baja - Calibración recomendada';
+			case 'sensorAccuracy.unreliableDescription': return 'No fiable - Interferencia magnética, calibración necesaria';
+			case 'sensorAccuracy.tapToCalibrate': return 'Toca para calibrar';
 			default: return null;
 		}
 	}
@@ -377,6 +497,26 @@ extension on StringsEn {
 			case 'debug.actions.calibrating': return 'Calibrating: {offset}°';
 			case 'debug.actions.hideDebug': return 'Hide debug';
 			case 'debug.actions.showDebug': return 'Show debug';
+			case 'visualDensity.title': return 'Visual Density';
+			case 'visualDensity.description': return 'Adjust the amount of information visible on screen';
+			case 'visualDensity.minimal': return 'Minimal';
+			case 'visualDensity.low': return 'Low';
+			case 'visualDensity.normal': return 'Normal';
+			case 'visualDensity.high': return 'High';
+			case 'visualDensity.maximum': return 'Maximum';
+			case 'visualDensity.hint': return 'Slide to adjust how many POIs are shown';
+			case 'visualDensity.settings.maxDistance': return 'Maximum distance';
+			case 'visualDensity.settings.minImportance': return 'Minimum importance';
+			case 'visualDensity.settings.declutterMode': return 'Anti-overlap mode';
+			case 'sensorAccuracy.high': return 'High';
+			case 'sensorAccuracy.medium': return 'Medium';
+			case 'sensorAccuracy.low': return 'Low';
+			case 'sensorAccuracy.unreliable': return 'Unreliable';
+			case 'sensorAccuracy.highDescription': return 'High accuracy - Optimal calibration';
+			case 'sensorAccuracy.mediumDescription': return 'Medium accuracy - May require calibration';
+			case 'sensorAccuracy.lowDescription': return 'Low accuracy - Calibration recommended';
+			case 'sensorAccuracy.unreliableDescription': return 'Unreliable - Magnetic interference, calibration needed';
+			case 'sensorAccuracy.tapToCalibrate': return 'Tap to calibrate';
 			default: return null;
 		}
 	}

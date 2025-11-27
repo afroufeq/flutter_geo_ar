@@ -4,14 +4,15 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_geo_ar'
-  s.version          = '0.0.2'
-  s.summary          = 'A new Flutter plugin project.'
+  s.version          = '0.0.3'
+  s.summary          = 'Geo-AR plugin for Flutter with Native Sensor Fusion, DEM support, and Visual Correction.'
   s.description      = <<-DESC
-A new Flutter plugin project.
+Geo-AR plugin for Flutter. Optimized v1.5 with Native Sensor Fusion, Isolate Offloading, DEM support, and Visual Correction.
+Provides real-time augmented reality visualization of geographic points of interest with advanced sensor fusion and visual tracking.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/afroufeq/flutter_geo_ar'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'TrackingSport SL' => 'https://github.com/afroufeq' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
@@ -21,9 +22,6 @@ A new Flutter plugin project.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
 
-  # If your plugin requires a privacy manifest, for example if it uses any
-  # required reason APIs, update the PrivacyInfo.xcprivacy file to describe your
-  # plugin's privacy impact, and then uncomment this line. For more information,
-  # see https://developer.apple.com/documentation/bundleresources/privacy_manifest_files
-  # s.resource_bundles = {'flutter_geo_ar_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
+  # Privacy manifest for required reason APIs (camera, sensors, location)
+  s.resource_bundles = {'flutter_geo_ar_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
 end

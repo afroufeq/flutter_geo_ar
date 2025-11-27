@@ -29,5 +29,31 @@
       "hideDebug": "Hide debug",
       "showDebug": "Show debug"
     }
+  },
+  "visualDensity": {
+    "title": "Visual Density",
+    "description": "Adjust the amount of information visible on screen",
+    "minimal": "Minimal",
+    "low": "Low",
+    "normal": "Normal",
+    "high": "High",
+    "maximum": "Maximum",
+    "hint": "Slide to adjust how many POIs are shown",
+    "settings": {
+      "maxDistance": "Maximum distance",
+      "minImportance": "Minimum importance",
+      "declutterMode": "Anti-overlap mode"
+    }
+  },
+  "sensorAccuracy": {
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "unreliable": "Unreliable",
+    "highDescription": "High accuracy - Optimal calibration",
+    "mediumDescription": "Medium accuracy - May require calibration",
+    "lowDescription": "Low accuracy - Calibration recommended",
+    "unreliableDescription": "Unreliable - Magnetic interference, calibration needed",
+    "tapToCalibrate": "Tap to calibrate"
   }
 }

@@ -2,6 +2,13 @@
 
 Todos los cambios importantes de este proyecto serán documentados en este archivo.
 
+
+## [0.0.3] - 2025-11-27
+
+- Sistema de control de densidad visual con slider intuitivo y filtros avanzados de POIs por distancia, importancia y declutter (ver [documentación](/docs/VISUAL_DENSITY_CONTROL.md))
+- Indicador de precisión de sensores con visualización del estado de calibración de brújula en tiempo real (ver [documentación](/docs/SENSOR_ACCURACY_INDICATOR.md))
+
+
 ## [0.0.2] - 2025-11-27
 
 - Agregado sistema de estabilización visual (ver [documentación](/docs/VISUAL_STABILIZATION.md))
