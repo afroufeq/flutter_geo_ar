@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_geo_ar/flutter_geo_ar.dart';
+import 'package:flutter_geo_ar/src/i18n/strings.g.dart';
 
 /// Ejemplo de uso de sensores optimizados con PoseManager
 ///
@@ -125,23 +126,25 @@ class _SensorOptimizationExampleState extends State<SensorOptimizationExample> w
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Optimización de Sensores'), backgroundColor: Colors.blue),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _buildConfigSection(),
-            const SizedBox(height: 20),
-            _buildControlSection(),
-            const SizedBox(height: 20),
-            _buildMetricsSection(),
-            const SizedBox(height: 20),
-            _buildOrientationSection(),
-            const SizedBox(height: 20),
-            _buildLocationSection(),
-          ],
+    return TranslationProvider(
+      child: Scaffold(
+        appBar: AppBar(title: const Text('Optimización de Sensores'), backgroundColor: Colors.blue),
+        body: SingleChildScrollView(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildConfigSection(),
+              const SizedBox(height: 20),
+              _buildControlSection(),
+              const SizedBox(height: 20),
+              _buildMetricsSection(),
+              const SizedBox(height: 20),
+              _buildOrientationSection(),
+              const SizedBox(height: 20),
+              _buildLocationSection(),
+            ],
+          ),
         ),
       ),
     );

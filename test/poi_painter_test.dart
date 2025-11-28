@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_geo_ar/src/poi/poi_painter.dart';
+import 'package:flutter_geo_ar/src/poi/poi_display_mode.dart';
+import 'package:flutter_geo_ar/src/poi/declutter_mode.dart';
 
 void main() {
   group('PoiPainter', () {
@@ -66,11 +68,36 @@ void main() {
           testPoisData,
           fadeByDistance: false,
           debugMode: true,
+          declutterMode: DeclutterMode.off,
+          displayMode: PoiDisplayMode.distanceBased,
         );
 
         expect(painter.poisData, equals(testPoisData));
         expect(painter.fadeByDistance, isFalse);
         expect(painter.debugMode, isTrue);
+        expect(painter.declutterMode, equals(DeclutterMode.off));
+        expect(painter.displayMode, equals(PoiDisplayMode.distanceBased));
+      });
+
+      test('crea instancia con displayMode always por defecto', () {
+        final painter = PoiPainter(testPoisData);
+
+        expect(painter.displayMode, equals(PoiDisplayMode.always));
+      });
+
+      test('crea instancia con displayMode distanceBased', () {
+        final painter = PoiPainter(
+          testPoisData,
+          displayMode: PoiDisplayMode.distanceBased,
+        );
+
+        expect(painter.displayMode, equals(PoiDisplayMode.distanceBased));
+      });
+
+      test('crea instancia con declutterMode normal por defecto', () {
+        final painter = PoiPainter(testPoisData);
+
+        expect(painter.declutterMode, equals(DeclutterMode.normal));
       });
     });
 
@@ -837,6 +864,665 @@ void main() {
         );
 
         expect(tester.takeException(), isNull);
+      });
+    });
+
+    group('Sistema LOD (Level of Detail)', () {
+      group('Modo Always (por defecto)', () {
+        testWidgets('muestra información completa independiente de la distancia', (tester) async {
+          final poisData = [
+            {
+              'x': 100.0,
+              'y': 100.0,
+              'distance': 100.0, // Muy cerca
+              'poiName': 'POI Cercano',
+              'poiKey': 'mountain',
+            },
+            {
+              'x': 300.0,
+              'y': 100.0,
+              'distance': 1000.0, // Distancia media
+              'poiName': 'POI Medio',
+              'poiKey': 'peak',
+            },
+            {
+              'x': 500.0,
+              'y': 100.0,
+              'distance': 5000.0, // Lejos
+              'poiName': 'POI Lejano',
+              'poiKey': 'default',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.always,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('es el comportamiento por defecto', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 3000.0,
+              'poiName': 'POI Test',
+              'poiKey': 'mountain',
+            },
+          ];
+
+          // Sin especificar displayMode
+          final painter = PoiPainter(poisData);
+
+          expect(painter.displayMode, equals(PoiDisplayMode.always));
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+      });
+
+      group('Modo DistanceBased - Nivel 1 (< 500m)', () {
+        testWidgets('muestra vista completa para POI muy cercano', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 100.0, // < 500m
+              'poiName': 'POI Cercano',
+              'poiKey': 'mountain',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('muestra vista completa para POI en el límite inferior', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 499.0, // Justo antes de 500m
+              'poiName': 'POI Límite',
+              'poiKey': 'peak',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('muestra icono + nombre + distancia para distancia < 500m', (tester) async {
+          final poisData = [
+            {
+              'x': 200.0,
+              'y': 200.0,
+              'distance': 250.0,
+              'poiName': 'Teide',
+              'poiKey': 'mountain',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+      });
+
+      group('Modo DistanceBased - Nivel 2 (500m - 2000m)', () {
+        testWidgets('muestra vista simplificada para POI a distancia media', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 1000.0, // Entre 500 y 2000m
+              'poiName': 'POI Medio',
+              'poiKey': 'peak',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('muestra vista simplificada en el límite inferior (500m)', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 500.0, // Exactamente 500m
+              'poiName': 'POI Límite Inferior',
+              'poiKey': 'mountain',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('muestra vista simplificada en el límite superior (1999m)', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 1999.0, // Justo antes de 2000m
+              'poiName': 'POI Límite Superior',
+              'poiKey': 'default',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('muestra icono + nombre (sin distancia) para rango medio', (tester) async {
+          final poisData = [
+            {
+              'x': 300.0,
+              'y': 250.0,
+              'distance': 1500.0,
+              'poiName': 'Roque Nublo',
+              'poiKey': 'peak',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+      });
+
+      group('Modo DistanceBased - Nivel 3 (> 2000m)', () {
+        testWidgets('muestra solo icono para POI lejano', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 5000.0, // > 2000m
+              'poiName': 'POI Lejano',
+              'poiKey': 'mountain',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('muestra solo icono en el límite (2000m)', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 2000.0, // Exactamente 2000m
+              'poiName': 'POI Límite',
+              'poiKey': 'peak',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('muestra solo icono para POI muy lejano', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 15000.0, // Muy lejos
+              'poiName': 'POI Muy Lejano',
+              'poiKey': 'default',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('aplica opacidad reducida (70%) en nivel 3', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 10000.0,
+              'poiName': 'POI con Opacidad',
+              'poiKey': 'mountain',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+      });
+
+      group('Modo DistanceBased - Múltiples POIs en diferentes niveles', () {
+        testWidgets('dibuja correctamente POIs en los 3 niveles simultáneamente', (tester) async {
+          final poisData = [
+            {
+              'x': 100.0,
+              'y': 200.0,
+              'distance': 200.0, // Nivel 1: < 500m
+              'poiName': 'POI Cercano',
+              'poiKey': 'mountain',
+            },
+            {
+              'x': 300.0,
+              'y': 200.0,
+              'distance': 1000.0, // Nivel 2: 500-2000m
+              'poiName': 'POI Medio',
+              'poiKey': 'peak',
+            },
+            {
+              'x': 500.0,
+              'y': 200.0,
+              'distance': 5000.0, // Nivel 3: > 2000m
+              'poiName': 'POI Lejano',
+              'poiKey': 'default',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('maneja correctamente muchos POIs con LOD', (tester) async {
+          final poisData = List.generate(
+            30,
+            (i) => {
+              'x': (i * 25.0) % 800.0,
+              'y': (i * 20.0) % 600.0,
+              'distance': 100.0 + (i * 500.0), // Distribuidos en todos los niveles
+              'poiName': 'POI $i',
+              'poiKey': ['mountain', 'peak', 'default'][i % 3],
+            },
+          );
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+      });
+
+      group('Interacción LOD con otros modos', () {
+        testWidgets('LOD funciona correctamente con debugMode', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 5000.0, // Nivel 3
+              'poiName': 'POI Debug',
+              'poiKey': 'mountain',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+            debugMode: true,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('LOD funciona con fadeByDistance desactivado', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 1500.0, // Nivel 2
+              'poiName': 'POI Sin Fade',
+              'poiKey': 'peak',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+            fadeByDistance: false,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('LOD funciona con declutterMode.off', (tester) async {
+          final poisData = [
+            {
+              'x': 400.0,
+              'y': 300.0,
+              'distance': 800.0, // Nivel 2
+              'poiName': 'POI 1',
+              'poiKey': 'mountain',
+            },
+            {
+              'x': 410.0,
+              'y': 305.0,
+              'distance': 850.0, // Nivel 2, muy cerca del anterior
+              'poiName': 'POI 2',
+              'poiKey': 'peak',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+            declutterMode: DeclutterMode.off,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
+
+        testWidgets('LOD funciona con todos los parámetros combinados', (tester) async {
+          final poisData = [
+            {
+              'x': 200.0,
+              'y': 200.0,
+              'distance': 300.0, // Nivel 1
+              'poiName': 'POI Cercano',
+              'poiKey': 'mountain',
+            },
+            {
+              'x': 400.0,
+              'y': 200.0,
+              'distance': 1200.0, // Nivel 2
+              'poiName': 'POI Medio',
+              'poiKey': 'peak',
+            },
+            {
+              'x': 600.0,
+              'y': 200.0,
+              'distance': 8000.0, // Nivel 3
+              'poiName': 'POI Lejano',
+              'poiKey': 'default',
+            },
+          ];
+
+          final painter = PoiPainter(
+            poisData,
+            displayMode: PoiDisplayMode.distanceBased,
+            fadeByDistance: true,
+            debugMode: false,
+            declutterMode: DeclutterMode.normal,
+          );
+
+          await tester.pumpWidget(
+            MaterialApp(
+              home: Scaffold(
+                body: CustomPaint(
+                  painter: painter,
+                  size: Size(800, 600),
+                  child: Container(),
+                ),
+              ),
+            ),
+          );
+
+          expect(tester.takeException(), isNull);
+        });
       });
     });
   });

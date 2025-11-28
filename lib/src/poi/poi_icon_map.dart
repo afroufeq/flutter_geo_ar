@@ -8,7 +8,21 @@ final Map<String, IconData> poiIcons = {
   'natural:volcano': FontAwesomeIcons.volcano,
   'natural:spring': FontAwesomeIcons.droplet, // O FontAwesomeIcons.water
   'natural:arch': FontAwesomeIcons.archway,
-  
+  'natural:viewpoint': FontAwesomeIcons.eye, // Mirador natural
+  'natural:cave_entrance': FontAwesomeIcons.dungeon, // Entrada de cueva
+  'natural:cape': FontAwesomeIcons.compass, // Cabo/Promontorio
+  'natural:waterfall': FontAwesomeIcons.water, // Cascada
+  'natural:beach': FontAwesomeIcons.umbrellaBeach, // Playa
+  'natural:cliff': FontAwesomeIcons.mountainSun, // Acantilado
+  'natural:rock': FontAwesomeIcons.gem, // Formación rocosa
+  'natural:stone': FontAwesomeIcons.circle, // Piedra
+
+  // --- LEISURE ---
+  'leisure:nature_reserve': FontAwesomeIcons.tree, // Reserva natural
+
+  // --- BOUNDARY ---
+  'boundary:protected_area': FontAwesomeIcons.shieldHeart, // Área protegida
+
   // --- TOURISM ---
   'tourism:viewpoint': FontAwesomeIcons.binoculars,
   'tourism:museum': FontAwesomeIcons.buildingColumns,
@@ -40,7 +54,7 @@ final Map<String, IconData> poiIcons = {
   'place:hamlet': FontAwesomeIcons.tents, // O FontAwesomeIcons.houseUser para aldeas pequeñas
   'place:isolated_dwelling': FontAwesomeIcons.houseChimneyUser,
   'place:farm': FontAwesomeIcons.tractor,
-  
+
   // --- PLACE (Geográfico / Otros) ---
   'place:island': FontAwesomeIcons.umbrellaBeach,
   'place:islet': FontAwesomeIcons.fish,

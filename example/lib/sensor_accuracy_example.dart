@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_geo_ar/flutter_geo_ar.dart';
+import 'package:flutter_geo_ar/src/i18n/strings.g.dart';
 
 /// Ejemplo de uso del indicador de precisión de sensores
 ///
@@ -68,64 +69,69 @@ class _SensorAccuracyExampleState extends State<SensorAccuracyExample> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Sensor Accuracy Example')),
-      body: Stack(
-        children: [
-          // Vista AR (simulada para el ejemplo)
-          Container(
-            color: Colors.black87,
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(Icons.explore, size: 100, color: Colors.white54),
-                  const SizedBox(height: 20),
-                  Text('Vista AR', style: Theme.of(context).textTheme.headlineMedium?.copyWith(color: Colors.white54)),
-                ],
+    return TranslationProvider(
+      child: Scaffold(
+        appBar: AppBar(title: const Text('Sensor Accuracy Example')),
+        body: Stack(
+          children: [
+            // Vista AR (simulada para el ejemplo)
+            Container(
+              color: Colors.black87,
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.explore, size: 100, color: Colors.white54),
+                    const SizedBox(height: 20),
+                    Text(
+                      'Vista AR',
+                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(color: Colors.white54),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
 
-          // Indicador de precisión completo (esquina superior derecha)
-          Positioned(
-            top: 16,
-            right: 16,
-            child: SensorAccuracyIndicator(
-              sensorData: _currentSensorData,
-              showLabel: true,
-              onTap: () {
-                final accuracy = SensorAccuracy.fromFusedData(_currentSensorData);
-                if (accuracy == SensorAccuracy.low || accuracy == SensorAccuracy.unreliable) {
-                  _showCalibrationDialog();
-                }
-              },
-            ),
-          ),
-
-          // Indicador compacto (esquina superior izquierda)
-          Positioned(
-            top: 16,
-            left: 16,
-            child: Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: Colors.black.withValues(alpha: 0.6),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Text('Brújula: ', style: TextStyle(color: Colors.white, fontSize: 12)),
-                  CompactSensorAccuracyIndicator(sensorData: _currentSensorData, onTap: _showCalibrationDialog),
-                ],
+            // Indicador de precisión completo (esquina superior derecha)
+            Positioned(
+              top: 16,
+              right: 16,
+              child: SensorAccuracyIndicator(
+                sensorData: _currentSensorData,
+                showLabel: true,
+                onTap: () {
+                  final accuracy = SensorAccuracy.fromFusedData(_currentSensorData);
+                  if (accuracy == SensorAccuracy.low || accuracy == SensorAccuracy.unreliable) {
+                    _showCalibrationDialog();
+                  }
+                },
               ),
             ),
-          ),
 
-          // Información de debug
-          Positioned(bottom: 16, left: 16, right: 16, child: _buildDebugInfo()),
-        ],
+            // Indicador compacto (esquina superior izquierda)
+            Positioned(
+              top: 16,
+              left: 16,
+              child: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.black.withValues(alpha: 0.6),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Text('Brújula: ', style: TextStyle(color: Colors.white, fontSize: 12)),
+                    CompactSensorAccuracyIndicator(sensorData: _currentSensorData, onTap: _showCalibrationDialog),
+                  ],
+                ),
+              ),
+            ),
+
+            // Información de debug
+            Positioned(bottom: 16, left: 16, right: 16, child: _buildDebugInfo()),
+          ],
+        ),
       ),
     );
   }

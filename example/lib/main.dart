@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter_geo_ar/flutter_geo_ar.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'debug_view_all_example.dart';
+import 'adaptive_throttling_example.dart';
+import 'sensor_accuracy_example.dart';
+import 'sensor_optimization_example.dart';
+import 'visual_density_example.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -106,6 +111,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              child: const Text("👁️ DEBUG: Ver Todo/Ver Normal"),
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const DebugViewAllExample())),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
@@ -216,6 +226,29 @@ class HomeScreen extends StatelessWidget {
                   ),
                 );
               },
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              child: const Text("⚡ Throttling Adaptativo"),
+              onPressed: () =>
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const AdaptiveThrottlingExample())),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              child: const Text("🎯 Precisión de Sensores"),
+              onPressed: () =>
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const SensorAccuracyExample())),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              child: const Text("⚙️ Optimización de Sensores"),
+              onPressed: () =>
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const SensorOptimizationExample())),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              child: const Text("📊 Control de Densidad Visual"),
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VisualDensityExample())),
             ),
           ],
         ),

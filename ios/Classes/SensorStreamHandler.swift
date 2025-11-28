@@ -17,7 +17,13 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
     private var minInterval: TimeInterval = 0.1  // 100ms por defecto (10Hz)
     private var lowPowerMode: Bool = false
     
-    // Buffer unificado para throttling
+    // Guardar última precisión de heading para incluirla en todos los eventos
+    private var lastHeadingAccuracy: Double?
+    
+    // Throttlers
+    private var adaptiveThrottler: AdaptiveSensorThrottler?
+    
+    // Buffer unificado para throttling (cuando no se usa adaptiveThrottler)
     private var pendingData: [String: Any] = [:]
     private var lastEmitTime: TimeInterval = 0
     private var throttleTimer: Timer?
@@ -32,6 +38,11 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
         self.eventSink = events
         
         // Obtener configuración de throttle y modo bajo consumo
+        var adaptiveThrottling = false
+        var lowFrequencyInterval: TimeInterval = 1.0
+        var staticThreshold: Double = 0.1
+        var staticDuration: TimeInterval = 2.0
+        
         if let args = arguments as? [String: Any] {
             if let throttleMs = args["throttleMs"] as? Int {
                 self.minInterval = Double(throttleMs) / 1000.0
@@ -39,6 +50,37 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
             if let lowPower = args["lowPowerMode"] as? Bool {
                 self.lowPowerMode = lowPower
             }
+            if let adaptive = args["adaptiveThrottling"] as? Bool {
+                adaptiveThrottling = adaptive
+            }
+            if let lowFreqMs = args["lowFrequencyMs"] as? Int {
+                lowFrequencyInterval = Double(lowFreqMs) / 1000.0
+            }
+            if let threshold = args["staticThreshold"] as? Double {
+                staticThreshold = threshold
+            }
+            if let duration = args["staticDurationMs"] as? Int {
+                staticDuration = Double(duration) / 1000.0
+            }
+        }
+        
+        // Inicializar throttler según la configuración
+        if adaptiveThrottling {
+            print("[GeoAR] 🎯 Usando throttler ADAPTATIVO (\(Int(minInterval * 1000))ms -> \(Int(lowFrequencyInterval * 1000))ms)")
+            adaptiveThrottler = AdaptiveSensorThrottler(
+                highFrequencyInterval: minInterval,
+                lowFrequencyInterval: lowFrequencyInterval,
+                staticThreshold: staticThreshold,
+                staticDuration: staticDuration,
+                onEmit: { [weak self] data in
+                    self?.eventSink?(data)
+                },
+                onModeChange: { isMoving in
+                    print("[GeoAR] 📊 Cambio de modo: \(isMoving ? "ACTIVO" : "ESTÁTICO")")
+                }
+            )
+        } else {
+            print("[GeoAR] ⏱️ Usando throttler FIJO (\(Int(minInterval * 1000))ms)")
         }
         
         // Iniciar sensores de orientación
@@ -59,6 +101,10 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
         // Limpiar throttling
         throttleTimer?.invalidate()
         throttleTimer = nil
+        
+        // Limpiar throttler adaptativo
+        adaptiveThrottler?.dispose()
+        adaptiveThrottler = nil
         
         objc_sync_enter(self)
         pendingData.removeAll()
@@ -93,15 +139,25 @@ class SensorStreamHandler: NSObject, FlutterStreamHandler {
             let pitch = attitude.pitch * 180.0 / .pi
             let roll = attitude.roll * 180.0 / .pi
             
-            // Acumular datos de orientación en el buffer
-            let orientationData: [String: Any] = [
+            // Acumular datos de orientación en el buffer, incluyendo precisión de heading si está disponible
+            var orientationData: [String: Any] = [
                 "heading": heading,
                 "pitch": pitch,
                 "roll": roll,
                 "ts": Date().timeIntervalSince1970 * 1000.0
             ]
             
-            self.pushToThrottler(data: orientationData)
+            // Incluir headingAccuracy si ya se ha recibido
+            if let headingAccuracy = self.lastHeadingAccuracy {
+                orientationData["headingAccuracy"] = headingAccuracy
+            }
+            
+            // Usar el throttler correspondiente
+            if let adaptive = self.adaptiveThrottler {
+                adaptive.push(data: orientationData)
+            } else {
+                self.pushToThrottler(data: orientationData)
+            }
         }
     }
     
@@ -201,18 +257,33 @@ extension SensorStreamHandler: CLLocationManagerDelegate {
             "ts": Date().timeIntervalSince1970 * 1000.0
         ]
         
-        pushToThrottler(data: locationData)
+        // Usar el throttler correspondiente
+        if let adaptive = adaptiveThrottler {
+            adaptive.push(data: locationData)
+        } else {
+            pushToThrottler(data: locationData)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        // Capturar precisión del heading (brújula)
+        // Guardar la precisión del heading (brújula) para incluirla en todos los eventos de orientación
         // headingAccuracy en grados: negativo = inválido, < 10 = alta, 10-30 = media, 30-90 = baja, > 90 = no fiable
+        lastHeadingAccuracy = newHeading.headingAccuracy
+        
+        print("[GeoAR] 🧭 Precisión de heading actualizada: \(newHeading.headingAccuracy)° (< 0 = inválido, < 10 = alta, 10-30 = media, 30-90 = baja, > 90 = no fiable)")
+        
+        // Enviar actualización inmediata con la nueva precisión
         let headingAccuracyData: [String: Any] = [
             "headingAccuracy": newHeading.headingAccuracy,
             "ts": Date().timeIntervalSince1970 * 1000.0
         ]
         
-        pushToThrottler(data: headingAccuracyData)
+        // Usar el throttler correspondiente
+        if let adaptive = adaptiveThrottler {
+            adaptive.push(data: headingAccuracyData)
+        } else {
+            pushToThrottler(data: headingAccuracyData)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

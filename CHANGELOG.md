@@ -5,8 +5,15 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 
 ## [0.0.3] - 2025-11-27
 
+- Throttling adaptativo de sensores que ajusta automáticamente la frecuencia de actualización (10Hz↔1Hz) basándose en movimiento del dispositivo, logrando hasta 70% de ahorro de batería en patrones de uso con paradas frecuentes (ver [documentación](/docs/ADAPTIVE_SENSOR_THROTTLING.md))
 - Sistema de control de densidad visual con slider intuitivo y filtros avanzados de POIs por distancia, importancia y declutter (ver [documentación](/docs/VISUAL_DENSITY_CONTROL.md))
 - Indicador de precisión de sensores con visualización del estado de calibración de brújula en tiempo real (ver [documentación](/docs/SENSOR_ACCURACY_INDICATOR.md))
+- Sistema LOD (Level of Detail) para POIs con parámetro `poiDisplayMode` que optimiza el renderizado ajustando la información mostrada según distancia.
+  Modo `distanceBased` aplica 3 niveles automáticos: completo (<500m), simplificado (500-2000m) y solo icono (>2000m), mejorando rendimiento hasta 50%
+- Visualización de capas de terreno DEM en modo debug con perfiles del terreno a múltiples distancias (500m, 2km, 5km, 10km)
+  Permite validar visualmente el funcionamiento del DEM y la topografía del entorno con parámetros `showTerrainLayers` y `showTerrainLabels`
+- Script de conversión de POIs con soporte para múltiples formatos: GeoJSON, KML, CSV y GPX (ver [documentación](/scripts/README.md))
+  Incluye inferencia automática de categorías e importancia, y documentación completa sobre fuentes de datos públicas
 
 
 ## [0.0.2] - 2025-11-27

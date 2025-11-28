@@ -30,8 +30,10 @@ class SensorEventStreamHandler(private val context: Context) :
     private var rotationSensor: Sensor? = null
     private var magnetometer: Sensor? = null
     private var throttler: SensorEventThrottler? = null
+    private var adaptiveThrottler: AdaptiveSensorThrottler? = null
     private var eventSink: EventChannel.EventSink? = null
-    private var magnetometerAccuracy: Int = SensorManager.SENSOR_STATUS_UNRELIABLE
+    // Inicializar con null para que la lógica de Dart no lo considere unreliable hasta tener datos reales
+    private var magnetometerAccuracy: Int? = null
 
     override fun onListen(arguments: Any?, events: EventChannel.EventSink?) {
         eventSink = events
@@ -39,17 +41,45 @@ class SensorEventStreamHandler(private val context: Context) :
         // Obtener configuración de throttle y modo bajo consumo desde los argumentos
         val throttleMs: Long
         val lowPowerMode: Boolean
+        val adaptiveThrottling: Boolean
+        val lowFrequencyMs: Long
+        val staticThreshold: Float
+        val staticDurationMs: Long
 
         if (arguments is Map<*, *>) {
             throttleMs = (arguments["throttleMs"] as? Number)?.toLong() ?: 100L
             lowPowerMode = (arguments["lowPowerMode"] as? Boolean) ?: false
+            adaptiveThrottling = (arguments["adaptiveThrottling"] as? Boolean) ?: false
+            lowFrequencyMs = (arguments["lowFrequencyMs"] as? Number)?.toLong() ?: 1000L
+            staticThreshold = (arguments["staticThreshold"] as? Number)?.toFloat() ?: 0.1f
+            staticDurationMs = (arguments["staticDurationMs"] as? Number)?.toLong() ?: 2000L
         } else {
             throttleMs = 100L
             lowPowerMode = false
+            adaptiveThrottling = false
+            lowFrequencyMs = 1000L
+            staticThreshold = 0.1f
+            staticDurationMs = 2000L
         }
 
-        // Inicializar throttler con la frecuencia configurada
-        throttler = SensorEventThrottler(eventSink, throttleMs)
+        // Inicializar throttler según la configuración
+        if (adaptiveThrottling) {
+            android.util.Log.d("GeoAR", "[GeoAR] 🎯 Usando throttler ADAPTATIVO (${throttleMs}ms -> ${lowFrequencyMs}ms)")
+            adaptiveThrottler = AdaptiveSensorThrottler(
+                context = context,
+                highFrequencyMs = throttleMs,
+                lowFrequencyMs = lowFrequencyMs,
+                staticThreshold = staticThreshold,
+                staticDurationMs = staticDurationMs,
+                onEmit = { data -> eventSink?.success(data) },
+                onModeChange = { isMoving ->
+                    android.util.Log.d("GeoAR", "[GeoAR] 📊 Cambio de modo: ${if (isMoving) "ACTIVO" else "ESTÁTICO"}")
+                }
+            )
+        } else {
+            android.util.Log.d("GeoAR", "[GeoAR] ⏱️ Usando throttler FIJO (${throttleMs}ms)")
+            throttler = SensorEventThrottler(eventSink, throttleMs)
+        }
 
         // Configurar sensor de orientación
         sensorManager = context.getSystemService(Context.SENSOR_SERVICE) as SensorManager
@@ -97,7 +127,13 @@ class SensorEventStreamHandler(private val context: Context) :
                         "accuracy" to lastKnownLocation.accuracy,
                         "ts" to System.currentTimeMillis()
                     )
-                    throttler?.push(locationData)
+                    
+                    // Usar el throttler correspondiente
+                    if (adaptiveThrottler != null) {
+                        adaptiveThrottler?.push(locationData)
+                    } else {
+                        throttler?.push(locationData)
+                    }
                 } else {
                     android.util.Log.d("GeoAR", "[GeoAR] ⚠️ No hay última ubicación conocida")
                 }
@@ -130,6 +166,8 @@ class SensorEventStreamHandler(private val context: Context) :
         locationManager?.removeUpdates(this)
         throttler?.cleanup()
         throttler = null
+        adaptiveThrottler?.cleanup()
+        adaptiveThrottler = null
         eventSink = null
     }
 
@@ -151,14 +189,22 @@ class SensorEventStreamHandler(private val context: Context) :
             val heading = if (azimuth < 0) azimuth + 360f else azimuth
 
             // Enviar datos de orientación al throttler incluyendo precisión del magnetómetro
-            val orientationData = mapOf(
+            val orientationData: MutableMap<String, Any> = mutableMapOf(
                 "heading" to heading,
                 "pitch" to pitch,
                 "roll" to roll,
-                "magnetometerAccuracy" to magnetometerAccuracy,
                 "ts" to System.currentTimeMillis()
             )
-            throttler?.push(orientationData)
+            
+            // Agregar magnetometerAccuracy solo si no es null
+            magnetometerAccuracy?.let { orientationData["magnetometerAccuracy"] = it }
+            
+            // Usar el throttler correspondiente
+            if (adaptiveThrottler != null) {
+                adaptiveThrottler?.push(orientationData)
+            } else {
+                throttler?.push(orientationData)
+            }
         }
     }
 
@@ -166,7 +212,7 @@ class SensorEventStreamHandler(private val context: Context) :
         // Capturar cambios de precisión del magnetómetro
         if (sensor?.type == Sensor.TYPE_MAGNETIC_FIELD) {
             magnetometerAccuracy = accuracy
-            // Valores: 0=SENSOR_STATUS_UNRELIABLE, 1=LOW, 2=MEDIUM, 3=HIGH
+            android.util.Log.d("GeoAR", "[GeoAR] 🧭 Precisión del magnetómetro actualizada: $accuracy (0=UNRELIABLE, 1=LOW, 2=MEDIUM, 3=HIGH)")
         }
     }
 
@@ -179,7 +225,13 @@ class SensorEventStreamHandler(private val context: Context) :
             "accuracy" to location.accuracy,
             "ts" to System.currentTimeMillis()
         )
-        throttler?.push(locationData)
+        
+        // Usar el throttler correspondiente
+        if (adaptiveThrottler != null) {
+            adaptiveThrottler?.push(locationData)
+        } else {
+            throttler?.push(locationData)
+        }
     }
 
     override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {

@@ -49,7 +49,10 @@ enum SensorAccuracy {
       }
     }
 
-    // Sin datos de precisión
-    return SensorAccuracy.unreliable;
+    // Sin datos de precisión disponibles aún:
+    // - En Android: onAccuracyChanged no se ha llamado todavía
+    // - En iOS: didUpdateHeading no se ha recibido aún
+    // Asumimos precisión media (optimista) para evitar falsos positivos
+    return SensorAccuracy.medium;
   }
 }

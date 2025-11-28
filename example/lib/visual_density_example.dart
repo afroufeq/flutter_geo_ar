@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_geo_ar/flutter_geo_ar.dart';
 import 'package:camera/camera.dart';
+import 'package:flutter_geo_ar/src/i18n/strings.g.dart';
 
 /// Ejemplo completo del sistema de Control de Densidad Visual
 ///
@@ -66,39 +67,41 @@ class _VisualDensityExampleState extends State<VisualDensityExample> {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
-    return Scaffold(
-      body: Stack(
-        children: [
-          // Vista AR con parámetros controlados por densidad
-          ListenableBuilder(
-            listenable: _densityController,
-            builder: (context, _) {
-              return GeoArView(
-                camera: _camera,
-                // Rutas a los archivos de datos
-                demPath: 'assets/data/dem/tenerife_cog.tif',
-                poisPath: 'assets/data/pois/tenerife_pois.json',
-                // Parámetros controlados por el controlador de densidad
-                maxDistance: _densityController.maxDistance,
-                minImportance: _densityController.minImportance,
-                declutterMode: _densityController.declutterMode,
-                // Otras configuraciones
-                showHorizon: true,
-                showDebugOverlay: true,
-                showPerformanceMetrics: true,
-                language: 'es',
-              );
-            },
-          ),
+    return TranslationProvider(
+      child: Scaffold(
+        body: Stack(
+          children: [
+            // Vista AR con parámetros controlados por densidad
+            ListenableBuilder(
+              listenable: _densityController,
+              builder: (context, _) {
+                return GeoArView(
+                  camera: _camera,
+                  // Rutas a los archivos de datos
+                  demPath: 'assets/data/dem/tenerife_cog.tif',
+                  poisPath: 'assets/data/pois/tenerife_pois.json',
+                  // Parámetros controlados por el controlador de densidad
+                  maxDistance: _densityController.maxDistance,
+                  minImportance: _densityController.minImportance,
+                  declutterMode: _densityController.declutterMode,
+                  // Otras configuraciones
+                  showHorizon: true,
+                  showDebugOverlay: true,
+                  showPerformanceMetrics: true,
+                  language: 'es',
+                );
+              },
+            ),
 
-          // Slider de densidad visual superpuesto
-          VisualDensitySlider(
-            controller: _densityController,
-            showDetailedInfo: true, // Mostrar parámetros detallados
-            alignment: Alignment.bottomCenter,
-            padding: const EdgeInsets.all(16),
-          ),
-        ],
+            // Slider de densidad visual superpuesto
+            VisualDensitySlider(
+              controller: _densityController,
+              showDetailedInfo: true, // Mostrar parámetros detallados
+              alignment: Alignment.bottomCenter,
+              padding: const EdgeInsets.all(16),
+            ),
+          ],
+        ),
       ),
     );
   }

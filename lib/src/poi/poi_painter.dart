@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'poi_icon_map.dart';
+import 'poi_display_mode.dart';
 import 'declutter_mode.dart';
 import '../utils/spatial_index.dart';
 
@@ -9,6 +10,7 @@ class PoiPainter extends CustomPainter {
   final bool fadeByDistance;
   final bool debugMode;
   final DeclutterMode declutterMode;
+  final PoiDisplayMode displayMode;
   static final Map<String, TextPainter> _textCache = {};
 
   /// Spatial index reutilizable para reducir presión sobre el GC
@@ -20,6 +22,7 @@ class PoiPainter extends CustomPainter {
     this.fadeByDistance = true,
     this.debugMode = false,
     this.declutterMode = DeclutterMode.normal,
+    this.displayMode = PoiDisplayMode.always,
   });
 
   @override
@@ -106,9 +109,29 @@ class PoiPainter extends CustomPainter {
   }
 
   void _drawPoi(Canvas canvas, double x, double y, String name, String key, double dist, double alpha) {
+    // Si el modo es 'always', siempre mostrar toda la información
+    if (displayMode == PoiDisplayMode.always) {
+      _drawFullPoi(canvas, x, y, name, key, dist, alpha);
+      return;
+    }
+
+    // Si el modo es 'distanceBased', implementar LOD (Level of Detail)
+    if (dist < 500) {
+      _drawFullPoi(canvas, x, y, name, key, dist, alpha);
+    } else if (dist < 2000) {
+      _drawSimplePoi(canvas, x, y, name, key, alpha);
+    } else {
+      _drawIconOnly(canvas, x, y, key, alpha * 0.7);
+    }
+  }
+
+  /// Nivel 1: Vista completa (< 500m)
+  /// Muestra icono (24px) + nombre (14px) + distancia (12px)
+  void _drawFullPoi(Canvas canvas, double x, double y, String name, String key, double dist, double alpha) {
     final icon = poiIcons[key] ?? poiIcons['default'];
     final color = Colors.white.withValues(alpha: alpha);
 
+    // Icono
     final iconTp = _getTextPainter(
         String.fromCharCode(icon!.codePoint),
         TextStyle(
@@ -118,10 +141,12 @@ class PoiPainter extends CustomPainter {
             color: Colors.orangeAccent.withValues(alpha: alpha)));
     iconTp.paint(canvas, Offset(x - iconTp.width / 2, y - 24));
 
+    // Nombre
     final nameTp = _getTextPainter(
         name, TextStyle(fontFamily: 'Urbanist', fontWeight: FontWeight.w100, fontSize: 14, color: color));
     nameTp.paint(canvas, Offset(x - nameTp.width / 2, y + 2));
 
+    // Distancia
     final distStr = dist < 1000 ? "${dist.toInt()} m" : "${(dist / 1000).toStringAsFixed(1)} km";
     final distTp = _getTextPainter(
         distStr,
@@ -131,6 +156,44 @@ class PoiPainter extends CustomPainter {
             fontSize: 12,
             color: color.withValues(alpha: alpha * 0.7)));
     distTp.paint(canvas, Offset(x - distTp.width / 2, y + 2 + nameTp.height));
+  }
+
+  /// Nivel 2: Vista simplificada (500m - 2000m)
+  /// Muestra icono (22px) + nombre (13px), sin distancia
+  void _drawSimplePoi(Canvas canvas, double x, double y, String name, String key, double alpha) {
+    final icon = poiIcons[key] ?? poiIcons['default'];
+    final color = Colors.white.withValues(alpha: alpha);
+
+    // Icono ligeramente más pequeño
+    final iconTp = _getTextPainter(
+        String.fromCharCode(icon!.codePoint),
+        TextStyle(
+            fontFamily: icon.fontFamily,
+            package: icon.fontPackage,
+            fontSize: 22,
+            color: Colors.orangeAccent.withValues(alpha: alpha)));
+    iconTp.paint(canvas, Offset(x - iconTp.width / 2, y - 22));
+
+    // Nombre ligeramente más pequeño
+    final nameTp = _getTextPainter(
+        name, TextStyle(fontFamily: 'Urbanist', fontWeight: FontWeight.w100, fontSize: 13, color: color));
+    nameTp.paint(canvas, Offset(x - nameTp.width / 2, y + 2));
+  }
+
+  /// Nivel 3: Solo icono (> 2000m)
+  /// Muestra solo icono (18px) con opacidad reducida
+  void _drawIconOnly(Canvas canvas, double x, double y, String key, double alpha) {
+    final icon = poiIcons[key] ?? poiIcons['default'];
+
+    // Icono más pequeño
+    final iconTp = _getTextPainter(
+        String.fromCharCode(icon!.codePoint),
+        TextStyle(
+            fontFamily: icon.fontFamily,
+            package: icon.fontPackage,
+            fontSize: 18,
+            color: Colors.orangeAccent.withValues(alpha: alpha)));
+    iconTp.paint(canvas, Offset(x - iconTp.width / 2, y - 9));
   }
 
   TextPainter _getTextPainter(String text, TextStyle style) {

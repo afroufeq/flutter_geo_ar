@@ -8,12 +8,14 @@ import '../utils/project_worker.dart';
 import '../poi/poi_model.dart';
 import '../poi/poi_painter.dart';
 import '../poi/poi_loader.dart';
+import '../poi/poi_display_mode.dart';
 import '../poi/dem_service.dart';
 import '../poi/declutter_mode.dart';
 import '../storage/calibration_service.dart';
 import '../visual/visual_tracking.dart';
 import '../horizon/horizon_generator.dart';
 import '../horizon/horizon_painter.dart';
+import '../horizon/terrain_layers_painter.dart';
 import '../utils/telemetry_service.dart';
 import '../i18n/strings.g.dart';
 import 'debug_overlay.dart';
@@ -42,6 +44,13 @@ class GeoArView extends StatefulWidget {
 
   /// Muestra información de debug sobre el horizonte
   final bool showHorizonDebug;
+
+  /// Habilita la visualización de capas de terreno en modo debug
+  /// Muestra el perfil del terreno a diferentes distancias superpuesto sobre la vista AR
+  final bool showTerrainLayers;
+
+  /// Muestra etiquetas con las distancias en las capas de terreno
+  final bool showTerrainLabels;
 
   /// Modo debug: Oculta la imagen de la cámara pero mantiene los sensores activos
   /// Útil para visualizar mejor los POIs y el horizonte en pruebas
@@ -76,6 +85,16 @@ class GeoArView extends StatefulWidget {
   /// - DeclutterMode.aggressive: Mayor spacing entre etiquetas
   final DeclutterMode declutterMode;
 
+  /// Modo de visualización de la información de los POIs
+  ///
+  /// Controla cómo se muestra la información según la distancia:
+  /// - PoiDisplayMode.always: Siempre muestra toda la información (default)
+  /// - PoiDisplayMode.distanceBased: Aplica LOD automático basado en distancia
+  ///   * Cerca (< 500m): icono + nombre + distancia
+  ///   * Media (500-2000m): icono + nombre
+  ///   * Lejos (> 2000m): solo icono
+  final PoiDisplayMode poiDisplayMode;
+
   /// Distancia máxima en metros para mostrar POIs
   ///
   /// Los POIs que estén más lejos que esta distancia no se mostrarán.
@@ -101,6 +120,8 @@ class GeoArView extends StatefulWidget {
     this.horizonLineColor = Colors.yellow,
     this.horizonLineWidth = 2.0,
     this.showHorizonDebug = false,
+    this.showTerrainLayers = false,
+    this.showTerrainLabels = false,
     this.debugMode = false,
     this.visualStabilization = VisualTrackingMode.lite,
     this.lowPowerMode = false,
@@ -108,6 +129,7 @@ class GeoArView extends StatefulWidget {
     this.showPerformanceMetrics = true,
     this.language = 'es',
     this.declutterMode = DeclutterMode.normal,
+    this.poiDisplayMode = PoiDisplayMode.always,
     this.maxDistance = 20000.0,
     this.minImportance = 5,
   }) : assert(
@@ -130,8 +152,9 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
   List<Poi> _loadedPois = [];
   double _calibrationOffset = 0.0;
   bool _isCalibrating = false;
-  bool _showDebugOverlay = false;
+  late bool _showDebugOverlay;
   bool _showCameraInDebug = false; // Controla si se muestra la cámara en modo debug
+  bool _showDemLines = false; // Controla si se muestran las líneas de DEM (capas de terreno)
 
   // Telemetry service para métricas de debug
   final TelemetryService _telemetry = TelemetryService();
@@ -148,13 +171,49 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
   DemService? _demService;
   FusedData? _currentSensorData;
 
+  // Capas de terreno predefinidas para visualización debug
+  late final List<TerrainLayer> _terrainLayers;
+
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
 
-    // Configurar el idioma del plugin
-    _setLanguage(widget.language);
+    // Inicializar el estado del debug overlay según la configuración
+    _showDebugOverlay = widget.showDebugOverlay;
+
+    // Configurar el idioma del plugin de forma segura
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _setLanguage(widget.language);
+    });
+
+    // Inicializar capas de terreno predefinidas
+    _terrainLayers = [
+      TerrainLayer(
+        distance: 500,
+        color: Colors.red.withValues(alpha: 0.4),
+        strokeWidth: 1.0,
+        label: '500m',
+      ),
+      TerrainLayer(
+        distance: 2000,
+        color: Colors.green.withValues(alpha: 0.5),
+        strokeWidth: 1.5,
+        label: '2km',
+      ),
+      TerrainLayer(
+        distance: 5000,
+        color: Colors.cyan.withValues(alpha: 0.6),
+        strokeWidth: 1.5,
+        label: '5km',
+      ),
+      TerrainLayer(
+        distance: 10000,
+        color: Colors.yellow.withValues(alpha: 0.8),
+        strokeWidth: 2.0,
+        label: '10km',
+      ),
+    ];
 
     // Inicializar VisualTracker con configuración adecuada
     // lowPowerMode tiene prioridad y fuerza off independientemente de visualStabilization
@@ -426,7 +485,7 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
 
     try {
       utilLog('[GeoAR] 🗻 Calculando perfil del horizonte...');
-      final profile = await _horizonGenerator!.compute(lat, lon, alt, angularRes: 2.0);
+      final profile = await _horizonGenerator!.compute(lat, lon, alt, angularRes: 0.5);
       if (mounted) {
         setState(() {
           _horizonProfile = profile;
@@ -573,6 +632,20 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: [
+          // Botón para mostrar/ocultar líneas de DEM en modo debug
+          if (widget.debugMode && _demService != null)
+            IconButton(
+              icon: Icon(
+                _showDemLines ? Icons.terrain : Icons.terrain_outlined,
+                color: _showDemLines ? Colors.green : Colors.white,
+              ),
+              onPressed: () {
+                setState(() {
+                  _showDemLines = !_showDemLines;
+                });
+              },
+              tooltip: _showDemLines ? 'Ocultar líneas DEM' : 'Mostrar líneas DEM',
+            ),
           // Botón para alternar cámara/fondo azul solo en modo DEBUG
           if (widget.debugMode && _camController != null && _camController!.value.isInitialized)
             IconButton(
@@ -611,6 +684,7 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
                 _projectedPois,
                 debugMode: widget.debugMode,
                 declutterMode: widget.declutterMode,
+                displayMode: widget.poiDisplayMode,
               ),
             ),
             // Dibujar el horizonte si está habilitado y disponible
@@ -625,6 +699,19 @@ class _GeoArViewState extends State<GeoArView> with WidgetsBindingObserver {
                   lineColor: widget.horizonLineColor,
                   lineWidth: widget.horizonLineWidth,
                   showDebugInfo: widget.showHorizonDebug,
+                ),
+              ),
+            // Dibujar capas de terreno si el botón está activo y hay DEM disponible
+            if (_showDemLines && _demService != null && _currentSensorData != null)
+              CustomPaint(
+                size: Size.infinite,
+                painter: TerrainLayersPainter(
+                  dem: _demService!,
+                  sensors: _currentSensorData,
+                  focalLength: widget.focalLength,
+                  calibration: _calibrationOffset,
+                  layers: _terrainLayers,
+                  showLabels: true, // Siempre mostrar etiquetas cuando las líneas están activas
                 ),
               ),
             if (_isCalibrating)

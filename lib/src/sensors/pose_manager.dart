@@ -33,11 +33,14 @@ class PoseManager {
   PoseManager._();
 
   final NativeEventChannel _channel = NativeEventChannel();
-  final _ctrl = StreamController<FusedData>.broadcast();
+  StreamController<FusedData>? _ctrl;
   StreamSubscription? _nativeSub;
 
   /// Stream de datos fusionados de sensores (orientación + ubicación)
-  Stream<FusedData> get stream => _ctrl.stream;
+  Stream<FusedData> get stream {
+    _ctrl ??= StreamController<FusedData>.broadcast();
+    return _ctrl!.stream;
+  }
 
   // Estado interno
   double? _heading, _pitch, _roll, _lat, _lon, _alt;
@@ -85,7 +88,13 @@ class PoseManager {
         if (event.containsKey('alt')) _alt = (event['alt'] as num).toDouble();
 
         final ts = event['ts'] ?? DateTime.now().millisecondsSinceEpoch;
-        _ctrl.add(FusedData(
+
+        // Verificar si el controlador está cerrado y recrearlo si es necesario
+        if (_ctrl == null || _ctrl!.isClosed) {
+          _ctrl = StreamController<FusedData>.broadcast();
+        }
+
+        _ctrl!.add(FusedData(
             heading: _heading, pitch: _pitch, roll: _roll, lat: _lat, lon: _lon, alt: _alt, ts: (ts as num).toInt()));
       }
     }, onError: (e) => utilLog("Error sensores: $e"));
@@ -101,6 +110,7 @@ class PoseManager {
   /// Libera todos los recursos
   void dispose() {
     stop();
-    _ctrl.close();
+    _ctrl?.close();
+    _ctrl = null;
   }
 }
